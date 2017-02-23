@@ -2,8 +2,10 @@
   "name": "firsttimers",
   "version": "1.0.0",
   "description": "Hoodie Bot to create starter issues",
-  "main": "index.js",
-  "scripts": {
+  "main": "server.js",
+  "scripts":
+   {
+    "start":"node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/hoodiehq/first-timers-only-bot/issues"
   },
+ "dependencies": {
+    "hapi": "^16.1.0",
+    "inert": "^4.1.0"
+},
   "homepage": "https://github.com/hoodiehq/first-timers-only-bot#readme"
 }
