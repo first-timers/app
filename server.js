@@ -50,11 +50,17 @@ server.route({
   method: 'GET',
   path: '/',
   handler: function (request, reply){
-    var data = {
-      title: 'This is the index page!',
-      message: 'Hello!!!'
-    };
-    return reply.view('index', data);
+    reply.view('index');
+  }
+});
+
+server.route({
+  method: 'POST',
+  path: '/starter-issue',
+  handler: function(request, reply){
+    reply ({
+      "ok": true
+    })
   }
 });
 
