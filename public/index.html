@@ -10,29 +10,22 @@
 
 $("form").on("submit", function(event){
   event.preventDefault();
-  console.log(this);
   var url = $('#url').val();
-  console.log(url);
 
-// https://api.github.com/repos/agonzalez0515/Coco-app/branches/arlene
 
-  var newurl = url.replace('https://github.com', 'https://api.github.com/repos');
-  var newesturl = newurl.replace('tree', 'branches');
+  var secondURL = url.replace('https://github.com', 'https://api.github.com/repos');
+  var finalURL = secondURL.replace('tree', 'branches');
 
-  console.log(newurl);
-  console.log(newesturl);
 
   $.ajax({
-    url: newesturl,
+    url: finalURL,
     type: "GET",
     success: function( result ) {
-      console.log(result)
-      // debugger;
-      var sha = result.commit.sha
-      console.log(sha)
+    var sha = result.commit.sha
+    console.log(sha)
+      alert("The SHA: " + sha);
     }
-  });
+  })
 });
-
 
 </script>
