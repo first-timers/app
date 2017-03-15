@@ -1,28 +1,28 @@
+<form action="/starter-issue" method="post">
+  URL: <input id="url" type="url" name="url"> </input>
+  <button type="submit">Submit</button>
+</form>
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
 
+$("form").on("submit", function(event){
+  event.preventDefault();
+  var url = $('#url').val();
 
-  <form action="/starter-issue" method="POST">
-    URL: <input type="text" name="url"/>
-    <button type="submit">Submit</button>
-  </form>
+  var secondURL = url.replace('https://github.com', 'https://api.github.com/repos');
+  var finalURL = secondURL.replace('tree', 'branches');
 
-  <script type="text/javascript">
+  $.ajax({
+    url: finalURL,
+    type: "GET",
+    success: function( result ) {
+    var sha = result.commit.sha
+    console.log(sha)
+      alert("The SHA: " + sha);
+    }
+  })
+});
 
-  function sendFormFromHTML(form) {
-  		var formData = new FormData(form);
-  		var xhr = new XMLHttpRequest();
-  		xhr.open('GET', formData.name);
-  		xhr.onload = function(e) { alert(this.responseText) };
-  		xhr.send();
-  	}
-
-
-  // 
-  // var request = require('request');
-  // request('http://www.google.com', function (error, response, body) {
-  //     if (!error && response.statusCode == 200) {
-  //         console.log(body) // Print the google web page.
-  //      }
-  // })
 </script>
