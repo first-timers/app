@@ -6,3 +6,23 @@
     URL: <input type="text" name="url"/>
     <button type="submit">Submit</button>
   </form>
+
+  <script type="text/javascript">
+
+  function sendFormFromHTML(form) {
+  		var formData = new FormData(form);
+  		var xhr = new XMLHttpRequest();
+  		xhr.open('GET', formData.name);
+  		xhr.onload = function(e) { alert(this.responseText) };
+  		xhr.send();
+  	}
+
+
+  // 
+  // var request = require('request');
+  // request('http://www.google.com', function (error, response, body) {
+  //     if (!error && response.statusCode == 200) {
+  //         console.log(body) // Print the google web page.
+  //      }
+  // })
+</script>
