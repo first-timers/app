@@ -63,7 +63,7 @@ server.route({
             path: '/starter-issue',
             handler: function(request, reply) {
 
-                //request to GET branch information from GitHub
+                //url user submits
                 var url = request.payload.url;
                 console.log("This is the URL submitted: " + url)
                 var secondURL = url.replace('https://github.com', 'https://api.github.com/repos');
@@ -77,6 +77,7 @@ server.route({
                     }
                 };
 
+                //branch information
                 function callback(err, result, body) {
                     var parsedBody = JSON.parse(result.body);
                     var sha = parsedBody.commit.sha;
@@ -92,6 +93,7 @@ server.route({
                         }
                     };
 
+                    //commit information
                     var callback2 = function(error, response, body) {
                         var parsedBodyCommit = JSON.parse(body);
                         console.log('parsedBodyCommit:', parsedBodyCommit);
@@ -99,11 +101,11 @@ server.route({
                         console.log('parsedBodyCommit.files:', parsedBodyCommit.files);
                     };
 
-
+                    //request to GET commit information from GitHub
                     Request(commitRequest, callback2);
                 };
 
-
+                //request to GET branch information from GitHub
                 Request(branchRequest, callback);
 
 
