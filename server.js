@@ -4,6 +4,7 @@ var Inert = require('inert');
 var Vision = require('vision');
 var Handlebars = require('handlebars')
 
+var Request = require('request');
 
 var server = new Hapi.Server();
 
@@ -61,6 +62,22 @@ server.route({
   method: 'POST',
   path: '/starter-issue',
   handler: function(request, reply){
+    var url = request.payload.url;
+
+    var options = {
+      url: url,
+      headers: {
+        'User-Agent': 'request'
+      }
+    };
+
+    function callback(err, res, body) {
+      console.log(res);
+    }
+
+    Request(options, callback);
+
+
     reply ({
       "ok": true
     })
