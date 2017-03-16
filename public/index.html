@@ -2,30 +2,3 @@
   URL: <input id="url" type="url" name="url"> </input>
   <button type="submit">Submit</button>
 </form>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript">
-
-
-$("form").on("submit", function(event){
-  event.preventDefault();
-  var url = $('#url').val();
-
-
-  var secondURL = url.replace('https://github.com', 'https://api.github.com/repos');
-  var finalURL = secondURL.replace('tree', 'branches');
-
-
-  $.ajax({
-    url: finalURL,
-    type: "GET",
-    success: function( result ) {
-    var sha = result.commit.sha
-    console.log(sha)
-      alert("The SHA: " + sha);
-    }
-  })
-});
-
-</script>
