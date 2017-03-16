@@ -63,16 +63,22 @@ server.route({
   path: '/starter-issue',
   handler: function(request, reply){
     var url = request.payload.url;
+    var secondURL = url.replace('https://github.com', 'https://api.github.com/repos');
+    var finalURL = secondURL.replace('tree', 'branches');
+
 
     var options = {
-      url: url,
+      url: finalURL,
       headers: {
         'User-Agent': 'request'
       }
     };
 
-    function callback(err, res, body) {
-      console.log(res);
+    function callback(err, result, body) {
+      var parsedBody = JSON.parse(result.body);
+      var sha = parsedBody.commit.sha;
+
+      console.log("The SHA: " + sha);
     }
 
     Request(options, callback);
