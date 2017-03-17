@@ -27,7 +27,7 @@ server.route({
     method: 'POST',
     path: '/starter-issue',
     handler: function(request, reply) {
-      
+
         //url user submits
         var url = request.payload.data;
         console.log("This is the URL submitted: " + url)
@@ -42,7 +42,7 @@ server.route({
         };
 
         //branch information
-        function callback(err, result, body) {
+        function callbackBranch(err, result, body) {
             var parsedBody = JSON.parse(result.body);
             var sha = parsedBody.commit.sha;
 
@@ -58,24 +58,28 @@ server.route({
             };
 
             //commit information
-            var callback2 = function(error, response, body) {
+            var callbackCommit = function(error, response, body) {
                 var parsedBodyCommit = JSON.parse(body);
-                console.log('parsedBodyCommit:', parsedBodyCommit);
-                console.log('*****************');
-                console.log('parsedBodyCommit.files:', parsedBodyCommit.files);
+
+                var commitMessage = parsedBodyCommit.commit.message
+                console.log ("THIS IS THE MESSAGE:", commitMessage)
+
+                var fileName = parsedBodyCommit.files[0].filename;
+                var patchDiff = parsedBodyCommit.files[0].patch;
+                var blobURL = parsedBodyCommit.files[0].blob_url;
             };
 
             //request to GET commit information from GitHub
-            Request(commitRequest, callback2);
+            Request(commitRequest, callbackCommit);
         };
 
         //request to GET branch information from GitHub
-        Request(branchRequest, callback);
-
+        Request(branchRequest, callbackBranch);
 
 
         reply({
-            "ok": true
+          // respond with path to the changed file, the diff, commit message and commit body
+          // the response will be all markdown code
         })
 
     }
