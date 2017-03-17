@@ -1,4 +1,32 @@
 <form action="/starter-issue" method="post">
-  URL: <input id="url" type="url" name="url"> </input>
+  URL: <input id="input" type="url" name="url"> </input>
   <button type="submit">Submit</button>
 </form>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.0.min.js"
+  integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+  crossorigin="anonymous"></script>
+<script>
+  $("button").on("click", function(event){
+    event.preventDefault();
+    // alert("hello");
+
+    var urlPost = $("form").attr('action');
+    console.log(urlPost)
+    var dataURL = $("#input").val();
+    console.log(dataURL)
+
+    $.ajax({
+      url: urlPost,
+      type: "POST",
+      data: {data: dataURL}
+    })
+
+    .done(function(response){
+      console.log(response)
+    })
+
+  })
+</script>
