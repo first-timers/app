@@ -4,6 +4,7 @@
 </form>
 
 
+<!-- ajax added so that page doesn't refresh and we stay single-page -->
 <script
   src="https://code.jquery.com/jquery-3.2.0.min.js"
   integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
@@ -11,12 +12,12 @@
 <script>
   $("button").on("click", function(event){
     event.preventDefault();
-    // alert("hello");
+    alert("Request sent!!!");
 
     var urlPost = $("form").attr('action');
-    console.log(urlPost)
+    // console.log(urlPost)
     var dataURL = $("#input").val();
-    console.log(dataURL)
+    // console.log(dataURL)
 
     $.ajax({
       url: urlPost,
@@ -26,6 +27,7 @@
 
     .done(function(response){
       console.log(response)
+
     })
 
   })
