@@ -12,14 +12,21 @@
         <h1>First Timers Only Bot</h1>
       </div>
       <div class="row">
-        <div class="url-form">
-          <form action="/starter-issue" method="post">
-          URL: <input id="input" type="url" name="url"> </input>
-          <button type="submit">Submit</button>
-          </form>
+        <div class="three columns">
+          <p> Submit a URL to a branch:</p>
+        </div>
+        <div class="nine columns">
+          <div class="url-form">
+            <form action="/starter-issue" method="post">
+            URL: <input id="input" type="url" name="url" style="width: 400px">
+            <button type="submit">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
-
+      <div class="row title"><h2> Let's make a new issue</h2>
+        <p>Copy paste the markdown below into a new issue.</p>
+      </div>
       <div class="row">
         <div class="textarea" contenteditable="true">
           <div class="intro">
@@ -97,10 +104,9 @@
 <style>
   .textarea {
     width: 900px;
-    /*border: 25px solid green;*/
     padding: 25px;
     margin: 25px;
-
+    border: 3px dashed black;
   }
 
   h1, .url-form{
