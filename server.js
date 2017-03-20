@@ -60,14 +60,14 @@ server.route({
             //commit information
             var callbackCommit = function(error, response, body) {
                 var parsedBodyCommit = JSON.parse(body);
-
+                console.log(parsedBodyCommit)
                 var commitMessage = parsedBodyCommit.commit.message
-                console.log("THIS IS THE MESSAGE:", commitMessage)
+                // console.log("THIS IS THE MESSAGE:", commitMessage)
 
                 var fileName = parsedBodyCommit.files[0].filename;
                 var patchDiff = parsedBodyCommit.files[0].patch;
                 var blobURL = parsedBodyCommit.files[0].blob_url;
-
+                console.log(patchDiff)
                 var commitInfo = {
                     "fileName": fileName,
                     "blobURL": blobURL,
