@@ -1,7 +1,64 @@
-<form action="/starter-issue" method="post">
-  URL: <input id="input" type="url" name="url"> </input>
-  <button type="submit">Submit</button>
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>First-Timers-Only Bot</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>First Timers Only Bot</h1>
+      </div>
+      <div class="row">
+        <div class="url-form">
+          <form action="/starter-issue" method="post">
+          URL: <input id="input" type="url" name="url"> </input>
+          <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="textarea" contenteditable="true">
+          <div class="intro">
+          <p>### 🆕🐥☝ First Timers Only<br>
+          This issue is reserved for people who never contributed to Open Source before. We know that the process of creating a pull request is the biggest barrier for new contributors. This issue is for you 💝 [About First Timers Only](http://www.firsttimersonly.com/).
+          <br>
+          <p class="need-to-know">### 🤔 What you will need to know
+          </br>
+          Nothing. This issue is meant to welcome you to Open Source :) We are happy to walk you through the process.</p>
+          </p>
+          </div>
+
+          <div class="clipboard">
+          <p class="clipboard">### :clipboard: Step by Step</p>
+          <br>
+          - [x] 🙋 **Claim this issue**: Comment below.
+            Once claimed we add you as contributor to this repository.<br>
+          - [x] 👌 **Accept our invitation** to this repository. Once accepted, assign yourself to this repository <br>
+          - [x] 👓 **Please review** our [Code of Conduct](http://hood.ie/code-of-conduct/) <br>
+            In a nutshell: be patient and actively kind<br>
+          - [x] 🔄 **replace** the `up for grabs` label with `in progress`.
+          <p class="update">- [x] 📝 **Update** [hoodiehq/hoodie-account-server-api’s README.md file](https://github.com/hoodiehq/hoodie-account-server-api/blob/master/README.md): Find the URL behind the code coverage badge (`https://coveralls.io/r/hoodiehq/hoodie-account-server-api?branch=master`) and replace it with the new URL<br> (`https://coveralls.io/github/hoodiehq/hoodie-account-server-api?branch=master`)</p>
+          - [x] 💾 **Commit** your changes with the message `docs(README): new code coverage status URL`<br>
+          - [x] 🔀 **Start a Pull Request**. Set the title to `new code coverage status URL` and set description to `closes hoodiehq/camp#123. There are two ways how you can start a pull request:<br>
+            1. If you are familiar with the terminal or would like to learn it, [here is a great tutorial](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github) on how to send a pull request using the terminal.<br>
+            2. You can [edit files directly in your browser](https://help.github.com/articles/editing-files-in-your-repository/)<br>
+          - [x] 🏁 **Done** :+1: Replace the `in progress` label with `ready`. Ask in comments for a review :)<br>
+          </div>
+          <div>
+          ### 🤔❓ Questions
+          You can also ping us in the [Hoodie Chat](http://hood.ie/chat/) or on [Twitter](https://twitter.com/hoodiehq/)
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
 
 
 <!-- ajax added so that page doesn't refresh and we stay single-page -->
@@ -15,9 +72,7 @@
     alert("Request sent!!!");
 
     var urlPost = $("form").attr('action');
-    // console.log(urlPost)
     var dataURL = $("#input").val();
-    // console.log(dataURL)
 
     $.ajax({
       url: urlPost,
@@ -25,10 +80,31 @@
       data: {data: dataURL}
     })
 
-    .done(function(response){
-      
+      .done(function(response){
 
-    })
+        var blobURL = response.blobURL
+        var fileName = response.fileName
+        var commitMessage = response.commitMessage
+        var patchDiff = response.patchDiff
 
+        $(".textbox").html();
+
+      });
   })
 </script>
+
+
+<style>
+  .textarea {
+    width: 900px;
+    /*border: 25px solid green;*/
+    padding: 25px;
+    margin: 25px;
+
+  }
+
+  h1, .url-form{
+    text-align: center;
+  }
+
+</style>
