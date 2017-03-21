@@ -32,26 +32,26 @@
         <div class="row">
             <div class="textarea" contenteditable="true">
                 <div class="intro">
-                    <p>### 🆕🐥☝ First Timers Only<br> This issue is reserved for people who never contributed to Open Source before. We know that the process of creating a pull request is the biggest barrier for new contributors. This issue is for you 💝
+                    <h6>### 🆕🐥☝ First Timers Only</h4>
+                      <p>
+                        This issue is reserved for people who never contributed to Open Source before. We know that the process of creating a pull request is the biggest barrier for new contributors. This issue is for you 💝
                         [About First Timers Only](http://www.firsttimersonly.com/).
-                        <br>
-                        ### 🤔 What you will need to know<br>
-                        <p class="need-to-know"></p>
-                    </p>
-                </div>
-
-                <div class="clipboard">
-                    <p class="clipboard">### :clipboard: Step by Step</p>
-                    <br> - [x] 🙋 **Claim this issue**: Comment below. Once claimed we add you as contributor to this repository.<br> - [x] 👌 **Accept our invitation** to this repository. Once accepted, assign yourself to this repository <br> - [x] 👓
-                    **Please review** our [Code of Conduct](http://hood.ie/code-of-conduct/) <br> In a nutshell: be patient and actively kind<br> - [x] 🔄 **replace** the `up for grabs` label with `in progress`.<br>
+                      </p>
+                    <h6>### 🤔 What you will need to know</h4>
+                      <p class="need-to-know"></p>
+                    <h6>### :clipboard: Step by Step</h4>
+                    - [x] 🙋 **Claim this issue**: Comment below. Once claimed we add you as contributor to this repository.<br> - [x] 👌 **Accept our invitation** to this repository. Once accepted, assign yourself to this repository <br>
+                    - [x] 👓 **Please review** our [Code of Conduct](http://hood.ie/code-of-conduct/) <br> In a nutshell: be patient and actively kind<br> - [x] 🔄 **replace** the `up for grabs` label with `in progress`.<br>
                     - [x] 📝 **Update** <p class="update"></p>
-                    - [x] 💾 **Commit** your changes with the message `docs(README): new code coverage status URL`<br> - [x] 🔀 **Start a Pull Request**. Set the title to `new code coverage status URL` and set description to `closes hoodiehq/camp#123.
+                    - [x] 💾 **Commit** your changes.<br>
+                    - [x] 🔀 **Start a Pull Request**.
                     There are two ways how you can start a pull request:<br> 1. If you are familiar with the terminal or would like to learn it, [here is a great tutorial](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
                     on how to send a pull request using the terminal.<br> 2. You can [edit files directly in your browser](https://help.github.com/articles/editing-files-in-your-repository/)<br> - [x] 🏁 **Done** :+1: Replace the `in progress` label with
                     `ready`. Ask in comments for a review :)<br>
-                </div>
-                <div>
-                    ### 🤔❓ Questions You can also ping us in the [Hoodie Chat](http://hood.ie/chat/) or on [Twitter](https://twitter.com/hoodiehq/)
+                    <h6>### 🤔❓ Questions</h6>
+                     <p>
+                       You can also ping us in the [Hoodie Chat](http://hood.ie/chat/) or on [Twitter](https://twitter.com/hoodiehq/)
+                     </p>
                 </div>
             </div>
         </div>
@@ -92,7 +92,7 @@
                   "<p>You will be updating: [" + fileName+"]" + "(" + blobURL + ")</p> <p>```diff<br>" + patchDiff + "<br> ```"
                 );
 
-                $(".need-to-know").text(commitMessage)
+                $(".need-to-know").html(commitMessage)
             });
     })
 </script>

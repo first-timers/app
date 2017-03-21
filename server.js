@@ -30,7 +30,7 @@ server.route({
 
         //url user submits
         var url = request.payload.data;
-        console.log("This is the URL submitted: " + url)
+        // console.log("This is the URL submitted: " + url)
         var secondURL = url.replace('https://github.com', 'https://api.github.com/repos');
         var finalURL = secondURL.replace('tree', 'branches');
 
@@ -46,7 +46,7 @@ server.route({
             var parsedBody = JSON.parse(result.body);
             var sha = parsedBody.commit.sha;
 
-            console.log("The SHA: " + sha);
+            // console.log("The SHA: " + sha);
 
             var commitURL = finalURL.replace(/branches.*$/, 'commits/' + sha);
 
@@ -60,14 +60,14 @@ server.route({
             //commit information
             var callbackCommit = function(error, response, body) {
                 var parsedBodyCommit = JSON.parse(body);
-                console.log(parsedBodyCommit)
-                var commitMessage = parsedBodyCommit.commit.message
+                // console.log(parsedBodyCommit)
+                var commitMessage = parsedBodyCommit.commit.message.replace(/\n/g, '<br>');
                 // console.log("THIS IS THE MESSAGE:", commitMessage)
 
                 var fileName = parsedBodyCommit.files[0].filename;
-                var patchDiff = parsedBodyCommit.files[0].patch;
+                var patchDiff = parsedBodyCommit.files[0].patch.replace(/\n/g, '<br>');
                 var blobURL = parsedBodyCommit.files[0].blob_url;
-                console.log(patchDiff)
+                // console.log(patchDiff)
                 var commitInfo = {
                     "fileName": fileName,
                     "blobURL": blobURL,
