@@ -30,10 +30,10 @@ server.route({
 
         //url user submits
         var url = request.payload.data;
-        // console.log("This is the URL submitted: " + url)
+        console.log("This is the URL submitted: " + url)
         var secondURL = url.replace('https://github.com', 'https://api.github.com/repos');
         var finalURL = secondURL.replace('tree', 'branches');
-
+        console.log(finalURL)
         var branchRequest = {
             url: finalURL,
             headers: {
