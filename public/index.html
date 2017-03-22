@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>First-Timers-Only Bot</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>First Timers Only Bot</h1>
+        </div>
+        <div class="row">
+            <div class="three columns">
+                <p> Submit a URL to a branch:</p>
+            </div>
+            <div class="nine columns">
+                <div class="url-form">
+                    <form action="/starter-issue" method="post">
+                        URL: <input id="input" type="url" name="url" style="width: 400px">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row title">
+            <h2> Let's make a new issue</h2>
+            <p>Copy paste the markdown below into a new issue.</p>
+        </div>
+        <div class="row">
+            <div class="textarea" contenteditable="true">
+                <div class="intro">
+                    ![writespeakcode](https://s3.postimg.org/5m9xwaxlf/writespeakcode.jpg)
+                    <h6>### 🆕🐥☝ First Timers Only</h4>
+                      <p>
+                        This issue is reserved for people who never contributed to Open Source before. We know that the process of creating a pull request is the biggest barrier for new contributors. This issue is for you 💝
+                        [About First Timers Only](http://www.firsttimersonly.com/).
+                      </p>
+                    <h6>### 🤔 What you will need to know</h4>
+                      [Write/Speak/Code Open Source Hours README for Hoodie!](https://gist.github.com/polinadotio/ea6bba1e5fe6668b94dd99a8063380ad)<br>
+                      <p class="need-to-know"></p>
+                    <h6>### :clipboard: Step by Step</h4>
+                    - [ ] 🙋 **Claim this issue**: Comment below.  Please only claim if you want to start working on it during [the event](https://www.meetup.com/WriteSpeakCode-SFBay/events/237067347/?from=ref). Once claimed we add you as contributor to this repository.<br> - [ ] 👌 **Accept our invitation** to this repository. Once accepted, assign yourself to this repository <br>
+                    - [ ] 👓 **Please review** our [Code of Conduct](http://hood.ie/code-of-conduct/) <br> In a nutshell: be patient and actively kind<br> - [ ] 🔄 **replace** the `up for grabs` label with `in progress`.<br>
+                    - [ ] 📝 **Update** <p class="update"></p>
+                    - [ ] 💾 **Commit** your changes.<br>
+                    - [ ] 🔀 **Start a Pull Request**.
+                    There are two ways how you can start a pull request:<br> 1. If you are familiar with the terminal or would like to learn it, [here is a great tutorial](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
+                    on how to send a pull request using the terminal.<br> 2. You can [edit files directly in your browser](https://help.github.com/articles/editing-files-in-your-repository/)<br> - [ ] 🏁 **Done** :+1: Replace the `in progress` label with
+                    `ready`. Ask in comments for a review :)<br>- [ ] 🔬 **Reviewers**: use the squash & commit button, set commit subject to `chore(LICENSE): update year` and commit body to `closes hoodiehq/camp#(insert issue number here)`
+                    <h6>### 🤔❓ Questions</h6>
+                     <p>
+                       You can also ping us in the [Hoodie Chat](http://hood.ie/chat/) or on [Twitter](https://twitter.com/hoodiehq/)
+                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+<!-- ajax added so that page doesn't refresh and we stay single-page -->
+<script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
+<script>
+    $("button").on("click", function(event) {
+        event.preventDefault();
+        alert("Request sent!!!");
+
+        var urlPost = $("form").attr('action');
+        var dataURL = $("#input").val();
+
+        $.ajax({
+                url: urlPost,
+                type: "POST",
+                data: {
+                    data: dataURL
+                }
+            })
+
+            .done(function(response) {
+
+                var blobURL = response.blobURL
+                var fileName = response.fileName
+                var commitMessage = response.commitMessage
+                var patchDiff = response.patchDiff
+
+                $(".update").html(
+                  "<p>You will be updating: [" + fileName+"]" + "(" + blobURL + ")</p> <p>```diff<br>" + patchDiff + "<br> ```"
+                );
+
+                $(".need-to-know").html(commitMessage)
+            });
+    })
+</script>
+
+
+<style>
+    .textarea {
+        width: 900px;
+        padding: 25px;
+        margin: 25px;
+        border: 3px dashed black;
+    }
+
+    h1,
+    .url-form {
+        text-align: center;
+    }
+</style>
