@@ -1,3 +1,6 @@
+var dotenv = require('dotenv');
+dotenv.load();
+
 var Hapi = require('hapi');
 var Inert = require('inert');
 var Request = require('request');
@@ -77,13 +80,14 @@ server.route({
                     "patchDiff": patchDiff
                 }
 
+
                 var issueRequest = {
                   // POST /repos/:owner/:repo/issues
                   method: 'POST',
                   url: "https://api.github.com/repos/agonzalez0515/saga-app/issues",
                   headers: {
                     'User-Agent': 'request',
-                    'Authorization': 'token ',
+                    'Authorization': 'token ' + process.env.TOKEN,
                     'Content-type': 'application/json',
                   },
                   json: true,
@@ -91,9 +95,13 @@ server.route({
                     'title': 'I found an issue'
                   }
                 };
+                console.log(issueRequest.headers.Authorization)
 
                 var callbackIssue = function(error, response, body){
-                  // console.log(body)
+                  if (error){
+                    console.log(error)
+                  }
+                  console.log(body)
                   var issueURL = body.html_url
                   console.log("Issue URL:" + issueURL)
 
