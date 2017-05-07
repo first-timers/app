@@ -70,12 +70,12 @@ server.route({
                 var blobURL = parsedBodyCommit.files[0].blob_url;
 
 
-                // var commitInfo = {
-                //     "fileName": fileName,
-                //     "blobURL": blobURL,
-                //     "commitMessage": commitMessage,
-                //     "patchDiff": patchDiff
-                // }
+                var commitInfo = {
+                    "fileName": fileName,
+                    "blobURL": blobURL,
+                    "commitMessage": commitMessage,
+                    "patchDiff": patchDiff
+                }
 
                 var issueRequest = {
                   // POST /repos/:owner/:repo/issues
@@ -83,15 +83,22 @@ server.route({
                   url: "https://api.github.com/repos/agonzalez0515/saga-app/issues",
                   headers: {
                     'User-Agent': 'request',
-                    'Authorization': 'token bebcea97d0b1b08e90754463d90f9017c7893935',
+                    'Authorization': 'token 2ee4edc6145575ecae423a4f7296d970d7e340e5',
+                    'Content-type': 'application/json',
+                  },
+                  json: true,
+                  body: {
+                    'title': 'I found an issue'
                   }
                 };
 
                 var callbackIssue = function(error, response, body){
+                  // console.log(body)
+                  var issueURL = body.html_url
+                  console.log("Issue URL:" + issueURL)
 
-                  var parsedBodyIssue = JSON.parse(body)
-                  console.log(parsedBodyIssue)
-
+                  //reply with a link to the issue created
+                  reply(issueURL)
 
                 };
 
@@ -99,8 +106,7 @@ server.route({
                 //request to create issue
                 Request(issueRequest, callbackIssue)
 
-                //reply with a link to the issue created
-                reply()
+
             };
 
             //request to GET commit information from GitHub
