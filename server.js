@@ -93,10 +93,9 @@ server.route({
                   json: true,
                   body: {
                     'title': 'I found an issue',
-
                   }
                 };
-                console.log(issueRequest.headers.Authorization)
+
 
                 var callbackIssue = function(error, response, body){
                   if (error){
@@ -110,12 +109,8 @@ server.route({
                   reply(issueURL)
 
                 };
-
-
                 //request to create issue
                 Request(issueRequest, callbackIssue)
-
-
             };
 
             //request to GET commit information from GitHub
