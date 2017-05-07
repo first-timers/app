@@ -33,7 +33,7 @@ server.route({
 
         //url user submits
         var url = request.payload.data;
-        console.log("This is the URL submitted: " + url)
+        // console.log("This is the URL submitted: " + url)
         var secondURL = url.replace('https://github.com', 'https://api.github.com/repos');
         var finalURL = secondURL.replace('tree', 'branches');
         // console.log(finalURL)
@@ -92,7 +92,8 @@ server.route({
                   },
                   json: true,
                   body: {
-                    'title': 'I found an issue'
+                    'title': 'I found an issue',
+
                   }
                 };
                 console.log(issueRequest.headers.Authorization)
@@ -101,7 +102,7 @@ server.route({
                   if (error){
                     console.log(error)
                   }
-                  console.log(body)
+                  // console.log(body)
                   var issueURL = body.html_url
                   console.log("Issue URL:" + issueURL)
 
