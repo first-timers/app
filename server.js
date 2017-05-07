@@ -30,7 +30,7 @@ server.route({
 
         //url user submits
         var url = request.payload.data;
-        // console.log("This is the URL submitted: " + url)
+        console.log("This is the URL submitted: " + url)
         var secondURL = url.replace('https://github.com', 'https://api.github.com/repos');
         var finalURL = secondURL.replace('tree', 'branches');
         // console.log(finalURL)
@@ -83,7 +83,7 @@ server.route({
                   url: "https://api.github.com/repos/agonzalez0515/saga-app/issues",
                   headers: {
                     'User-Agent': 'request',
-                    'Authorization': 'token 2ee4edc6145575ecae423a4f7296d970d7e340e5',
+                    'Authorization': 'token ',
                     'Content-type': 'application/json',
                   },
                   json: true,

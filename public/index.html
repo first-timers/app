@@ -74,6 +74,8 @@
         var urlPost = $("form").attr('action');
         var dataURL = $("#input").val();
 
+        console.log(dataURL)
+
         $.ajax({
                 url: urlPost,
                 type: "POST",
@@ -84,10 +86,8 @@
 
             .done(function(response) {
 
-                var blobURL = response.blobURL
-                var fileName = response.fileName
-                var commitMessage = response.commitMessage
-                var patchDiff = response.patchDiff
+
+                console.log(response)
 
                 $(".update").html(
                   "<p>You will be updating: [" + fileName+"]" + "(" + blobURL + ")</p> <p>```diff<br>" + patchDiff + "<br> ```"
