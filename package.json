@@ -10,10 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/hoodiehq/first-timers-only-bot.git"
   },
-  "author": "Juanita Soranno",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hoodiehq/first-timers-only-bot/issues"
   },
-  "homepage": "https://github.com/hoodiehq/first-timers-only-bot#readme"
+  "homepage": "https://github.com/hoodiehq/first-timers-only-bot#readme",
+  "dependencies": {
+    "hapi": "^16.1.0",
+    "inert": "^4.1.0",
+    "request": "^2.81.0"
+  }
 }
