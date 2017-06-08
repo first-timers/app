@@ -36,7 +36,7 @@ server.route({
         // console.log("This is the URL submitted: " + url)
         var secondURL = url.replace('https://github.com', 'https://api.github.com/repos');
         var finalURL = secondURL.replace('tree', 'branches');
-        // console.log(finalURL)
+        console.log(finalURL)
 
         var branchRequest = {
             url: finalURL,
@@ -82,12 +82,13 @@ server.route({
 
 
                 var issueRequest = {
-                  // POST /repos/:owner/:repo/issues
                   method: 'POST',
-                  url: "https://api.github.com/repos/agonzalez0515/saga-app/issues",
+                  url: "https://api.github.com/repos/hoodiehq/first-timers-only-bot/issues",
                   headers: {
                     'User-Agent': 'request',
                     'Authorization': 'token ' + process.env.TOKEN,
+
+                    
                     'Content-type': 'application/json',
                   },
                   json: true,
@@ -98,6 +99,8 @@ server.route({
 
 
                 var callbackIssue = function(error, response, body){
+                  console.log(body)
+
                   if (error){
                     console.log(error)
                   }
