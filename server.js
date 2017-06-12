@@ -97,7 +97,7 @@ server.route({
                   body: {
                     'title': 'I found an issue',
                     'body': issueBody,
-                    'labels': ['first-timers-only', 'up-for-grabs']
+                    'labels': ['first-timers-TEST-only']
                   }
                 };
 
