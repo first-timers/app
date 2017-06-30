@@ -2,7 +2,7 @@
 var Hapi = require('hapi');
 var Inert = require('inert');
 var Request = require('request');
-var Markdown = require('markdown').markdown;
+
 
 var server = new Hapi.Server();
 
@@ -70,9 +70,9 @@ server.route({
                 // console.log("This is commit message: " + commitMessage)
 
                 var fileName = parsedBodyCommit.files[0].filename;
-                var patchDiff = parsedBodyCommit.files[0].patch.replace(/\n/g, '<br>');
+                var patchDiff = parsedBodyCommit.files[0].patch;
                 var blobURL = parsedBodyCommit.files[0].blob_url;
-
+                console.log("patchDiff:" + patchDiff)
 
                 // var commitInfo = {
                 //     "fileName": fileName,
@@ -81,7 +81,7 @@ server.route({
                 //     "patchDiff": patchDiff
                 // }
 
-                var issueBody = Markdown.toHTML("** 🆕🐥☝ First Timers Only. **\n\n This issue is reserved for people who never contributed to Open Source before. We know that the process of creating a pull request is the biggest barrier for new contributors. This issue is for you 💝 [About First Timers Only](http://www.firsttimersonly.com/).\n\n **🤔 What you will need to know.**\n\n Nothing. This issue is meant to welcome you to Open Source :) We are happy to walk you through the process.\n\n **:clipboard: Step by Step**\n\n - [x] 🙋 **Claim this issue**: Comment below\n Once claimed we add you as contributor to this repository.\n - [x] 👌 **Accept our invitation** to this repository. Once accepted, assign yourself to this repository\n\n - [x] 👓 **Please review** our [Code of Conduct](http://hood.ie/code-of-conduct/)\n\n In a nutshell: be patient and actively kind\n\n - [x] 🔄 **replace** the `up for grabs` label with `in progress`.\n\n - [x] 📝 **Update** the file["+ fileName +"](" + blobURL + ") in the `hoodie` repository (press the little pen Icon) and edit the line as shown below.\n\n```js \n\ndiff\n\n"+patchDiff+"\n\n ```\n\n - [x] 💾 **Commit** your changes\n\n - [x] 🔀 **Start a Pull Request**. There are two ways how you can start a pull request:\n\n1. If you are familiar with the terminal or would like to learn it, [here is a great tutorial](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github) on how to send a pull request using the terminal.\n\n 2. You can [edit files directly in your browser](https://help.github.com/articles/editing-files-in-your-repository/)\n\n - [x] 🏁 **Done** :+1: Replace the `in progress` label with `ready`. Ask in comments for a review :) \n\n### 🤔❓ Questions\n\nYou can ping us in the [Hoodie Chat](http://hood.ie/chat/) or on [Twitter](https://twitter.com/hoodiehq/)");
+                var issueBody = "** 🆕🐥☝ First Timers Only. **\n\n This issue is reserved for people who never contributed to Open Source before. We know that the process of creating a pull request is the biggest barrier for new contributors. This issue is for you 💝 [About First Timers Only](http://www.firsttimersonly.com/).\n\n **🤔 What you will need to know.**\n\n Nothing. This issue is meant to welcome you to Open Source :) We are happy to walk you through the process.\n\n **:clipboard: Step by Step**\n\n - [x] 🙋 **Claim this issue**: Comment below\n Once claimed we add you as contributor to this repository.\n - [x] 👌 **Accept our invitation** to this repository. Once accepted, assign yourself to this repository\n\n - [x] 👓 **Please review** our [Code of Conduct](http://hood.ie/code-of-conduct/)\n\n In a nutshell: be patient and actively kind\n\n - [x] 🔄 **replace** the `up for grabs` label with `in progress`.\n\n - [x] 📝 **Update** the file["+ fileName +"](" + blobURL + ") in the `hoodie` repository (press the little pen Icon) and edit the line as shown below.\n\n```js \n\ndiff\n\n"+patchDiff+"\n\n ```\n\n - [x] 💾 **Commit** your changes\n\n - [x] 🔀 **Start a Pull Request**. There are two ways how you can start a pull request:\n\n1. If you are familiar with the terminal or would like to learn it, [here is a great tutorial](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github) on how to send a pull request using the terminal.\n\n 2. You can [edit files directly in your browser](https://help.github.com/articles/editing-files-in-your-repository/)\n\n - [x] 🏁 **Done** :+1: Replace the `in progress` label with `ready`. Ask in comments for a review :) \n\n### 🤔❓ Questions\n\nYou can ping us in the [Hoodie Chat](http://hood.ie/chat/) or on [Twitter](https://twitter.com/hoodiehq/)";
 
 
 
