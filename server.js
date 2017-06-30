@@ -35,7 +35,7 @@ server.route({
         // console.log("This is the URL submitted: " + url)
         var secondURL = url.replace('https://github.com', 'https://api.github.com/repos');
         var finalURL = secondURL.replace('tree', 'branches');
-        console.log(finalURL)
+        // console.log(finalURL)
 
         var branchRequest = {
             url: finalURL,
@@ -44,14 +44,16 @@ server.route({
             }
         };
 
-        //branch information
-        var callbackBranch= function(err, result, body) {
-            var parsedBody = JSON.parse(result.body);
+        //branch information, response from branchRequest
+        var branchResponse= function(err, response, body) {
+            var parsedBody = JSON.parse(response.body);
+            // console.log("parsed body:" + parsedBody)
             var sha = parsedBody.commit.sha;
 
-            console.log("The SHA: " + sha);
+            // console.log("The SHA: " + sha);
 
             var commitURL = finalURL.replace(/branches.*$/, 'commits/' + sha);
+            // console.log("CommitURL:" + commitURL)
 
             var commitRequest = {
                 url: commitURL,
@@ -60,12 +62,12 @@ server.route({
                 }
             };
 
-            //commit information
-            var callbackCommit = function(error, response, body) {
+            //commit information, response from commitRequest
+            var commitResponse = function(error, response, body) {
                 var parsedBodyCommit = JSON.parse(body);
 
                 var commitMessage = parsedBodyCommit.commit.message.replace(/\n/g, '<br>');
-                console.log("This is commit message: " + commitMessage)
+                // console.log("This is commit message: " + commitMessage)
 
                 var fileName = parsedBodyCommit.files[0].filename;
                 var patchDiff = parsedBodyCommit.files[0].patch.replace(/\n/g, '<br>');
@@ -100,30 +102,30 @@ server.route({
                 };
 
 
-                var callbackIssue = function(error, response, body){
-                  console.log(body)
+                var issueResponse = function(error, response, body){
+                  // console.log(body)
 
                   if (error){
                     console.log(error)
                   }
                   // console.log(body)
                   var issueURL = body.html_url
-                  console.log("Issue URL:" + issueURL)
+                  // console.log("Issue URL:" + issueURL)
 
                   //reply with a link to the issue created
                   reply(issueURL)
 
                 };
                 //request to create issue
-                Request(issueRequest, callbackIssue)
+                Request(issueRequest, issueResponse)
             };
 
             //request to GET commit information from GitHub
-            Request(commitRequest, callbackCommit);
+            Request(commitRequest, commitResponse);
         };
 
         //request to GET branch information from GitHub
-        Request(branchRequest, callbackBranch);
+        Request(branchRequest, branchResponse);
     }
 });
 
