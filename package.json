@@ -16,7 +16,6 @@
   },
   "homepage": "https://github.com/hoodiehq/first-timers-only-bot#readme",
   "dependencies": {
-    "dotenv": "^4.0.0",
     "hapi": "^16.1.0",
     "inert": "^4.1.0",
     "request": "^2.81.0",
