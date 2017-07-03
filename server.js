@@ -122,11 +122,7 @@ Nothing. This issue is meant to welcome you to Open Source :) We are happy to wa
 ### 🤔❓ Questions
 
 You can ping us in the [Hoodie Chat](http://hood.ie/chat/) or on [Twitter](https://twitter.com/hoodiehq/)`
-
-                console.log(`\nissueBody ==============================`)
-                console.log(issueBody)
-                return
-
+                
 
                 var issueRequest = {
                   method: 'POST',
