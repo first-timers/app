@@ -1,4 +1,4 @@
-# first-timers-only-bot
+# First-timers-only-bot
 
 ### 🐶 🎯⛳ The Motivation
 
@@ -16,14 +16,14 @@ We are in the progress of updating the bot to watch only for branches starting w
 
 NOTE: Add picture of an issue example
 
-### Requirements
-1) You'll need an Access Token from Github. Follow steps 1-9 from this [article](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) to generate your token. Make sure to SAVE the token in a document/editor file because it will only be shown to you once.
+### ✅ ➕ Requirements
+1) You'll need an Access Token from Github. Follow steps 1-9 from this [article](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) to generate your token. ⚠️ Make sure to SAVE the token in a document/editor file because it will only be shown to you once.
 
 2) Install [Node.js](https://nodejs.org/en/)
 
 3) Install [Hapi](https://hapijs.com/)
 
-### Setup
+### 🕜 💻 Setup
 ```
 mkdir my-app
 cd my-app
@@ -32,8 +32,8 @@ cd first-timers-only-bot
 
 ```
 
-###How to Start the Server
+### 🚦 🏁 How to Start the Server
 
 In your terminal, type `TOKEN=<tokenhere> node server.js`. Make sure to substitute `<tokenhere>` for your access token from Github.
 
-### Using the bot
+### 😮 🙌 👀 🎉 Using the bot
