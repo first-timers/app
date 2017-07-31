@@ -1,23 +1,23 @@
 {
-  "name": "firsttimers",
+  "name": "first-timers-only-bot",
   "version": "1.0.0",
-  "description": "Hoodie Bot to create starter issues",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "probot run ./server.js"
+  },
+  "dependencies": {
+    "probot": "^0.7.4"
+  },
+  "engines": {
+    "node": "8.1.x"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hoodiehq/first-timers-only-bot.git"
+    "url": "https://glitch.com/edit/#!/first-timers-only-bot"
   },
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hoodiehq/first-timers-only-bot/issues"
-  },
-  "homepage": "https://github.com/hoodiehq/first-timers-only-bot#readme",
-  "dependencies": {
-    "hapi": "^16.1.0",
-    "inert": "^4.1.0",
-    "request": "^2.81.0"
-  }
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "server"
+  ]
 }
