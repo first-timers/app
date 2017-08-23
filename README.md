@@ -12,8 +12,11 @@ Creating what we call [starter issues](http://hood.ie/blog/starter-issues.html) 
 
 Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the issue directly in the master branch or creating a pull request, I create a new branch that is called something like first-timers-only-typo-in-title. GitHub will notify the "first-timers-only issue bot" about the new branch using webhooks. Currently, the bot will see that a new branch was created starting with "first-timers-only" "and it will create a new issue at https://github.com/hoodiehq/camp/issues/new based on a template and assign the first-timers-only and the up-for-grabs label. If the commit body can be used to add some context information. If left empty, the 🤔 What you will need to know section of the issue will simply say "Nothing :)". Otherwise the commit body will be used there.
 
+[Issue Example Here](https://github.com/arlene-perez/bot-app-test/issues/1)
+![Committing-Branch](/assets/Committing-Branch.png?raw=true)
+![Issue-Generated](/assets/Issue-Generated.png?raw=true)
+![Issue-Done](/assets/Issue-Done.png?raw=true)
 
-NOTE: Add picture of an issue example
 
 ### ✅ ➕ Steps
 1) You'll need an Access Token from Github. Follow steps 1-9 from this [article](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) to generate your token. ⚠️ Make sure to SAVE the token in a document/editor file because it will only be shown to you once.
