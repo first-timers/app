@@ -21,10 +21,9 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
 git clone https://github.com/hoodiehq/first-timers-only-bot.git
 cd first-timers-only-bot
 npm install
-
 ```
 
-When you are ready to use the bot, _make sure to change the label to **first-timers** in the instructions.md file._
+👀 When you are ready to use the bot, _make sure to change the label to **first-timers** in the instructions.md file._
 
 ### 🚦 🏁 How to Start the Server Through Terminal
 
