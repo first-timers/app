@@ -21,10 +21,9 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
 git clone https://github.com/hoodiehq/first-timers-only-bot.git
 cd first-timers-only-bot
 npm install
-
 ```
 
-When you are ready to use the bot, _make sure to change the label to **first-timers** in the instructions.md file._
+👀 When you are ready to use the bot, _make sure to change the label to **first-timers** in the instructions.md file._
 
 ### 🚦 🏁 How to Start the Server Through Terminal
 
@@ -35,12 +34,12 @@ In your terminal, type `TOKEN=<tokenhere> node server.js`. Make sure to substitu
 
 ### 😮 🙌 👀 🎉 Using the bot
 
-| No need to fork the repo.,Edit the file directly on the repo(where your Github App is installed on) with your change and commit message. Make sure to click on **Create a new branch** at the bottom and begin the title of the branch with **first-timers-only**. | ![Committing-Branch](/assets/Committing-Branch.png?raw=true) |
+| 1) No need to fork the repo. Edit the file your change and commit message _directly_ on the repo where your Github App is installed on with. Make sure to click on **Create a new branch** at the bottom and begin the title of the branch with **first-timers-only**. | ![Committing-Branch](/assets/Committing-Branch.png?raw=true) |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| Click on the issues tab and notice your issue was created with your change and commit message. Follow the steps on the issue message                                                                                                                               | ![Issue-Generated](/assets/Issue-Generated.png?raw=true)     |
+| Click on the issues tab and notice your issue was created with your change and commit message. The contributor would then follow the steps on the issue message.                                                                                                                               | ![Issue-Generated](/assets/Issue-Generated.png?raw=true)     |
 
-### Result
+### 😱 🙌 😎Result
 
 [Issue Example Here](https://github.com/arlene-perez/bot-app-test/issues/1)
 
-<img align="middle" src="/assets/Issue-Done.png">
+<img align="center" src="/assets/Issue-Done.png">
