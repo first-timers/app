@@ -10,7 +10,7 @@ Creating what we call [starter issues](http://hood.ie/blog/starter-issues.html) 
 
 ### 💡💥❓ How things work
 
-Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the issue directly in the master branch or creating a pull request which is time-consuming, I can simply create a new branch that is called something like **first-timers-only-typo-in-title.** GitHub will then notify the "first-timers-only issue bot" about the new branch using Webhooks. The bot is listening to any new branch was created starting with **first-timers-only** and it will create a new issue at _https://github.com/hoodiehq/camp/issues/new_ with a template and assign the first-timers-only and the up-for-grabs label. The commit body can be used to add some context information and if left empty, the 🤔 **What you will need to know** section of the issue will simply say "Nothing :)".
+Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the issue directly in the master branch or creating a pull request which is time-consuming, I can simply create a new branch that is called something like **first-timers-only-typo-in-title.** GitHub will then notify the "first-timers-only issue bot" about the new branch using Webhooks. The bot is listening to any new branch starting with **first-timers-only** and it will create a new issue on your repo. It is currently setup to the Hoodie repo with a template and assigns the first-timers-only and up-for-grabs labels but can be modified by the developer. The commit body can be used to add some context information and if left empty, the 🤔 **What you will need to know** section of the issue will simply say "Nothing :)".
 
 ### 🕜 💻 Setup
 ```
@@ -30,11 +30,11 @@ npm install
 
 4) Generate your app's **Webhoook Secret**. Go to Settings → GitHub Apps → Select your bot and enter a secret code where it says **Webhook Secret**. Save!
 
-5) You'll need an Access Token from Github. Follow steps 1-9 from this [article](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) to generate your token. ⚠️ Make sure to SAVE the token in a document/editor file because it will only be shown to you once.
+5) You'll need an Access Token from GitHub. Follow steps 1-9 from this [article](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) to generate your token. ⚠️ Make sure to SAVE the token in a document/editor file because it will only be shown to you once.
 
-6) Generate a **private key** for your App by going to Settings->GitHub Apps-> Select your bot and scroll to _Private Key_ to click on **Generate private key**. ⚠️Copy _ALL_ of its content and make sure to PASTE this in a document/editor file because it will only be shown to you once.
+6) Generate a **private key** for your App by going to Settings->GitHub Apps-> Select your bot and scroll to _Private Key_ to click on **Generate private key**. ⚠️Copy _ALL_ of its contents and make sure to PASTE this in a document/editor file because it will only be shown to you once.
 
-6) Create a new file named  ".data/private-key.pem". Paste the ALL of the _private key_ text including the "Begin RSA..." part into this file.
+6) Create a new file named  ".data/private-key.pem". Paste ALL of the _private key_ text including the "Begin RSA..." part into this file.
 
 6) Grab your GitHub App's ID from the settings page.
 
