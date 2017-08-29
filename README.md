@@ -34,11 +34,11 @@ npm install
 
 6) Generate a **private key** for your App by going to Settings->GitHub Apps-> Select your bot and scroll to _Private Key_ to click on **Generate private key**. ⚠️Copy _ALL_ of its content and make sure to PASTE this in a document/editor file because it will only be shown to you once.
 
-6) Create a new file named  ".data/private-key.pem". Paste the ALL of the _private key_ text inside this file.
+6) Create a new file named  ".data/private-key.pem". Paste the ALL of the _private key_ text including the "Begin RSA..." part into this file.
 
 6) Grab your GitHub App's ID from the settings page.
 
-7) Add your App ID, Access Token and Webhook Secret with the path to the private key to your `.env` file. Look below for an example:
+7) Add your App ID, Access Token and Webhook Secret with the path to the private key to your `.env` file. 
 ````
 APP_ID=123
 WEBHOOK_SECRET=yourcode
