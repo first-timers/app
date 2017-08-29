@@ -34,7 +34,6 @@ In your terminal, type `TOKEN=<tokenhere> node server.js`. Make sure to substitu
 
 ### 😮 🙌 👀 🎉 Using the bot
 
-
 ## License
 
 [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
