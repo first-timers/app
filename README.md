@@ -38,3 +38,9 @@ cd first-timers-only-bot
 In your terminal, type `TOKEN=<tokenhere> node server.js`. Make sure to substitute `<tokenhere>` for your access token from Github.
 
 ### 😮 🙌 👀 🎉 Using the bot
+
+
+
+## License
+
+[Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
