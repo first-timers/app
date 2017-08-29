@@ -34,12 +34,12 @@ In your terminal, type `TOKEN=<tokenhere> node server.js`. Make sure to substitu
 
 ### 😮 🙌 👀 🎉 Using the bot
 
-| 1) No need to fork the repo. Edit the file your change and commit message _directly_ on the repo where your Github App is installed on with. Make sure to click on **Create a new branch** at the bottom and begin the title of the branch with **first-timers-only**. | ![Committing-Branch](/assets/Committing-Branch.png?raw=true) |
+| 1) No need to fork the repo. Edit the file your change and commit message _directly_ on the repo where your Github App is installed on with. Make sure to click on "Create a new branch" at the bottom and begin the title of the branch with _first-timers-only_. | ![Committing-Branch](/assets/Committing-Branch.png?raw=true) |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| Click on the issues tab and notice your issue was created with your change and commit message. The contributor would then follow the steps on the issue message.                                                                                                                               | ![Issue-Generated](/assets/Issue-Generated.png?raw=true)     |
+| 2) Click on the issues tab and notice your issue was created with your change and commit message. The contributor would then follow the steps on the issue message.                                                                                                                               | ![Issue-Generated](/assets/Issue-Generated.png?raw=true)     |
 
 ### 😱 🙌 😎Result
 
 [Issue Example Here](https://github.com/arlene-perez/bot-app-test/issues/1)
 
-<img align="center" src="/assets/Issue-Done.png">
+<p align="center"><img src="/assets/Issue-Done.png"></p>
