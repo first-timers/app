@@ -34,16 +34,16 @@ In your terminal, type `TOKEN=<tokenhere> node server.js`. Make sure to substitu
 
 ### 😮 🙌 👀 🎉 Using the bot
 <table>
-<tr>
+<tr bgcolor="#eeccff">
 <th>Steps</th>
 <th>Example</th>
 </tr>
-<tr>
-<td>No need to fork the repo. Edit the file your change and commit message <b>directly</b> on the repo where your Github App is installed on with. Make sure to click on <i>Create a new branch</i> at the bottom and begin the title of the branch with <b>first-timers-only</b>.</td>
+<tr bgcolor="#eeccff">
+<td>1) No need to fork the repo. Edit the file your change and commit message <b>directly</b> on the repo where your Github App is installed on with. Make sure to click on <i>Create a new branch</i> at the bottom and begin the title of the branch with <b>first-timers-only</b>.</td>
 <td><img src="/assets/Committing-Branch.png?raw=true"></td>
 </tr>
-<tr>
-<td>Click on the issues tab and notice your issue was created with your change and commit message. The contributor would then follow the steps on the issue message.</td>
+<tr bgcolor="#eeccff">
+<td>2) Click on the issues tab and notice your issue was created with your change and commit message. The contributor would then follow the steps on the issue message.</td>
 <td><img src="/assets/Issue-Generated.png?raw=true"</td>
 </tr>
 
