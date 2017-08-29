@@ -12,10 +12,6 @@ Creating what we call [starter issues](http://hood.ie/blog/starter-issues.html) 
 
 Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the issue directly in the master branch or creating a pull request which is time-consuming, I can simply create a new branch that is called something like **first-timers-only-typo-in-title.** GitHub will then notify the "first-timers-only issue bot" about the new branch using Webhooks. The bot is listening to any new branch was created starting with **first-timers-only** and it will create a new issue at _https://github.com/hoodiehq/camp/issues/new_ with a template and assign the first-timers-only and the up-for-grabs label. The commit body can be used to add some context information and if left empty, the 🤔 **What you will need to know** section of the issue will simply say "Nothing :)".
 
-### ✅ ➕ Access Token Needed
-1) You'll need an Access Token from Github. Follow steps 1-9 from this [article](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) to generate your token. ⚠️ Make sure to SAVE the token in a document/editor file because it will only be shown to you once.
-
-
 ### 🕜 💻 Setup
 ```
 git clone https://github.com/hoodiehq/first-timers-only-bot.git
@@ -25,6 +21,31 @@ npm install
 
 👀 When you are ready to use the bot, _make sure to change the label to **first-timers** in the instructions.md file._
 
+###  ✅ ➕Setting Up GitHub App with Bot
+1) ![Create the GitHub App](https://github.com/gr2m/github-app-example#create-a-github-app)
+
+2) ![Install the bot on your repo](https://github.com/gr2m/github-app-example#install-your-github-app)
+
+3) You will need to create a `.env` file. This file is only for you to view, where you store information such as tokens and Webhook secrets.
+
+4) Generate your app's **Webhoook Secret**. Go to Settings → GitHub Apps → Select your bot and enter a secret code where it says **Webhook Secret**. Save!
+
+5) You'll need an Access Token from Github. Follow steps 1-9 from this [article](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) to generate your token. ⚠️ Make sure to SAVE the token in a document/editor file because it will only be shown to you once.
+
+6) Generate a **private key** for your App by going to Settings->GitHub Apps-> Select your bot and scroll to _Private Key_ to click on **Generate private key**. ⚠️Copy _ALL_ of its content and make sure to PASTE this in a document/editor file because it will only be shown to you once.
+
+6) Create a new file named  ".data/private-key.pem". Paste the ALL of the _private key_ text inside this file.
+
+6) Grab your GitHub App's ID from the settings page.
+
+7) Add your App ID, Access Token and Webhook Secret with the path to the private key to your `.env` file. Look below for an example:
+````
+APP_ID=123
+WEBHOOK_SECRET=yourcode
+
+PRIVATE_KEY_PATH=.data/private-key.pem
+TOKEN=aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+````
 ### 🚦 🏁 How to Start the Server Through Terminal
 
 In your terminal, type `TOKEN=<tokenhere> node server.js`. Make sure to substitute `<tokenhere>` for your access token from Github.
