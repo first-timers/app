@@ -44,11 +44,11 @@ border: 1px solid black;
 </tr>
 <tr>
 <td>No need to fork the repo. Edit the file your change and commit message _directly_ on the repo where your Github App is installed on with. Make sure to click on "Create a new branch" at the bottom and begin the title of the branch with _first-timers-only_.</td>
-<td>![Committing-Branch](/assets/Committing-Branch.png?raw=true)</td>
+<td><img src="/assets/Committing-Branch.png?raw=true"></td>
 </tr>
 <tr>
 <td>Click on the issues tab and notice your issue was created with your change and commit message. The contributor would then follow the steps on the issue message.</td>
-<td>![Issue-Generated](/assets/Issue-Generated.png?raw=true)</td>
+<td><img src="/assets/Issue-Generated.png?raw=true"</td>
 </tr>
 
 ## License
