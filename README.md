@@ -50,8 +50,9 @@ TOKEN=aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 In your terminal, type `TOKEN=<tokenhere> node server.js`. Make sure to substitute `<tokenhere>` for your access token from Github.
 
-### 🚦 🏁 How to Start the Server Through Glitch
-[Glitch](https://glitch.com/) is a platform where we hosted our first-timers-bot. It's so easy to use! Simply add your code and your bot will instantly be live!
+### 🚦 🏁 Make it LIVE!
+
+You can deploy to your favorite place like Heroku, Now, or Glitch. We used Glitch. [Glitch](https://glitch.com/) is a platform where we hosted our first-timers-bot. It's so easy to use! Simply add your code and your bot will instantly be live!  Here's a ![repo](https://github.com/gr2m/github-app-example#receive-a-webhook) on how to deploy from github to glitch.
 
 ### 😮 🙌 👀 🎉 Using the bot
 <table>
