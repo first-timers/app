@@ -19,7 +19,7 @@ cd first-timers-only-bot
 npm install
 ```
 
-👀 When you are ready to use the bot, _make sure to change the label to whichever label you want used, such as **first-timers** or **up-for-grabs** in the instructions.md file._
+👀 When you are ready to use the bot, _make sure to change the label_ to whichever label you want used, such as **first-timers** or **up-for-grabs** in the instructions.md file.
 
 ###  ✅ ➕Setting Up GitHub App with Bot
 1) ![Create the GitHub App](https://github.com/gr2m/github-app-example#create-a-github-app)
