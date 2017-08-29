@@ -56,3 +56,9 @@ border: 1px solid black;
 [Issue Example Here](https://github.com/arlene-perez/bot-app-test/issues/1)
 
 <p align="center"><img src="/assets/Issue-Done.png"></p>
+
+
+
+## License
+
+[Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
