@@ -29,11 +29,11 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
         <td><img src="/assets/Edit.png?raw=true"></td>
     </tr>
     <tr>
-        <td>2) Make the change and write your commit message.  Make sure to click on <i>Create a new branch</i> at the bottom and begin the title of the branch with <b>first-timers-only</b> for example.</td>
+        <td>3) Make the change and write your commit message under <b>Commit changes</b>.  Make sure to check <i>Create a new branch</i> at the bottom and begin the title of the branch with <b>first-timers-only</b> for example.</td>
         <td><img src="/assets/Committing-Branch.png?raw=true"></td>
     </tr>
     <tr>
-        <td>3) Click on the <b>issues</b> tab and notice your issue was created with your change and commit message. The contributor would then follow the steps on the issue message.</td>
+        <td>4) Click on the <b>issues</b> tab and notice your issue was created with your change and commit message. The contributor would then follow the steps on the issue message.</td>
         <td><img src="/assets/Issue-Generated.png?raw=true"</td>
 </tr>
 
