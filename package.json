@@ -4,13 +4,17 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "probot run ./server.js",
     "now-start": "PRIVATE_KEY=$(echo $PRIVATE_KEY | base64 -d) npm start",
-    "test": "standard"
+    "start": "probot run ./server.js",
+    "pretest": "standard",
+    "test": "tap 'test/{integration,unit}/*-test.js'"
   },
   "dependencies": {
-    "probot": "^0.7.4",
-    "standard": "^10.0.3"
+    "probot": "^0.7.4"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3",
+    "tap": "^10.7.2"
   },
   "engines": {
     "node": "8.1.x"
