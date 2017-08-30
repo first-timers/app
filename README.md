@@ -14,21 +14,25 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
 
 
 ### 😮 🙌 👀 🎉 Use Our Bot!
-1) ![Install App](https://github.com/apps/first-timers-bot)
 
-💥Try it out on this ![repo](https://github.com/First-timers-bot/first-timers-test)!
 <table>
-<tr>
-<th>Steps</th>
-<th>Example</th>
-</tr>
-<tr>
-<td>No need to fork the repo. Edit the file your change and commit message <b>directly</b> on the repo where your Github App is installed on with. Make sure to click on <i>Create a new branch</i> at the bottom and begin the title of the branch with <b>first-timers-only</b>.</td>
-<td><img src="/assets/Committing-Branch.png?raw=true"></td>
-</tr>
-<tr>
-<td>Click on the <b>issues</b> tab and notice your issue was created with your change and commit message. The contributor would then follow the steps on the issue message.</td>
-<td><img src="/assets/Issue-Generated.png?raw=true"</td>
+    <tr>
+        <th>Steps</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td>1) ![Install App](https://github.com/apps/first-timers-bot)</td>
+    </tr>
+    <tr>
+        <td>2) Try it out on this ![repo](https://github.com/First-timers-bot/first-timers-test)!</td>
+    </tr>
+    <tr>
+        <td>3) No need to fork the repo. Edit the file your change and commit message <b>directly</b> on the repo where your Github App is installed on with. Make sure to click on <i>Create a new branch</i> at the bottom and begin the title of the branch with <b>first-timers-only</b>.</td>
+        <td><img src="/assets/Committing-Branch.png?raw=true"></td>
+    </tr>
+    <tr>
+        <td>4) Click on the <b>issues</b> tab and notice your issue was created with your change and commit message. The contributor would then follow the steps on the issue message.</td>
+        <td><img src="/assets/Issue-Generated.png?raw=true"</td>
 </tr>
 </table>
 
@@ -37,49 +41,6 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
 [Issue Example Here](https://github.com/arlene-perez/bot-app-test/issues/1)
 
 <p align="center"><img src="/assets/Issue-Done.png"></p>
-
-
-### 🕜 💻 Want to Modify the App?
-```
-git clone https://github.com/hoodiehq/first-timers-only-bot.git
-cd first-timers-only-bot
-npm install
-```
-👀 When you are ready to use the bot, _make sure to change the label_ to whichever label you want used, such as **first-timers** or **up-for-grabs** in the instructions.md file.
-
-###  ✅ ➕Installing the First Timers Bot on your Repo
-
-1) ![Create the GitHub App](https://github.com/gr2m/github-app-example#create-a-github-app)
-
-2) ![Install the bot on your repo](https://github.com/gr2m/github-app-example#install-your-github-app)
-
-3) You will need to create a `.env` file. This file is only for you to view, where you store information such as tokens and Webhook secrets.
-
-4) Generate your app's **Webhoook Secret**. Go to Settings → GitHub Apps → Select your bot and enter a secret code where it says **Webhook Secret**. Save!
-
-5) You'll need an Access Token from GitHub. Follow steps 1-9 from this [article](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) to generate your token. ⚠️ Make sure to SAVE the token in a document/editor file because it will only be shown to you once.
-
-6) Generate a **private key** for your App by going to Settings->GitHub Apps-> Select your bot and scroll to _Private Key_ to click on **Generate private key**. ⚠️Copy _ALL_ of its contents and make sure to PASTE this in a document/editor file because it will only be shown to you once.
-
-6) Create a new file named  ".data/private-key.pem". Paste ALL of the _private key_ text including the "Begin RSA..." part into this file.
-
-6) Grab your GitHub App's ID from the settings page.
-
-7) Add your App ID, Access Token and Webhook Secret with the path to the private key to your `.env` file. 
-````
-APP_ID=123
-WEBHOOK_SECRET=yourcode
-
-PRIVATE_KEY_PATH=.data/private-key.pem
-TOKEN=aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-````
-### 🚦 🏁 How to Start the Server Through Terminal
-
-In your terminal, type `TOKEN=<tokenhere> node server.js`. Make sure to substitute `<tokenhere>` for your access token from Github.
-
-### 🚦 🏁 Make it LIVE!
-
-You can deploy to your favorite place like Heroku, Now, or Glitch. We used Glitch. [Glitch](https://glitch.com/) is a platform where we hosted our first-timers-bot. It's so easy to use! Simply add your code and your bot will instantly be live!  Here's a ![repo](https://github.com/gr2m/github-app-example#receive-a-webhook) on how to deploy from github to glitch.
 
 
 ## License
