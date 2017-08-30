@@ -22,10 +22,10 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
         <th>Example</th>
     </tr>
     <tr>
-        <td>1) ![Install App](https://github.com/apps/first-timers-bot)</td>
+        <td>1) [Install App](https://github.com/apps/first-timers-bot)</td>
     </tr>
     <tr>
-        <td>2) Try it out on this ![repo](https://github.com/First-timers-bot/first-timers-test)!</td>
+        <td>2) Try it out on this [repo](https://github.com/First-timers-bot/first-timers-test)!</td>
     </tr>
     <tr>
         <td>3) No need to fork the repo. Edit the file your change and commit message <b>directly</b> on the repo where your Github App is installed on with. Make sure to click on <i>Create a new branch</i> at the bottom and begin the title of the branch with <b>first-timers-only</b>.</td>
