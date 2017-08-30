@@ -13,6 +13,9 @@
     "probot": "^0.7.4"
   },
   "devDependencies": {
+    "github": "^10.0.0",
+    "nock": "^9.0.14",
+    "simple-mock": "^0.8.0",
     "standard": "^10.0.3",
     "tap": "^10.7.2"
   },
