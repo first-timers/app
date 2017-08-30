@@ -12,19 +12,22 @@ Creating what we call [starter issues](http://hood.ie/blog/starter-issues.html) 
 
 Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the issue directly in the master branch or creating a pull request which is time-consuming, I can simply create a new branch that is called something like **first-timers-only-typo-in-title.** GitHub will then notify the "first-timers-only issue bot" about the new branch using Webhooks. The bot is listening to any new branch starting with **first-timers-only** and it will create a new issue on your repo. It is currently setup to the Hoodie repo with a template and assigns the first-timers-only and up-for-grabs labels but can be modified by the developer. The commit body can be used to add some context information and if left empty, the 🤔 **What you will need to know** section of the issue will simply say "Nothing :)".
 
+### 😮 🙌 👀 🎉 Use Our Bot!
+1) ![Install App](https://github.com/apps/first-timers-bot)
 
-### 😮 🙌 👀 🎉 Using the bot
+💥Try it out on this ![repo](https://github.com/First-timers-bot/first-timers-test)!
+
 <table>
 <tr>
 <th>Steps</th>
 <th>Example</th>
 </tr>
 <tr>
-<td>1) No need to fork the repo. Edit the file your change and commit message <b>directly</b> on the repo where your Github App is installed on with. Make sure to click on <i>Create a new branch</i> at the bottom and begin the title of the branch with <b>first-timers-only</b>.</td>
+<td>No need to fork the repo. Edit the file your change and commit message <b>directly</b> on the repo where your Github App is installed on with. Make sure to click on <i>Create a new branch</i> at the bottom and begin the title of the branch with <b>first-timers-only</b>.</td>
 <td><img src="/assets/Committing-Branch.png?raw=true"></td>
 </tr>
 <tr>
-<td>2) Click on the <b>issues</b> tab and notice your issue was created with your change and commit message. The contributor would then follow the steps on the issue message.</td>
+<td>Click on the <b>issues</b> tab and notice your issue was created with your change and commit message. The contributor would then follow the steps on the issue message.</td>
 <td><img src="/assets/Issue-Generated.png?raw=true"</td>
 </tr>
 
