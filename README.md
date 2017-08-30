@@ -22,10 +22,14 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
         <th>Example</th>
     </tr>
     <tr>
-        <td>1)<a href="https://github.com/apps/first-timers-bot">Install App</a> on a repo of your choice</td>
+        <td>1) <a href="https://github.com/apps/first-timers-bot">Install App</a> on a repo of your choice</td>
     </tr>
     <tr>
-        <td>2) Edit the file your change and commit message <b>directly</b> on the repo where your Github App is installed on with. Make sure to click on <i>Create a new branch</i> at the bottom and begin the title of the branch with <b>first-timers-only</b>.</td>
+        <td>2) Click on the file you want to edit.</td>
+        <td><img src="/assets/Edit.png?raw=true"></td>
+    </tr>
+    <tr>
+        <td>2) Make the change and write your commit message.  Make sure to click on <i>Create a new branch</i> at the bottom and begin the title of the branch with <b>first-timers-only</b> for example.</td>
         <td><img src="/assets/Committing-Branch.png?raw=true"></td>
     </tr>
     <tr>
