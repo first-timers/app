@@ -12,16 +12,43 @@ Creating what we call [starter issues](http://hood.ie/blog/starter-issues.html) 
 
 Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the issue directly in the master branch or creating a pull request which is time-consuming, I can simply create a new branch that is called something like **first-timers-only-typo-in-title.** GitHub will then notify the "first-timers-only issue bot" about the new branch using Webhooks. The bot is listening to any new branch starting with **first-timers-only** and it will create a new issue on your repo. It is currently setup to the Hoodie repo with a template and assigns the first-timers-only and up-for-grabs labels but can be modified by the developer. The commit body can be used to add some context information and if left empty, the 🤔 **What you will need to know** section of the issue will simply say "Nothing :)".
 
-### 🕜 💻 Setup
+
+### 😮 🙌 👀 🎉 Use Our Bot!
+![Install App](https://github.com/apps/first-timers-bot)
+
+Try it out on this ![repo](https://github.com/First-timers-bot/first-timers-test)!
+<table>
+<tr>
+<th>Steps</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>1) No need to fork the repo. Edit the file your change and commit message <b>directly</b> on the repo where your Github App is installed on with. Make sure to click on <i>Create a new branch</i> at the bottom and begin the title of the branch with <b>first-timers-only</b>.</td>
+<td><img src="/assets/Committing-Branch.png?raw=true"></td>
+</tr>
+<tr>
+<td>2) Click on the <b>issues</b> tab and notice your issue was created with your change and commit message. The contributor would then follow the steps on the issue message.</td>
+<td><img src="/assets/Issue-Generated.png?raw=true"</td>
+</tr>
+</table>
+
+### 😱 🙌 😎Result
+
+[Issue Example Here](https://github.com/arlene-perez/bot-app-test/issues/1)
+
+<p align="center"><img src="/assets/Issue-Done.png"></p>
+
+
+### 🕜 💻 Want to Modify the App?
 ```
 git clone https://github.com/hoodiehq/first-timers-only-bot.git
 cd first-timers-only-bot
 npm install
 ```
-
 👀 When you are ready to use the bot, _make sure to change the label_ to whichever label you want used, such as **first-timers** or **up-for-grabs** in the instructions.md file.
 
-###  ✅ ➕Setting Up GitHub App with Bot
+###  ✅ ➕Installing the First Timers Bot on your Repo
+
 1) ![Create the GitHub App](https://github.com/gr2m/github-app-example#create-a-github-app)
 
 2) ![Install the bot on your repo](https://github.com/gr2m/github-app-example#install-your-github-app)
@@ -53,29 +80,6 @@ In your terminal, type `TOKEN=<tokenhere> node server.js`. Make sure to substitu
 ### 🚦 🏁 Make it LIVE!
 
 You can deploy to your favorite place like Heroku, Now, or Glitch. We used Glitch. [Glitch](https://glitch.com/) is a platform where we hosted our first-timers-bot. It's so easy to use! Simply add your code and your bot will instantly be live!  Here's a ![repo](https://github.com/gr2m/github-app-example#receive-a-webhook) on how to deploy from github to glitch.
-
-### 😮 🙌 👀 🎉 Using the bot
-<table>
-<tr>
-<th>Steps</th>
-<th>Example</th>
-</tr>
-<tr>
-<td>1) No need to fork the repo. Edit the file your change and commit message <b>directly</b> on the repo where your Github App is installed on with. Make sure to click on <i>Create a new branch</i> at the bottom and begin the title of the branch with <b>first-timers-only</b>.</td>
-<td><img src="/assets/Committing-Branch.png?raw=true"></td>
-</tr>
-<tr>
-<td>2) Click on the <b>issues</b> tab and notice your issue was created with your change and commit message. The contributor would then follow the steps on the issue message.</td>
-<td><img src="/assets/Issue-Generated.png?raw=true"</td>
-</tr>
-</table>
-
-### 😱 🙌 😎Result
-
-[Issue Example Here](https://github.com/arlene-perez/bot-app-test/issues/1)
-
-<p align="center"><img src="/assets/Issue-Done.png"></p>
-
 
 
 ## License
