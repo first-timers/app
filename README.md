@@ -29,7 +29,7 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
         <td><img src="/assets/Edit.png?raw=true"></td>
     </tr>
     <tr>
-        <td>3) Make the change and write your commit message under <b>Commit changes</b>.  Make sure to check <i>Create a new branch</i> at the bottom and begin the title of the branch with <b>first-timers-only</b> for example.</td>
+        <td>3) Make the change and write your commit message under <b>Commit changes</b>.  Make sure to check <i>Create a new branch</i> at the bottom and the branch needs to start with <b>"first-timers-"</b>.</td>
         <td><img src="/assets/Committing-Branch.png?raw=true"></td>
     </tr>
     <tr>
