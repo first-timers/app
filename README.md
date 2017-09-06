@@ -1,6 +1,6 @@
 # first-timers-only-bot
 
-### 🐶 🎯⛳ The Motivation
+### 🐶🎯⛳ The Motivation
 
 From our own experiences, we know the process of creating a pull request is the biggest barrier for new contributors.  We wanted to streamline the process to create very simple contributor-friendly issues to help onboard more people to become Open Source contributors for the first time.
 
@@ -10,37 +10,44 @@ Creating what we call [starter issues](http://hood.ie/blog/starter-issues.html) 
 
 ### 💡💥❓ How things work
 
-Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the issue directly in the master branch or creating a pull request, I create a new branch that is called something like first-timers-only-typo-in-title. GitHub will notify the "first-timers-only issue bot" about the new branch using Webhooks. Currently, the bot will see that a new branch was created starting with "first-timers-only" and it will create a new issue at https://github.com/hoodiehq/camp/issues/new based on a template and assign the first-timers-only and the up-for-grabs label. If the commit body can be used to add some context information. If left empty, the 🤔 What you will need to know section of the issue will simply say "Nothing :)". Otherwise the commit body will be used there.
+Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the issue directly in the master branch or creating a pull request which is time-consuming, I can simply create a new branch that is called something like _first-timers-only-typo-in-title._ GitHub will then notify the **First Timers Bot** about the new branch using Webhooks. The bot is listening to any new branch starting with **first-timers-only** and it will create a new issue on your repo. It is currently setup to the Hoodie repo with a template and assigns the first-timers-only and up-for-grabs labels but can be modified by the developer. The commit body can be used to add some context information and if left empty, the 🤔 **What you will need to know** section of the issue will simply say "Nothing :)".
+
+
+### 😮🙌👀🎉 Use Our Bot!
+
+<table>
+    <tr>
+        <th>Steps</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td>1) <a href="https://github.com/apps/first-timers-bot">Install App</a> on a repo of your choice</td>
+        <td><img src="/assets/Install-App.png?raw=true"></td>
+    </tr>
+    <tr>
+        <td>2) Click on the file you want to edit.</td>
+        <td><img src="/assets/Edit.png?raw=true"></td>
+    </tr>
+    <tr>
+        <td>3) Make the change and write your commit message under <b>Commit changes</b>.  Make sure to check <i>Create a new branch</i> at the bottom and the branch needs to start with <b>"first-timers-"</b>.</td>
+        <td><img src="/assets/Committing-Branch.png?raw=true"></td>
+    </tr>
+    <tr>
+        <td>4) Click on the <b>issues</b> tab and notice your issue was created with your change and commit message. The contributor would then follow the steps on the issue message.</td>
+        <td><img src="/assets/Issue-Generated.png?raw=true"</td>
+
+    </tr>
+</table>
+
+### 😱🙌😎Result
 
 [Issue Example Here](https://github.com/arlene-perez/bot-app-test/issues/1)
 
-![Committing-Branch](/assets/Committing-Branch.png?raw=true)
-![Issue-Generated](/assets/Issue-Generated.png?raw=true)
-![Issue-Done](/assets/Issue-Done.png?raw=true)
-
-
-### ✅ ➕ Steps
-1) You'll need an Access Token from Github. Follow steps 1-9 from this [article](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) to generate your token. ⚠️ Make sure to SAVE the token in a document/editor file because it will only be shown to you once.
-
-2) Install [Node.js](https://nodejs.org/en/)
-
-3) Install [Hapi](https://hapijs.com/)
-
-### 🕜 💻 Setup
-```
-git clone https://github.com/hoodiehq/first-timers-only-bot.git
-cd first-timers-only-bot
-
-```
-
-### 🚦 🏁 How to Start the Server
-
-In your terminal, type `TOKEN=<tokenhere> node server.js`. Make sure to substitute `<tokenhere>` for your access token from Github.
-
-### 😮 🙌 👀 🎉 Using the bot
+<p align="center"><img src="/assets/Issue-Done.png"></p>
 
 
 
 ## License
 
 [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
