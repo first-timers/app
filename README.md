@@ -35,7 +35,6 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
     <tr>
         <td>4) Click on the <b>issues</b> tab and notice your issue was created with your change and commit message. The contributor would then follow the steps on the issue message.</td>
         <td><img src="/assets/Issue-Generated.png?raw=true"</td>
-
     </tr>
 </table>
 
