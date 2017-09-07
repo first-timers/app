@@ -21,5 +21,14 @@
   "keywords": [
     "node",
     "server"
-  ]
+  ],
+  "now": {
+    "alias": "first-timers-bot",
+    "env": {
+      "APP_ID": "@app-id",
+      "NODE_ENV": "production",
+      "PRIVATE_KEY": "@private-key",
+      "WEBHOOK_SECRET": "@webhook-secret"
+    }
+  }
 }
