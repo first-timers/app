@@ -37,7 +37,7 @@ module.exports = function (robot) {
         repo: repo,
         title: commitMessage,
         body: content,
-        labels: ['test-newbie']
+        labels: ['first-timers-only']
       })
     })
 
