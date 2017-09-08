@@ -10,6 +10,7 @@
     "test": "tap 'test/{integration,unit}/*-test.js'"
   },
   "dependencies": {
+    "debug": "^3.0.1",
     "probot": "^0.7.4"
   },
   "devDependencies": {
