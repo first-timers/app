@@ -1,4 +1,4 @@
-# first-timers-only-bot
+# first-timers-bot
 
 ### 🐶🎯⛳ The Motivation
 
