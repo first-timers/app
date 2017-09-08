@@ -1,5 +1,5 @@
 {
-  "name": "first-timers-only-bot",
+  "name": "first-timers-bot",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -17,7 +17,7 @@
   "repository": {
     "url": "https://glitch.com/edit/#!/first-timers-only-bot"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "keywords": [
     "node",
     "server"

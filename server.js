@@ -37,7 +37,11 @@ module.exports = function (robot) {
         repo: repo,
         title: commitMessage,
         body: content,
+<<<<<<< HEAD
         labels: ['test-newbie']
+=======
+        labels: ['first-timers-only']
+>>>>>>> d51e485cccf9e578e0a2e5536c47e7fe3832b3e9
       })
     })
 
