@@ -12,6 +12,7 @@ const api = {
 test('get branch request succeeds', t => {
   const state = {
     api,
+    debug: () => {},
     owner: 'owner',
     repo: 'repo',
     branch: 'branch'

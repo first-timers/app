@@ -22,7 +22,10 @@ test('server create event with reftype = tag', t => {
 
   handleCreateEvent({
     payload: {
-      refType: 'tag'
+      ref_type: 'tag',
+      repository: {
+        full_name: 'hoodiehq/first-timers-bot'
+      }
     }
   })
 
@@ -33,7 +36,7 @@ test('server create event with reftype = tag', t => {
 })
 
 test('server create event with non-existing branch name', t => {
-  t.plan(4)
+  t.plan(3)
   simple.mock(robotMock, 'on')
 
   server(robotMock)
@@ -43,30 +46,28 @@ test('server create event with non-existing branch name', t => {
   t.is(typeof handleCreateEvent, 'function')
 
   const githubMock = nock('https://api.github.com', {encodedQueryParams: true})
-    .get('/repos/hoodiehq/first-timers-only-bot/branches/first-timers-does-not-exist')
+    .get('/repos/hoodiehq/first-timers-bot/branches/first-timers-does-not-exist')
     .reply(404, {
       message: 'Branch not found',
       documentation_url: 'https://developer.github.com/v3/repos/#get-branch'
     })
 
-  simple.mock(console, 'log').callFn((error) => {
-    t.is(error.code, 404)
-    t.is(githubMock.pendingMocks()[0], undefined)
-  })
-
   handleCreateEvent({
     github: github,
     payload: {
-      refType: 'branch',
+      ref_type: 'branch',
       ref: 'first-timers-does-not-exist',
       repository: {
-        name: 'first-timers-only-bot',
+        name: 'first-timers-bot',
+        full_name: 'hoodiehq/first-timers-bot',
         owner: {
           login: 'hoodiehq'
         }
       }
     }
   })
+
+  t.is(githubMock.pendingMocks()[0], undefined)
 
   simple.restore()
 })
