@@ -5,4 +5,4 @@ now="npx now@7.1.1 --token=$NOW_TOKEN"
 
 $now --public
 $now alias
-$now rm --safe --yes wip-bot
+$now rm --safe --yes first-timers-bot
