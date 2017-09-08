@@ -26,7 +26,7 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
     </tr>
     <tr>
         <td>2) Click on the file you want to edit.</td>
-        <td><img src="/assets/Edit.png?raw=true"></td>
+        <td><img src="/assets/editPic.png?raw=true"></td>
     </tr>
     <tr>
         <td>3) Make the change and write your commit message under <b>Commit changes</b>.  Make sure to check <i>Create a new branch</i> at the bottom and the branch needs to start with <b>"first-timers-"</b>.</td>
@@ -49,4 +49,3 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
 ## License
 
 [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
-
