@@ -40,7 +40,7 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
     </tr>
 </table>
 
-### 😱🙌😎Result
+### 😱🙌😎 Result
 
 [Issue Example Here](https://github.com/arlene-perez/bot-app-test/issues/1)
 
