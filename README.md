@@ -1,5 +1,7 @@
 # first-timers-bot
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hoodiehq/first-timers-bot.svg)](https://greenkeeper.io/)
+
 ### 🐶🎯⛳ The Motivation
 
 From our own experiences, we know the process of creating a pull request is the biggest barrier for new contributors.  We wanted to streamline the process to create very simple contributor-friendly issues to help onboard more people to become Open Source contributors for the first time.
