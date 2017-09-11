@@ -17,6 +17,8 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
 
 ### 😮🙌👀🎉 Use Our Bot!
 
+First-timers is built with [Probot](https://probot.github.io/).
+
 <table>
     <tr>
         <th>Steps</th>
