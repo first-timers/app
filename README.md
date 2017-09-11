@@ -48,7 +48,7 @@ First-timers is built with [Probot](https://probot.github.io/).
 
 <p align="center"><img src="/assets/Issue-Done.png"></p>
 
-### Contributors 
+### Contributors
 
 Thank you to everyone who has helped with this project.
 <!-- Contributors START
@@ -56,7 +56,7 @@ Michael_McCombie michaelmccombie https://twitter.com/michaelbuilds design
 Gregor_Martynus gr2m https://twitter.com/gr2m mentor
 Contributors END -->
 <!-- Contributors table START -->
-| <img src="https://avatars.githubusercontent.com/michaelmccombie?s=100" width="100" alt="Michael McCombie" /><br /><sub>Michael McCombie</sub>](https://twitter.com/michaelbuilds)<br />🎨 | <img src="https://avatars.githubusercontent.com/gr2m?s=100" width="100" alt="Gregor Martynus" /><br /><sub>Gregor Martynus</sub>](https://twitter.com/gr2m)<br />undefined |
+| <img src="https://avatars.githubusercontent.com/michaelmccombie?s=100" width="100" alt="Michael McCombie" /><br /><sub>Michael McCombie</sub>](https://twitter.com/michaelbuilds)<br />🎨 | <img src="https://avatars.githubusercontent.com/Martynus?s=100" width="100" alt="Gregor Martynus" /><br />[<sub>Gregor Martynus</sub>](https://twitter.com/gr2m)<br />👨🏻‍🏫 |
 | :---: | :---: |
 <!-- Contributors table END -->
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification.
