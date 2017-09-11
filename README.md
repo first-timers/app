@@ -49,7 +49,7 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
 
 ### 👩‍💻💕About Us
 
-Angie and Arlene are LA natives that met while attending Dev Bootcamp in San Francisco.  After bootcamp was over and they were back in LA, they wanted to once again be part of an amazing, welcoming community like DBC was. They found Hoodie through Rails Girls! This project is extra special for them as it is their first contribution to open source.
+Angie and Arlene are LA natives that met while attending Dev Bootcamp in San Francisco.  After bootcamp was over and they were back in LA, they wanted to once again be part of an amazing, welcoming community like DBC was. They found Hoodie through [Rails Girls Summer of Code](https://railsgirlssummerofcode.org/)! This project is extra special for them as it is their first contribution to open source.
 
 Find Angie on [Twitter](https://twitter.com/angieg0nzalez) || [agonzalez0515.github.io](https://agonzalez0515.github.io)<br>
 Find Arlene on [GitHub](https://github.com/techforchange)
