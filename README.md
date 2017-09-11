@@ -12,10 +12,12 @@ Creating what we call [starter issues](http://hood.ie/blog/starter-issues.html) 
 
 ### 💡💥❓ How things work
 
-Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the issue directly in the master branch or creating a pull request which is time-consuming, I can simply create a new branch that is called something like _first-timers-only-typo-in-title._ GitHub will then notify the **First Timers Bot** about the new branch using Webhooks. The bot is listening to any new branch starting with **first-timers-only** and it will create a new issue on your repo. It is currently setup to the Hoodie repo with a template and assigns the first-timers-only and up-for-grabs labels but can be modified by the developer. The commit body can be used to add some context information and if left empty, the 🤔 **What you will need to know** section of the issue will simply say "Nothing :)".
+Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the issue directly in the master branch or creating a pull request which is time-consuming, I can simply create a new branch that is called something like _first-timers-typo-in-title._ GitHub will then notify the **First Timers Bot** about the new branch using Webhooks. The bot is listening to any new branch starting with **first-timers-** and it will create a new issue on your repo. It is currently setup to the Hoodie repo with a template and assigns the first-timers-only and up-for-grabs labels but can be modified by the developer. The commit body can be used to add some context information and if left empty, the 🤔 **What you will need to know** section of the issue will simply say "Nothing :)".
 
 
-### 😮🙌👀🎉 Use Our Bot!
+### 😮👀🎉 Use Our Bot!
+
+First-timers is built with [Probot](https://probot.github.io/)
 
 <table>
     <tr>
@@ -31,7 +33,7 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
         <td><img src="/assets/editPic.png?raw=true"></td>
     </tr>
     <tr>
-        <td>3) Make the change and write your commit message under <b>Commit changes</b>.  Make sure to check <i>Create a new branch</i> at the bottom and the branch needs to start with <b>"first-timers-"</b>.</td>
+        <td>3) Make the change and write your commit message under <b>Commit changes</b>.  Make sure to check <i>Create a new branch</i> at the bottom and the branch needs to start with <b>"first-timers-"</b>. Click <b>Propose file change</b></td>
         <td><img src="/assets/Committing-Branch.png?raw=true"></td>
     </tr>
     <tr>
@@ -46,8 +48,15 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
 
 <p align="center"><img src="/assets/Issue-Done.png"></p>
 
+### 👩‍💻💕About Us
 
+Angie and Arlene are LA natives that met while attending Dev Bootcamp in San Francisco.  After bootcamp was over and they were back in LA, they wanted to once again be part of an amazing, welcoming community like DBC was. They found Hoodie through Rails Girls! This project is extra special for them as it is their first contribution to open source.
 
-## License
+Find Angie on [Twitter](https://twitter.com/angieg0nzalez) || [agonzalez0515.github.io](https://agonzalez0515.github.io)
+Find Arlene on [GitHub](https://github.com/techforchange)
+
+### License
 
 [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+Thank you to @michaelmccombie for contributing the pink Hoodie bot. Find him on [Twitter](https://twitter.com/michaelbuilds)
