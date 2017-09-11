@@ -18,8 +18,7 @@ test('get commit request succeeds', t => {
     sha: 'sha'
   }
 
-  simple.mock(api.repos,
-  'getCommit').resolveWith({
+  simple.mock(api.repos, 'getCommit').resolveWith({
     data: {
       files: [{
         filename: 'filename',
