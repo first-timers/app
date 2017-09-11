@@ -1,6 +1,6 @@
 # first-timers-bot
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/hoodiehq/first-timers-bot.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/hoodiehq/first-timers-bot.svg?branch=master)](https://travis-ci.org/hoodiehq/first-timers-bot)[![Greenkeeper badge](https://badges.greenkeeper.io/hoodiehq/first-timers-bot.svg)](https://greenkeeper.io/)
 
 ### 🐶🎯⛳ The Motivation
 
