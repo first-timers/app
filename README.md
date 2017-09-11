@@ -52,15 +52,14 @@ First-timers is built with [Probot](https://probot.github.io/).
 
 Thank you to everyone who has helped with this project.
 <!-- Contributors START
-Michael_McCombue michaelmccombie https://twitter.com/michaelbuilds design
+Michael_McCombie michaelmccombie https://twitter.com/michaelbuilds design
 Contributors END -->
 <!-- Contributors table START -->
-| <img src="https://avatars.githubusercontent.com/michaelmccombie?s=100" width="100" alt="Michael McCombue" /><br /><sub>Michael McCombue</sub>](https://twitter.com/michaelbuilds)<br />🎨 |
+| <img src="https://avatars.githubusercontent.com/michaelmccombie?s=100" width="100" alt="Michael McCombie" /><br /><sub>Michael McCombie</sub>](https://twitter.com/michaelbuilds)<br />🎨 |
 | :---: |
 <!-- Contributors table END -->
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification.
 
-🎨	Thank you to @michaelmccombie for contributing the pink Hoodie bot. Find him on [Twitter]().
 
 ### License
 
