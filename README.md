@@ -22,19 +22,19 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
     </tr>
     <tr>
         <td>1) <a href="https://github.com/apps/first-timers-bot">Install App</a> on a repo of your choice</td>
-        <td><img src="/assets/Install-App.png?raw=true"></td>
+        <td><img src="https://raw.githubusercontent.com/hoodiehq/first-timers-bot/master/assets/Install-App.png"></td>
     </tr>
     <tr>
         <td>2) Click on the file you want to edit.</td>
-        <td><img src="/assets/editPic.png?raw=true"></td>
+        <td><img src="https://raw.githubusercontent.com/hoodiehq/first-timers-bot/master/assets/editPic.png"></td>
     </tr>
     <tr>
         <td>3) Make the change and write your commit message under <b>Commit changes</b>.  Make sure to check <i>Create a new branch</i> at the bottom and the branch needs to start with <b>"first-timers-"</b>.</td>
-        <td><img src="https://drive.google.com/file/d/0B0wS4SPNSC2jZWIwNVhHOTRQOEk/view?usp=sharing"></td>
+        <td><img src="https://raw.githubusercontent.com/hoodiehq/first-timers-bot/master/assets/Committing-Branch.png"></td>
     </tr>
     <tr>
         <td>4) Click on the <b>issues</b> tab and notice your issue was created with your change and commit message. The contributor would then follow the steps on the issue message.</td>
-        <td><img src="/assets/Issue-Generated.png?raw=true"</td>
+        <td><img src="https://raw.githubusercontent.com/hoodiehq/first-timers-bot/master/assets/Issue-Generated.png"</td>
     </tr>
 </table>
 
