@@ -1,6 +1,6 @@
 # first-timers-bot
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/hoodiehq/first-timers-bot.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/hoodiehq/first-timers-bot.svg?branch=master)](https://travis-ci.org/hoodiehq/first-timers-bot)[![Greenkeeper badge](https://badges.greenkeeper.io/hoodiehq/first-timers-bot.svg)](https://greenkeeper.io/)
 
 ### 🐶🎯⛳ The Motivation
 
@@ -16,6 +16,8 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
 
 
 ### 😮🙌👀🎉 Use Our Bot!
+
+First-timers is built with [Probot](https://probot.github.io/).
 
 <table>
     <tr>
@@ -46,6 +48,17 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
 
 <p align="center"><img src="/assets/Issue-Done.png"></p>
 
+### Contributors
+
+Thank you to everyone who has helped with this project.
+<!-- Contributors START
+Michael_McCombie michaelmccombie https://twitter.com/michaelbuilds design
+Contributors END -->
+<!-- Contributors table START -->
+| <img src="https://avatars.githubusercontent.com/michaelmccombie?s=100" width="100" alt="Michael McCombie" /><br />[<sub>Michael McCombie</sub>](https://twitter.com/michaelbuilds)<br />[🎨](https://raw.githubusercontent.com/hoodiehq/first-timers-bot/51742c62ae3e4e2be7e58d170a9eab73a3871bf4/assets/avatar.png)|
+| :---: |
+<!-- Contributors table END -->
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification.
 
 ### 👩‍💻💕About Us
 <!-- Contributors START
@@ -60,6 +73,6 @@ Contributors END -->
 Angie and Arlene are LA natives that met while attending Dev Bootcamp in San Francisco.  After bootcamp was over and they were back in LA, they wanted to once again be part of an amazing, welcoming community like DBC was. They found Hoodie through [Rails Girls Summer of Code](https://railsgirlssummerofcode.org/)! This project is extra special for them as it is their first contribution to open source.
 
 
-## License
+### License
 
 [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
