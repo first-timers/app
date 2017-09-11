@@ -1,7 +1,7 @@
 
 ### 🆕🐥☝ First Timers Only.
 
-This issue is reserved for people who never contributed to Open Source before. We know that the process of creating a pull request is the biggest barrier for new contributors. This issue is for you 💝 
+This issue is reserved for people who never contributed to Open Source before. We know that the process of creating a pull request is the biggest barrier for new contributors. This issue is for you 💝
 
 [About First Timers Only](http://www.firsttimersonly.com/).
 
@@ -16,12 +16,6 @@ Nothing. This issue is meant to welcome you to Open Source :) We are happy to wa
   Once claimed we add you as contributor to this repository.
 
 - [ ] 👌 **Accept our invitation** to this repository. Once accepted, assign yourself to this repository
-
-- [ ] 👓 **Please review** our [Code of Conduct](http://hood.ie/code-of-conduct/)
-
-  In a nutshell: be patient and actively kind
-
-- [ ] 🔄 **replace** the `up for grabs` label with `in progress`.
 
 - [ ] 📝 **Update** the file [$FILENAME]($BLOB_URL) in the `$REPO` repository (press the little pen Icon) and edit the line as shown below.
 
@@ -39,8 +33,11 @@ $DIFF
 
 2. You can [edit files directly in your browser](https://help.github.com/articles/editing-files-in-your-repository/)
 
-- [ ] 🏁 **Done** :+1: Replace the `in progress` label with `ready`. Ask in comments for a review :)
+- [ ] 🏁 **Done** Ask in comments for a review :)
 
 ### 🤔❓ Questions
 
-You can ping us in the [Hoodie Chat](http://hood.ie/chat/) or on [Twitter](https://twitter.com/hoodiehq/)
+Leave a comment below!
+
+
+This issue was created by [First-Timers-Bot](https://github.com/hoodiehq/first-timers-bot).
