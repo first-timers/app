@@ -53,7 +53,7 @@ First-timers is built with [Probot](https://probot.github.io/).
 Thank you to everyone who has helped with this project.
 <!-- Contributors START
 Michael_McCombie michaelmccombie https://twitter.com/michaelbuilds design
-Gregor Martynus gr2m https://twitter.com/gr2m mentor
+Gregor_Martynus gr2m https://twitter.com/gr2m mentor
 Contributors END -->
 <!-- Contributors table START -->
 | <img src="https://avatars.githubusercontent.com/michaelmccombie?s=100" width="100" alt="Michael McCombie" /><br /><sub>Michael McCombie</sub>](https://twitter.com/michaelbuilds)<br />🎨 | <img src="https://avatars.githubusercontent.com/Martynus?s=100" width="100" alt="Gregor" /><br /><sub>Gregor Martynus</sub>](https://twitter.com/gr2m)<br /> 👨🏻‍🏫 |
