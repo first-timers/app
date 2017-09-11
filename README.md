@@ -48,6 +48,9 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
 
 
 
-## License
+### License
 
 [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+
+Thank you to @michaelmccombie for contributing the pink Hoodie bot. Find him on [Twitter](https://twitter.com/michaelbuilds).
