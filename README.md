@@ -57,7 +57,7 @@ Contributors END -->
 | :---: | :---: |
 <!-- Contributors table END -->
 
-Angie and Arlene are LA natives that met while attending Dev Bootcamp in San Francisco.  After bootcamp was over and they were back in LA, they wanted to once again be part of an amazing, welcoming community like DBC was. They found Hoodie through Rails Girls! This project is extra special for them as it is their first contribution to open source.
+Angie and Arlene are LA natives that met while attending Dev Bootcamp in San Francisco.  After bootcamp was over and they were back in LA, they wanted to once again be part of an amazing, welcoming community like DBC was. They found Hoodie through [Rails Girls Summer of Code](https://railsgirlssummerofcode.org/)! This project is extra special for them as it is their first contribution to open source.
 
 
 ## License
