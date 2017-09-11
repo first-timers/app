@@ -17,7 +17,7 @@ Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the 
 
 ### 😮👀🎉 Use Our Bot!
 
-First-timers is built with [Probot](https://probot.github.io/)
+First-timers is built with [Probot](https://probot.github.io/).
 
 <table>
     <tr>
@@ -52,11 +52,11 @@ First-timers is built with [Probot](https://probot.github.io/)
 
 Angie and Arlene are LA natives that met while attending Dev Bootcamp in San Francisco.  After bootcamp was over and they were back in LA, they wanted to once again be part of an amazing, welcoming community like DBC was. They found Hoodie through Rails Girls! This project is extra special for them as it is their first contribution to open source.
 
-Find Angie on [Twitter](https://twitter.com/angieg0nzalez) || [agonzalez0515.github.io](https://agonzalez0515.github.io)
+Find Angie on [Twitter](https://twitter.com/angieg0nzalez) || [agonzalez0515.github.io](https://agonzalez0515.github.io)<br>
 Find Arlene on [GitHub](https://github.com/techforchange)
 
 ### License
 
 [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
-Thank you to @michaelmccombie for contributing the pink Hoodie bot. Find him on [Twitter](https://twitter.com/michaelbuilds)
+Thank you to [@michaelmccombie](https://github.com/michaelmccombie) for contributing the pink Hoodie bot. Find him on [Twitter](https://twitter.com/michaelbuilds).
