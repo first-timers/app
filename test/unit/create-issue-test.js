@@ -15,17 +15,20 @@ test('create issue request succeeds', t => {
     debug: () => {},
     owner: 'owner',
     repo: 'repo',
-    title: 'title',
-    body: 'body',
-    labels: 'labels',
-    template: '`test patch:$DIFF filename:$FILENAME bloburl:$BLOB_URL repo:$REPO`'
+    branch: 'branch',
+    sha: 'sha',
+    commit: {
+      message: 'message',
+      patch: 'patch',
+      filename: 'filename',
+      blobUrl: 'blobUrl'
     }
+    template: '`test patch:${DIFF} filename:${FILENAME} bloburl:${BLOB_URL} repo:${REPO}`'
+  }
 
   simple.mock(api.repos, 'createIssue').resolveWith({
     data: {
-      issue: {
-        html_url: 'html_url'
-      },
+      html_url: 'html_url',
       commit: {
         filename: 'filename',
         patch: 'patch',
