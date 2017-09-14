@@ -22,8 +22,8 @@ test('create issue request succeeds', t => {
       patch: 'patch',
       filename: 'filename',
       blobUrl: 'blobUrl'
-    }
-    template: '`test patch:${DIFF} filename:${FILENAME} bloburl:${BLOB_URL} repo:${REPO}`'
+    },
+    template: '`test value1: $DIFF, value2: $FILENAME, value3: $BLOB_URL, value4: $REPO`'
   }
 
   simple.mock(api.repos, 'createIssue').resolveWith({
