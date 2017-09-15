@@ -36,12 +36,13 @@ test('create issue request succeeds', t => {
   createIssue(state)
 
   .then(() => {
-    const content = state.template
+    // const content = state.template
     const createIssueArgs = api.issues.create.lastCall.arg
     t.is(createIssueArgs.owner, 'owner')
     t.is(createIssueArgs.repo, 'repo')
-    t.is(content, 'test value1: patch, value2: filename, value3: blobUrl, value4: repo body')
-    t.is(state.labels, 'labels')
+    t.is(createIssueArgs.body, 'test value1: patch value2: filename value3: blobUrl value4: repo')
+    t.is(createIssueArgs.labels, 'labels')
+    // Need to test for html_url and need to make sure it's the correct html_url
 
     simple.restore()
     t.end()
