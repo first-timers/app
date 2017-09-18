@@ -48,3 +48,24 @@ test('get commit request succeeds', t => {
     t.end()
   })
 })
+
+test('get commit fails', t => {
+  const state = {
+    api,
+    debug: () => {}
+  }
+  simple.mock(api.repos, 'getCommit').rejectWith({
+    message: 'Not Found'
+  })
+  getCommit(state)
+
+  .then(() => {
+    t.error('should not resolve')
+  })
+  .catch((error) => {
+    t.is(error.message, 'Not Found')
+
+    simple.restore()
+    t.end()
+  })
+})
