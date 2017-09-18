@@ -37,18 +37,30 @@ test('create issue request succeeds', t => {
 
   .then((response) => {
     const createIssueArgs = api.issues.create.lastCall.arg
-    // 1) Make sure the issue was created
     t.is(response.data.html_url, 'html_url')
-    // 2) Make sure it includes the patch, filename,etc
     t.is(createIssueArgs.body, 'test value1: patch value2: filename value3: blobUrl value4: repo')
-    // 3) Make sure the issue was created on the right repo?
     t.is(createIssueArgs.repo, 'repo')
-    // 4) Issue has the correct label?
     t.is(createIssueArgs.labels, 'labels')
-    // 5) That its owner is correct
     t.is(createIssueArgs.owner, 'owner')
 
     simple.restore()
+    t.end()
+  })
+
+})
+
+test('create issue request fails', t => {
+
+  simple.mock(api.issues, 'create').rejectWith({
+
+  })
+
+  .then(() => {
+    t.error('should not resolve')
+  })
+
+  .catch((error) => {
+    t.is(error.message, '')
     t.end()
   })
 })
