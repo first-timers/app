@@ -55,7 +55,7 @@ test('get commit fails', t => {
     debug: () => {}
   }
   simple.mock(api.repos, 'getCommit').rejectWith({
-    message: 'Not Found'
+    status: 'Not Found'
   })
   getCommit(state)
 
@@ -63,7 +63,7 @@ test('get commit fails', t => {
     t.error('should not resolve')
   })
   .catch((error) => {
-    t.is(error.message, 'Not Found')
+    t.is(error.status, 'Not Found')
 
     simple.restore()
     t.end()
