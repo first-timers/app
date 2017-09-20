@@ -7,3 +7,5 @@ deploy:
   skip_cleanup: true
   on:
     branch: master
+after success:
+  - npm run converage
