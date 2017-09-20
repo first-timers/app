@@ -8,4 +8,4 @@ deploy:
   on:
     branch: master
 after_success:
-  - npm run converage
+   - npm run coverage
