@@ -66,9 +66,9 @@ test('create issue request fails', t => {
     template: 'test value1: $DIFF value2: $FILENAME value3: $BLOB_URL value4: $REPO'
   }
 
-simple.mock(api.issues, 'create').rejectWith({
-  code: 404
-})
+  simple.mock(api.issues, 'create').rejectWith({
+    code: 404
+  })
 
   createIssue(state)
 
