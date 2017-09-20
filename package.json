@@ -8,7 +8,7 @@
     "start": "probot run ./server.js",
     "pretest": "standard",
     "test": "tap 'test/{integration,unit}/*-test.js'",
-    "coverage": "tap --coverage-report=text-lcov | coveralls",
+    "coverage": "tap --coverage-report=text-lcov | coveralls"
   },
   "dependencies": {
     "debug": "^3.0.1",
