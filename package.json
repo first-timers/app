@@ -7,13 +7,15 @@
     "now-start": "PRIVATE_KEY=$(echo $PRIVATE_KEY | base64 -d) DEBUG=probot* npm start",
     "start": "probot run ./server.js",
     "pretest": "standard",
-    "test": "tap 'test/{integration,unit}/*-test.js'"
+    "test": "tap --coverage 'test/{integration,unit}/*-test.js'",
+    "coverage": "tap --coverage-report=text-lcov | coveralls"
   },
   "dependencies": {
     "debug": "^3.0.1",
     "probot": "^0.11.0"
   },
   "devDependencies": {
+    "coveralls": "^2.11.9",
     "github": "^11.0.0",
     "nock": "^9.0.14",
     "simple-mock": "^0.8.0",

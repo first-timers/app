@@ -37,3 +37,7 @@ jspm_packages
 
 # make sure not to accidentally commit the app’s private key
 private-key.pem
+
+#nyc test coverage
+.nyc_output
+coverage
