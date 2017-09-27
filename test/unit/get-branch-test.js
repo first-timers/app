@@ -55,7 +55,7 @@ test('get branch test fails', t => {
   getBranch(state)
 
   .then(() => {
-    t.error('should not resolve')
+    t.fail('should not resolve')
   })
   .catch((error) => {
     t.is(error.code, 404)
