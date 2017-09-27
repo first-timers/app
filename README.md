@@ -1,6 +1,6 @@
 # first-timers-bot
 
-[![Build Status](https://travis-ci.org/hoodiehq/first-timers-bot.svg?branch=master)](https://travis-ci.org/hoodiehq/first-timers-bot)[![Greenkeeper badge](https://badges.greenkeeper.io/hoodiehq/first-timers-bot.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/hoodiehq/first-timers-bot.svg?branch=master)](https://travis-ci.org/hoodiehq/first-timers-bot) [![Coverage Status](https://coveralls.io/repos/github/hoodiehq/first-timers-bot/badge.svg?branch=master)](https://coveralls.io/github/hoodiehq/first-timers-bot?branch=master) [![Greenkeeper badge](https://badges.greenkeeper.io/hoodiehq/first-timers-bot.svg)](https://greenkeeper.io/)
 
 ### 🐶🎯⛳ The Motivation
 
