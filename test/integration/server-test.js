@@ -35,6 +35,30 @@ test('server create event with reftype = tag', t => {
   t.end()
 })
 
+test('server create event with branch ref read-me-fix', t => {
+  simple.mock(robotMock, 'on')
+
+  server(robotMock)
+
+  t.is(robotMock.on.lastCall.arg, 'create')
+  const handleCreateEvent = robotMock.on.lastCall.args[1]
+  t.is(typeof handleCreateEvent, 'function')
+
+  handleCreateEvent({
+    payload: {
+      ref_type: 'branch',
+      ref: 'read-me-fix',
+      repository: {
+        full_name: 'hoodiehq/first-timers-bot'
+      }
+    }
+  })
+
+  t.pass('Ignores ref that does not start with first-timers')
+  simple.restore()
+  t.end()
+})
+
 test('server create event with non-existing branch name', t => {
   t.plan(3)
   simple.mock(robotMock, 'on')
