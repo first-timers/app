@@ -41,3 +41,26 @@ test('get branch request succeeds', t => {
 
   .catch(t.error)
 })
+
+test('get branch test fails', t => {
+  const state = {
+    api,
+    debug: () => {}
+  }
+
+  simple.mock(api.repos, 'getBranch').rejectWith({
+    code: 404
+  })
+
+  getBranch(state)
+
+  .then(() => {
+    t.fail('should not resolve')
+  })
+  .catch((error) => {
+    t.is(error.code, 404)
+
+    simple.restore()
+    t.end()
+  })
+})
