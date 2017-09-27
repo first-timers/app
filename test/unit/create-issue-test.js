@@ -73,7 +73,7 @@ test('create issue request fails', t => {
   createIssue(state)
 
   .then(() => {
-    t.error('should not resolve')
+    t.fail('should not resolve')
   })
 
   .catch((error) => {

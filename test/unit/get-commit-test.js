@@ -60,7 +60,7 @@ test('get commit fails', t => {
   getCommit(state)
 
   .then(() => {
-    t.error('should not resolve')
+    t.fail('should not resolve')
   })
   .catch((error) => {
     t.is(error.code, 404)
