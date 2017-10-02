@@ -15,7 +15,7 @@
     "probot": "^0.11.0"
   },
   "devDependencies": {
-    "coveralls": "^2.11.9",
+    "coveralls": "^3.0.0",
     "github": "^11.0.0",
     "nock": "^9.0.14",
     "simple-mock": "^0.8.0",
