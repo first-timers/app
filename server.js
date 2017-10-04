@@ -1,4 +1,4 @@
-const debug = require('debug')('probot:first-timers-bot')
+const debug = require('debug')('probot:first-timers')
 
 const handleCreateEvent = require('./lib/handle-create-event')
 
