@@ -71,37 +71,3 @@ test('get commit fails', t => {
     t.end()
   })
 })
-
-test('branchUrl fails', t => {
-  const state = {
-    api,
-    debug: () => {},
-    owner: 'owner',
-    repo: 'repo',
-    sha: 'sha',
-    repoDefaultBranch: 'defaultBranch'
-
-  }
-
-  simple.mock(api.repos, 'getCommit').resolveWith({
-    data: {
-      files: [{
-        filename: 'filename',
-        patch: 'patch',
-        blob_url: 'https://github.com/Techforchange/first-timers-test/blob/f00ecb1bbffe515500558568ae0b176d2a1defe8/README.md'
-      }],
-      commit: {
-        message: 'message'
-      }
-    }
-  })
-
-  getCommit(state)
-
-  .then(() => {
-    t.is(state.commit.branchUrl, 'https://github.com/Techforchange/first-timers-test/blob/f00ecb1bbffe515500558568ae0b176d2a1defe8/README.md')
-
-    simple.restore()
-    t.end()
-  })
-})
