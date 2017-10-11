@@ -17,7 +17,7 @@ Nothing. This issue is meant to welcome you to Open Source :) We are happy to wa
 
 - [ ] 👌 **Accept our invitation** to this repository. Once accepted, assign yourself to this repository
 
-- [ ] 📝 **Update** the file [$FILENAME]($BLOB_URL) in the `$REPO` repository (press the little pen Icon) and edit the line as shown below.
+- [ ] 📝 **Update** the file [$FILENAME]($BRANCH_URL) in the `$REPO` repository (press the little pen Icon) and edit the line as shown below.
 
 
 ```diff
