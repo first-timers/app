@@ -14,10 +14,13 @@ test('create issue request succeeds', t => {
     api,
     debug: () => {},
     owner: 'owner',
-    repo: 'repo',
     branch: 'branch',
+    repo: 'repo',
     sha: 'sha',
-    labels: 'labels',
+    config: {
+      repository: 'repo-name',
+      labels: 'label-1'
+    },
     commit: {
       message: 'title',
       patch: 'patch',
@@ -39,8 +42,8 @@ test('create issue request succeeds', t => {
     const createIssueArgs = api.issues.create.lastCall.arg
     t.is(response.data.html_url, 'html_url')
     t.is(createIssueArgs.body, 'test value1: patch value2: filename value3: branchUrl value4: repo')
-    t.is(createIssueArgs.repo, 'repo')
-    t.is(createIssueArgs.labels, 'labels')
+    t.is(createIssueArgs.repo, 'repo-name')
+    t.is(createIssueArgs.labels, 'label-1')
     t.is(createIssueArgs.owner, 'owner')
 
     simple.restore()
@@ -53,10 +56,13 @@ test('create issue request fails', t => {
     api,
     debug: () => {},
     owner: 'owner',
-    repo: 'repo',
     branch: 'branch',
+    repo: null,
     sha: 'sha',
-    labels: 'labels',
+    config: {
+      repository: 'repo-name',
+      labels: ['label-1', 'label-2']
+    },
     commit: {
       message: 'title',
       patch: 'patch',

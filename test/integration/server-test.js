@@ -11,7 +11,7 @@ const robotMock = {
 
 nock.disableNetConnect()
 
-test('server create event with reftype = tag', t => {
+test('server create event with reftype = tag', async (t) => {
   simple.mock(robotMock, 'on')
 
   server(robotMock)
@@ -20,13 +20,18 @@ test('server create event with reftype = tag', t => {
   const handleCreateEvent = robotMock.on.lastCall.args[1]
   t.is(typeof handleCreateEvent, 'function')
 
-  handleCreateEvent({
+  const configure = function (yaml) {
+    return {repository: 'name', labels: ['label']}
+  }
+
+  await handleCreateEvent({
     payload: {
       ref_type: 'tag',
       repository: {
         full_name: 'hoodiehq/first-timers-bot'
       }
-    }
+    },
+    config: configure
   })
 
   t.pass('Ignores refType tag')
@@ -35,7 +40,7 @@ test('server create event with reftype = tag', t => {
   t.end()
 })
 
-test('server create event with branch ref read-me-fix', t => {
+test('server create event with branch ref read-me-fix', async (t) => {
   simple.mock(robotMock, 'on')
 
   server(robotMock)
@@ -44,14 +49,19 @@ test('server create event with branch ref read-me-fix', t => {
   const handleCreateEvent = robotMock.on.lastCall.args[1]
   t.is(typeof handleCreateEvent, 'function')
 
-  handleCreateEvent({
+  const configure = function (yaml) {
+    return {repository: 'name', labels: ['label']}
+  }
+
+  await handleCreateEvent({
     payload: {
       ref_type: 'branch',
       ref: 'read-me-fix',
       repository: {
         full_name: 'hoodiehq/first-timers-bot'
       }
-    }
+    },
+    config: configure
   })
 
   t.pass('Ignores ref that does not start with first-timers')
@@ -59,7 +69,7 @@ test('server create event with branch ref read-me-fix', t => {
   t.end()
 })
 
-test('server create event with non-existing branch name', t => {
+test('server create event with non-existing branch name', async (t) => {
   t.plan(3)
   simple.mock(robotMock, 'on')
 
@@ -76,7 +86,11 @@ test('server create event with non-existing branch name', t => {
       documentation_url: 'https://developer.github.com/v3/repos/#get-branch'
     })
 
-  handleCreateEvent({
+  const configure = function (yaml) {
+    return {repository: 'name', labels: ['label']}
+  }
+
+  await handleCreateEvent({
     github: github,
     payload: {
       ref_type: 'branch',
@@ -88,10 +102,12 @@ test('server create event with non-existing branch name', t => {
           login: 'hoodiehq'
         }
       }
-    }
+    },
+    config: configure
   })
 
   t.is(githubMock.pendingMocks()[0], undefined)
 
   simple.restore()
+  t.end()
 })
