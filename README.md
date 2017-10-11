@@ -48,6 +48,23 @@ First-timers-bot is built with [Probot](https://probot.github.io/).
 
 <p align="center"><img src="/assets/Issue-Done.png"></p>
 
+### Configuration
+
+The first-timers app works without configuration. If you want to change the default settings, create a .github/first-timers.yml file with the content below can and then you can adjust the options to your preference.
+
+```yaml
+# You can create the issue in a different repo than where the problem is. Just make sure you installed the bot the the configured repository.
+# The issue will link back to the original repository where the contribution will be made.
+repository: repo-name
+
+# you can change the labels to suit your needs if "first-timers-only" is not what you are looking for.
+# These are some examples.
+labels:
+  - first-timers-only
+  - hacktoberfest
+```
+
+
 ### 👩‍💻💕About Us
 <!-- Contributors START
 Angie_Gonzalez agonzalez0515 https://agonzalez0515.github.io
