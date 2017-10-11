@@ -22,9 +22,9 @@ test('create issue request succeeds', t => {
       message: 'title',
       patch: 'patch',
       filename: 'filename',
-      blobUrl: 'blobUrl'
+      branchUrl: 'branchUrl'
     },
-    template: 'test value1: $DIFF value2: $FILENAME value3: $BLOB_URL value4: $REPO'
+    template: 'test value1: $DIFF value2: $FILENAME value3: $BRANCH_URL value4: $REPO'
   }
 
   simple.mock(api.issues, 'create').resolveWith({
@@ -38,7 +38,7 @@ test('create issue request succeeds', t => {
   .then((response) => {
     const createIssueArgs = api.issues.create.lastCall.arg
     t.is(response.data.html_url, 'html_url')
-    t.is(createIssueArgs.body, 'test value1: patch value2: filename value3: blobUrl value4: repo')
+    t.is(createIssueArgs.body, 'test value1: patch value2: filename value3: branchUrl value4: repo')
     t.is(createIssueArgs.repo, 'repo')
     t.is(createIssueArgs.labels, 'labels')
     t.is(createIssueArgs.owner, 'owner')
@@ -61,9 +61,9 @@ test('create issue request fails', t => {
       message: 'title',
       patch: 'patch',
       filename: 'filename',
-      blobUrl: 'blobUrl'
+      branchUrl: 'branchUrl'
     },
-    template: 'test value1: $DIFF value2: $FILENAME value3: $BLOB_URL value4: $REPO'
+    template: 'test value1: $DIFF value2: $FILENAME value3: $BRANCH_URL value4: $REPO'
   }
 
   simple.mock(api.issues, 'create').rejectWith({
