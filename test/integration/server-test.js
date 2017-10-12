@@ -21,7 +21,7 @@ test('server create event with reftype = tag', async (t) => {
   t.is(typeof handleCreateEvent, 'function')
 
   const configure = function (yaml) {
-    return {repository: 'name', labels: ['label']}
+    return {repository: 'name', labels: ['label'], template: 'template'}
   }
 
   await handleCreateEvent({
@@ -50,7 +50,7 @@ test('server create event with branch ref read-me-fix', async (t) => {
   t.is(typeof handleCreateEvent, 'function')
 
   const configure = function (yaml) {
-    return {repository: 'name', labels: ['label']}
+    return {repository: 'name', labels: ['label'], template: 'template'}
   }
 
   await handleCreateEvent({
@@ -70,7 +70,7 @@ test('server create event with branch ref read-me-fix', async (t) => {
 })
 
 test('server create event with non-existing branch name', async (t) => {
-  t.plan(3)
+  t.plan(4)
   simple.mock(robotMock, 'on')
 
   server(robotMock)
@@ -86,8 +86,15 @@ test('server create event with non-existing branch name', async (t) => {
       documentation_url: 'https://developer.github.com/v3/repos/#get-branch'
     })
 
+  const getContentMock = nock('https://api.github.com', {encodedQueryParams: true})
+    .get('/repos/hoodiehq/first-timers-bot/contents/template')
+    .reply({data: {
+      content: 'content'
+    }
+    })
+
   const configure = function (yaml) {
-    return {repository: 'name', labels: ['label']}
+    return {repository: 'name', labels: ['label'], template: 'template'}
   }
 
   await handleCreateEvent({
@@ -107,6 +114,7 @@ test('server create event with non-existing branch name', async (t) => {
   })
 
   t.is(githubMock.pendingMocks()[0], undefined)
+  t.is(getContentMock.pendingMocks()[0], undefined)
 
   simple.restore()
   t.end()
