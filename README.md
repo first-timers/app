@@ -50,10 +50,10 @@ First-timers-bot is built with [Probot](https://probot.github.io/).
 
 ### Configuration
 
-The first-timers app works without configuration. If you want to change the default settings, create a .github/first-timers.yml file with the content below can and then you can adjust the options to your preference.
+The first-timers app works without configuration. If you want to change the default settings, create a .github/first-timers.yml file with the content below and then you can adjust the options to your preference.
 
 ```yaml
-# You can create the issue in a different repo than where the problem is. Just make sure you installed the bot the the configured repository.
+# You can create the issue in a different repo than where the problem is. Just make sure you installed the bot on the configured repository.
 # The issue will link back to the original repository where the contribution will be made.
 repository: repo-name
 
