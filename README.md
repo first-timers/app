@@ -64,7 +64,7 @@ labels:
   - hacktoberfest
 
 #If you would like to add your own template for the issue, add an .md file to your .github folder
- template: .github/first-timers-issue-template.md 
+template: .github/first-timers-issue-template.md 
 ```
 
 
