@@ -12,8 +12,7 @@
   },
   "dependencies": {
     "debug": "^3.0.1",
-    "probot": "^0.11.0",
-    "js-base64": "^2.3.2"
+    "probot": "^0.11.0"
   },
   "devDependencies": {
     "coveralls": "^3.0.0",
