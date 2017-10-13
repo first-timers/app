@@ -9,7 +9,7 @@ const api = {
   }
 }
 
-test('gets template content', t => {
+test('gets template content if URL exists', t => {
   const state = {
     api,
     debug: () => {},
@@ -36,4 +36,19 @@ test('gets template content', t => {
     simple.restore()
     t.end()
   })
+})
+
+test('does not get content if URL does not exist', t => {
+  const state = {
+    api,
+    debug: () => {},
+    owner: 'owner',
+    repo: 'repo',
+    customTemplateUrl: null
+  }
+
+  getTemplateContent(state)
+  t.pass('Ignores custom template')
+  simple.restore()
+  t.end()
 })

@@ -111,15 +111,3 @@ test('server create event with non-existing branch name', async (t) => {
   simple.restore()
   t.end()
 })
-
-// test(
-//   const getContentMock = nock('https://api.github.com', {encodedQueryParams: true})
-//     .get('/repos/hoodiehq/first-timers-bot/contents/template')
-//     .reply({
-//       data: {
-//         content: 'content'
-//       }
-//     })
-//   // t.is(getContentMock.pendingMocks()[0], undefined)
-
-// )
