@@ -14,7 +14,7 @@ test('get commit request succeeds', t => {
     api,
     debug: () => {},
     owner: 'owner',
-    repo: 'repo',
+    installRepo: 'installRepo',
     sha: 'sha',
     repoDefaultBranch: 'defaultBranch'
 
@@ -39,7 +39,7 @@ test('get commit request succeeds', t => {
     const getCommitArgs =
     api.repos.getCommit.lastCall.arg
     t.is(getCommitArgs.owner, 'owner')
-    t.is(getCommitArgs.repo, 'repo')
+    t.is(getCommitArgs.repo, 'installRepo')
     t.is(getCommitArgs.sha, 'sha')
     t.is(state.commit.message, 'message')
     t.is(state.commit.filename, 'filename')

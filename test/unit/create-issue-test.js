@@ -15,7 +15,8 @@ test('create issue request succeeds', t => {
     debug: () => {},
     owner: 'owner',
     branch: 'branch',
-    repo: 'repo',
+    issueRepo: 'issueRepo',
+    installRepo: 'installRepo',
     sha: 'sha',
     labels: 'label-1',
     commit: {
@@ -38,8 +39,8 @@ test('create issue request succeeds', t => {
   .then((response) => {
     const createIssueArgs = api.issues.create.lastCall.arg
     t.is(response.data.html_url, 'html_url')
-    t.is(createIssueArgs.body, 'test value1: patch value2: filename value3: branchUrl value4: repo')
-    t.is(createIssueArgs.repo, 'repo')
+    t.is(createIssueArgs.body, 'test value1: patch value2: filename value3: branchUrl value4: installRepo')
+    t.is(createIssueArgs.repo, 'issueRepo')
     t.is(createIssueArgs.labels, 'label-1')
     t.is(createIssueArgs.owner, 'owner')
 

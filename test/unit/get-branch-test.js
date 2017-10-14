@@ -14,7 +14,7 @@ test('get branch request succeeds', t => {
     api,
     debug: () => {},
     owner: 'owner',
-    repo: 'repo',
+    installRepo: 'installRepo',
     branch: 'branch'
   }
 
@@ -31,7 +31,7 @@ test('get branch request succeeds', t => {
   .then(() => {
     const getBranchArgs = api.repos.getBranch.lastCall.arg
     t.is(getBranchArgs.owner, 'owner')
-    t.is(getBranchArgs.repo, 'repo')
+    t.is(getBranchArgs.repo, 'installRepo')
     t.is(getBranchArgs.branch, 'branch')
     t.is(state.sha, 'sha')
 
