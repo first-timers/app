@@ -14,7 +14,7 @@ test('gets template content if URL exists', t => {
     api,
     debug: () => {},
     owner: 'owner',
-    repo: 'repo',
+    issueRepo: 'issueRepo',
     customTemplateUrl: 'custom_url'
   }
 
@@ -29,7 +29,7 @@ test('gets template content if URL exists', t => {
   .then(() => {
     const getTemplateContentArgs = api.repos.getContent.lastCall.arg
     t.is(getTemplateContentArgs.owner, 'owner')
-    t.is(getTemplateContentArgs.repo, 'repo')
+    t.is(getTemplateContentArgs.repo, 'issueRepo')
     t.is(getTemplateContentArgs.path, 'custom_url')
     t.is(state.template, 'content')
 
@@ -43,7 +43,7 @@ test('does not get content if URL does not exist', t => {
     api,
     debug: () => {},
     owner: 'owner',
-    repo: 'repo',
+    issueRepo: 'issueRepo',
     customTemplateUrl: null
   }
 
