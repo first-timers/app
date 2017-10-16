@@ -66,7 +66,9 @@ template: .github/first-timers-issue-template.md
 # The issue will link back to the original repository where the contribution will be made.
 repository: repo-name 
 ```
+**Configuration Example** 🖥 💯
 
+Our `hoodiehq/first-timers-bot` repository’s [`.github/first-timers.yml`](https://github.com/hoodiehq/first-timers-bot/blob/master/.github/first-timers.yml) file is using `hoodiehq/camp` repository’s [`.github/FIRST_TIMERS_ISSUE_TEMPLATE.md`](https://github.com/hoodiehq/hoodie/blob/master/.github/first-timers.yml) file as a template to create an issue such as this one: https://github.com/hoodiehq/camp/issues/126.
 
 ### 👩‍💻💕About Us
 <!-- Contributors START
