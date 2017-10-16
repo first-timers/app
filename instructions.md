@@ -15,7 +15,7 @@ Nothing. This issue is meant to welcome you to Open Source :) We are happy to wa
 
   Once claimed we add you as contributor to this repository.
 
-- [ ] 👌 **Accept our invitation** to this repository. Once accepted, assign yourself to this repository
+- [ ] 👌 **Accept our invitation** to this repository. Once accepted, assign yourself to this issue
 
 - [ ] 📝 **Update** the file [$FILENAME]($BRANCH_URL) in the `$REPO` repository (press the little pen Icon) and edit the line as shown below.
 
