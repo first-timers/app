@@ -1,6 +1,6 @@
 # first-timers-bot
 
-[![Build Status](https://travis-ci.org/hoodiehq/first-timers-bot.svg?branch=master)](https://travis-ci.org/hoodiehq/first-timers-bot) [![Coverage Status](https://coveralls.io/repos/github/hoodiehq/first-timers-bot/badge.svg?branch=master)](https://coveralls.io/github/hoodiehq/first-timers-bot?branch=master) [![Greenkeeper badge](https://badges.greenkeeper.io/hoodiehq/first-timers-bot.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/hoodiehq/first-timers-bot.svg?branch=master)](https://travis-ci.org/hoodiehq/first-timers-bot) [![Coverage Status](https://coveralls.io/repos/github/hoodiehq/first-timers-bot/badge.svg?branch=master)](https://coveralls.io/github/hoodiehq/first-timers-bot?branch=master) [![Greenkeeper badge](https://badges.greenkeeper.io/hoodiehq/first-timers-bot.svg)](https://greenkeeper.io/) [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m779426128-6b6e81ed8dc987db17d4cad2.svg)](https://stats.uptimerobot.com/LZ40Lcoj4)
 
 ### 🐶🎯⛳ The Motivation
 
@@ -69,6 +69,9 @@ repository: repo-name
 **Configuration Example** 🖥 💯
 
 Our `hoodiehq/first-timers-bot` repository’s [`.github/first-timers.yml`](https://github.com/hoodiehq/first-timers-bot/blob/master/.github/first-timers.yml) file is using `hoodiehq/camp` repository’s [`.github/FIRST_TIMERS_ISSUE_TEMPLATE.md`](https://github.com/hoodiehq/hoodie/blob/master/.github/first-timers.yml) file as a template to create an issue such as this one: https://github.com/hoodiehq/camp/issues/126.
+
+### Server Status
+Make sure to verify that the **status** badge at the top of this file is labeled as `up`. First Timers Bot is a node app that currently runs on [Now](https://zeit.co/now).
 
 ### 👩‍💻💕About Us
 <!-- Contributors START
