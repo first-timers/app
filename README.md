@@ -70,6 +70,9 @@ repository: repo-name
 
 Our `hoodiehq/first-timers-bot` repository’s [`.github/first-timers.yml`](https://github.com/hoodiehq/first-timers-bot/blob/master/.github/first-timers.yml) file is using `hoodiehq/camp` repository’s [`.github/FIRST_TIMERS_ISSUE_TEMPLATE.md`](https://github.com/hoodiehq/hoodie/blob/master/.github/first-timers.yml) file as a template to create an issue such as this one: https://github.com/hoodiehq/camp/issues/126.
 
+### Server Status
+Make sure to verify that the **status** badge at the top of this file is labeled as `up`. First Timers Bot is a node app that currently runs on [Now](https://zeit.co/now).
+
 ### 👩‍💻💕About Us
 <!-- Contributors START
 Angie_Gonzalez agonzalez0515 https://agonzalez0515.github.io
