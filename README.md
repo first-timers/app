@@ -21,7 +21,7 @@ First-timers-bot is built with [Probot](https://probot.github.io/).
 
 <table>
     <tr>
-        <th>Steps</th>
+        <th><b>Steps</b></th>
         <th>Example</th>
     </tr>
     <tr>
