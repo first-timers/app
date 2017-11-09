@@ -57,14 +57,13 @@ The first-timers app works without configuration. If you want to change the defa
 # These are some examples.
 labels:
   - first-timers-only
-  - hacktoberfest
-  
+
 #If you would like to add your own template for the issue, add an .md file to your .github folder
 template: .github/first-timers-issue-template.md
-  
+
 # You can create the issue in a different repo than where the problem is. Just make sure you installed the bot on the configured repository.
 # The issue will link back to the original repository where the contribution will be made.
-repository: repo-name 
+repository: repo-name
 ```
 **Configuration Example** 🖥 💯
 
