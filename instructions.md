@@ -5,11 +5,6 @@ This issue is reserved for people who never contributed to Open Source before. W
 
 [About First Timers Only](http://www.firsttimersonly.com/).
 
-### 🎃💻👕 Hacktoberfest: Trick or Treat!
-
-If you haven’t yet, sign up for [Hacktoberfest](https://hacktoberfest.digitalocean.com/) to earn an exclusive T-Shirt. Plus I’m sure we can teach you a cool trick or two in the process
-
-
 ### 🤔 What you will need to know.
 
 Nothing. This issue is meant to welcome you to Open Source :) We are happy to walk you through the process.
