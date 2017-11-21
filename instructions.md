@@ -20,9 +20,9 @@ Nothing. This issue is meant to welcome you to Open Source :) We are happy to wa
 - [ ] 📝 **Update** the file [$FILENAME]($BRANCH_URL) in the `$REPO` repository (press the little pen Icon) and edit the line as shown below.
 
 
-```diff
+``````diff
 $DIFF
-```
+``````
 
 
 - [ ] 💾 **Commit** your changes
