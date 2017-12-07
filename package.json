@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "coveralls": "^3.0.0",
-    "github": "^12.0.0",
+    "github": "^13.0.1",
     "nock": "^9.0.14",
     "simple-mock": "^0.8.0",
     "standard": "^10.0.3",
