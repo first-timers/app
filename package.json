@@ -23,7 +23,7 @@
     "tap": "^11.0.0"
   },
   "engines": {
-    "node": "8.1.x"
+    "node": "8.x"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/first-timers-only-bot"
