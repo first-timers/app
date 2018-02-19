@@ -26,12 +26,12 @@ test('delete branch request succeeds', t => {
 
   deleteBranch(state)
 
-  .then((response) => {
-    t.is(response.meta.status, '204 No Content')
+    .then((response) => {
+      t.is(response.meta.status, '204 No Content')
 
-    simple.restore()
-    t.end()
-  })
+      simple.restore()
+      t.end()
+    })
 })
 
 test('delete branch request fails', t => {
@@ -49,9 +49,9 @@ test('delete branch request fails', t => {
 
   deleteBranch(state)
 
-  .then((error) => {
-    t.is(error.code, 403)
-  })
+    .then((error) => {
+      t.is(error.code, 403)
+    })
 
   simple.mock(api.gitdata, 'deleteReference').rejectWith({
     code: 404
@@ -59,9 +59,9 @@ test('delete branch request fails', t => {
 
   deleteBranch(state)
 
-  .then((error) => {
-    t.is(error.code, 404)
-    simple.restore()
-    t.end()
-  })
+    .then((error) => {
+      t.is(error.code, 404)
+      simple.restore()
+      t.end()
+    })
 })

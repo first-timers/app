@@ -35,20 +35,20 @@ test('get commit request succeeds', t => {
 
   getCommit(state)
 
-  .then(() => {
-    const getCommitArgs =
+    .then(() => {
+      const getCommitArgs =
     api.repos.getCommit.lastCall.arg
-    t.is(getCommitArgs.owner, 'owner')
-    t.is(getCommitArgs.repo, 'installRepo')
-    t.is(getCommitArgs.sha, 'sha')
-    t.is(state.commit.message, 'message')
-    t.is(state.commit.filename, 'filename')
-    t.is(state.commit.patch, 'patch')
-    t.is(state.commit.branchUrl, 'https://github.com/Techforchange/first-timers-test/blob/defaultBranch/README.md')
+      t.is(getCommitArgs.owner, 'owner')
+      t.is(getCommitArgs.repo, 'installRepo')
+      t.is(getCommitArgs.sha, 'sha')
+      t.is(state.commit.message, 'message')
+      t.is(state.commit.filename, 'filename')
+      t.is(state.commit.patch, 'patch')
+      t.is(state.commit.branchUrl, 'https://github.com/Techforchange/first-timers-test/blob/defaultBranch/README.md')
 
-    simple.restore()
-    t.end()
-  })
+      simple.restore()
+      t.end()
+    })
 })
 
 test('get commit fails', t => {
@@ -61,13 +61,13 @@ test('get commit fails', t => {
   })
   getCommit(state)
 
-  .then(() => {
-    t.fail('should not resolve')
-  })
-  .catch((error) => {
-    t.is(error.code, 404)
+    .then(() => {
+      t.fail('should not resolve')
+    })
+    .catch((error) => {
+      t.is(error.code, 404)
 
-    simple.restore()
-    t.end()
-  })
+      simple.restore()
+      t.end()
+    })
 })

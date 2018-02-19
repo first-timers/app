@@ -36,17 +36,17 @@ test('create issue request succeeds', t => {
 
   createIssue(state)
 
-  .then((response) => {
-    const createIssueArgs = api.issues.create.lastCall.arg
-    t.is(response.data.html_url, 'html_url')
-    t.is(createIssueArgs.body, 'test value1: patch value2: filename value3: branchUrl value4: installRepo')
-    t.is(createIssueArgs.repo, 'issueRepo')
-    t.is(createIssueArgs.labels, 'label-1')
-    t.is(createIssueArgs.owner, 'owner')
+    .then((response) => {
+      const createIssueArgs = api.issues.create.lastCall.arg
+      t.is(response.data.html_url, 'html_url')
+      t.is(createIssueArgs.body, 'test value1: patch value2: filename value3: branchUrl value4: installRepo')
+      t.is(createIssueArgs.repo, 'issueRepo')
+      t.is(createIssueArgs.labels, 'label-1')
+      t.is(createIssueArgs.owner, 'owner')
 
-    simple.restore()
-    t.end()
-  })
+      simple.restore()
+      t.end()
+    })
 })
 
 test('create issue request fails', t => {
@@ -73,14 +73,14 @@ test('create issue request fails', t => {
 
   createIssue(state)
 
-  .then(() => {
-    t.fail('should not resolve')
-  })
+    .then(() => {
+      t.fail('should not resolve')
+    })
 
-  .catch((error) => {
-    t.is(error.code, 404)
+    .catch((error) => {
+      t.is(error.code, 404)
 
-    simple.restore()
-    t.end()
-  })
+      simple.restore()
+      t.end()
+    })
 })

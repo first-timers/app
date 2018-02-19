@@ -28,18 +28,18 @@ test('get branch request succeeds', t => {
 
   getBranch(state)
 
-  .then(() => {
-    const getBranchArgs = api.repos.getBranch.lastCall.arg
-    t.is(getBranchArgs.owner, 'owner')
-    t.is(getBranchArgs.repo, 'installRepo')
-    t.is(getBranchArgs.branch, 'branch')
-    t.is(state.sha, 'sha')
+    .then(() => {
+      const getBranchArgs = api.repos.getBranch.lastCall.arg
+      t.is(getBranchArgs.owner, 'owner')
+      t.is(getBranchArgs.repo, 'installRepo')
+      t.is(getBranchArgs.branch, 'branch')
+      t.is(state.sha, 'sha')
 
-    simple.restore()
-    t.end()
-  })
+      simple.restore()
+      t.end()
+    })
 
-  .catch(t.error)
+    .catch(t.error)
 })
 
 test('get branch test fails', t => {
@@ -54,13 +54,13 @@ test('get branch test fails', t => {
 
   getBranch(state)
 
-  .then(() => {
-    t.fail('should not resolve')
-  })
-  .catch((error) => {
-    t.is(error.code, 404)
+    .then(() => {
+      t.fail('should not resolve')
+    })
+    .catch((error) => {
+      t.is(error.code, 404)
 
-    simple.restore()
-    t.end()
-  })
+      simple.restore()
+      t.end()
+    })
 })
