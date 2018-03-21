@@ -29,6 +29,10 @@
     "url": "https://glitch.com/edit/#!/first-timers-only-bot"
   },
   "license": "Apache-2.0",
+  "files": [
+    "lib",
+    "server.js"
+  ],
   "keywords": [
     "node",
     "server"

@@ -41,3 +41,5 @@ private-key.pem
 #nyc test coverage
 .nyc_output
 coverage
+
+package-lock.json
