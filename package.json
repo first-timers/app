@@ -12,11 +12,11 @@
   },
   "dependencies": {
     "debug": "^3.0.1",
-    "probot": "^5.0.0"
+    "probot": "^6.0.0"
   },
   "devDependencies": {
+    "@octokit/rest": "^15.1.7",
     "coveralls": "^3.0.0",
-    "github": "^13.0.1",
     "nock": "^9.0.14",
     "simple-mock": "^0.8.0",
     "standard": "^11.0.0",
@@ -29,6 +29,10 @@
     "url": "https://glitch.com/edit/#!/first-timers-only-bot"
   },
   "license": "Apache-2.0",
+  "files": [
+    "lib",
+    "server.js"
+  ],
   "keywords": [
     "node",
     "server"

@@ -20,7 +20,7 @@ test('create issue request succeeds', t => {
     sha: 'sha',
     labels: 'label-1',
     commit: {
-      message: 'title',
+      message: 'title\n\ndescription',
       patch: 'patch',
       filename: 'filename',
       branchUrl: 'branchUrl'
@@ -39,6 +39,7 @@ test('create issue request succeeds', t => {
     .then((response) => {
       const createIssueArgs = api.issues.create.lastCall.arg
       t.is(response.data.html_url, 'html_url')
+      t.is(createIssueArgs.title, 'title')
       t.is(createIssueArgs.body, 'test value1: patch value2: filename value3: branchUrl value4: installRepo')
       t.is(createIssueArgs.repo, 'issueRepo')
       t.is(createIssueArgs.labels, 'label-1')

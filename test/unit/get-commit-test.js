@@ -29,6 +29,9 @@ test('get commit request succeeds', t => {
       }],
       commit: {
         message: 'message'
+      },
+      author: {
+        login: 'username'
       }
     }
   })
@@ -44,7 +47,8 @@ test('get commit request succeeds', t => {
       t.is(state.commit.message, 'message')
       t.is(state.commit.filename, 'filename')
       t.is(state.commit.patch, 'patch')
-      t.is(state.commit.branchUrl, 'https://github.com/Techforchange/first-timers-test/blob/defaultBranch/docs/README.md')
+      t.is(state.commit.branchUrl, 'https://github.com/Techforchange/first-timers-test/blob/defaultBranch/README.md')
+      t.is(state.commit.authorLogin, 'username')
 
       simple.restore()
       t.end()

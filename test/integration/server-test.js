@@ -1,9 +1,9 @@
-const GitHubApi = require('github')
+const Octokit = require('@octokit/rest')
 const nock = require('nock')
 const simple = require('simple-mock')
 const {test} = require('tap')
 
-const github = new GitHubApi()
+const octokit = new Octokit()
 const server = require('../../server')
 const robotMock = {
   on: () => {}
@@ -91,7 +91,7 @@ test('server create event with non-existing branch name', async (t) => {
   }
 
   await handleCreateEvent({
-    github: github,
+    github: octokit,
     payload: {
       ref_type: 'branch',
       ref: 'first-timers-does-not-exist',
