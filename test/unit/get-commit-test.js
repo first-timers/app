@@ -25,7 +25,7 @@ test('get commit request succeeds', t => {
       files: [{
         filename: 'filename',
         patch: 'patch',
-        blob_url: 'https://github.com/Techforchange/first-timers-test/blob/f00ecb1bbffe515500558568ae0b176d2a1defe8/docs/README.md'
+        blob_url: 'https://github.com/Techforchange/first-timers-test/blob/f00ecb1bbffe515500558568ae0b176d2a1defe8/README.md'
       }],
       commit: {
         message: 'message'
