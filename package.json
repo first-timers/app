@@ -31,7 +31,8 @@
   "license": "Apache-2.0",
   "files": [
     "lib",
-    "server.js"
+    "server.js",
+    "instructions.md"
   ],
   "keywords": [
     "node",
