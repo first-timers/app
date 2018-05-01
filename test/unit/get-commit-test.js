@@ -25,7 +25,7 @@ test('get commit request succeeds', t => {
       files: [{
         filename: 'filename',
         patch: 'patch',
-        blob_url: 'https://github.com/Techforchange/first-timers-test/blob/f00ecb1bbffe515500558568ae0b176d2a1defe8/README.md'
+        blob_url: 'https://github.com/Techforchange/first-timers-test/blob/f00ecb1bbffe515500558568ae0b176d2a1defe8/docs/README.md'
       }],
       commit: {
         message: 'message'
@@ -47,7 +47,7 @@ test('get commit request succeeds', t => {
       t.is(state.commit.message, 'message')
       t.is(state.commit.filename, 'filename')
       t.is(state.commit.patch, 'patch')
-      t.is(state.commit.branchUrl, 'https://github.com/Techforchange/first-timers-test/blob/defaultBranch/README.md')
+      t.is(state.commit.branchUrl, 'https://github.com/Techforchange/first-timers-test/blob/defaultBranch/docs/README.md')
       t.is(state.commit.authorLogin, 'username')
 
       simple.restore()
