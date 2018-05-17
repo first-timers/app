@@ -20,7 +20,7 @@
     "nock": "^9.0.14",
     "simple-mock": "^0.8.0",
     "standard": "^11.0.0",
-    "tap": "^11.0.0"
+    "tap": "^12.0.0"
   },
   "engines": {
     "node": "8.x"
