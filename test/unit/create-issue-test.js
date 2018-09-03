@@ -25,12 +25,19 @@ test('create issue request succeeds', t => {
       filename: 'filename',
       branchUrl: 'branchUrl'
     },
-    template: 'test value1: $DIFF value2: $FILENAME value3: $BRANCH_URL value4: $REPO'
+    template: 'test value1: $DIFF value2: $FILENAME value3: $BRANCH_URL value4: $REPO value5: $ISSUE_NUMBER'
   }
 
   simple.mock(api.issues, 'create').resolveWith({
     data: {
-      html_url: 'html_url'
+      html_url: 'html_url',
+      number: 123
+    }
+  })
+
+  simple.mock(api.issues, 'edit').resolveWith({
+    data: {
+      body: 'test value1: patch value2: filename value3: branchUrl value4: installRepo value5: 123'
     }
   })
 
@@ -38,12 +45,15 @@ test('create issue request succeeds', t => {
 
     .then((response) => {
       const createIssueArgs = api.issues.create.lastCall.arg
+      const editIssueArgs = api.issues.edit.lastCall.arg
       t.is(response.data.html_url, 'html_url')
+      t.is(response.data.number, 123)
       t.is(createIssueArgs.title, 'title')
-      t.is(createIssueArgs.body, 'test value1: patch value2: filename value3: branchUrl value4: installRepo')
+      t.is(createIssueArgs.body, 'test value1: patch value2: filename value3: branchUrl value4: installRepo value5: $ISSUE_NUMBER')
       t.is(createIssueArgs.repo, 'issueRepo')
       t.is(createIssueArgs.labels, 'label-1')
       t.is(createIssueArgs.owner, 'owner')
+      t.is(editIssueArgs.body, 'test value1: patch value2: filename value3: branchUrl value4: installRepo value5: 123')
 
       simple.restore()
       t.end()
