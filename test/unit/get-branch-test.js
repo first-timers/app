@@ -1,5 +1,5 @@
 const simple = require('simple-mock')
-const {test} = require('tap')
+const { test } = require('tap')
 
 const getBranch = require('../../lib/get-branch')
 
