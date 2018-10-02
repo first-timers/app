@@ -1,7 +1,7 @@
 const Octokit = require('@octokit/rest')
 const nock = require('nock')
 const simple = require('simple-mock')
-const {test} = require('tap')
+const { test } = require('tap')
 
 const octokit = new Octokit()
 const server = require('../../server')
@@ -21,7 +21,7 @@ test('server create event with reftype = tag', async (t) => {
   t.is(typeof handleCreateEvent, 'function')
 
   const configure = function (yaml) {
-    return {repository: 'name', labels: ['label']}
+    return { repository: 'name', labels: ['label'] }
   }
 
   await handleCreateEvent({
@@ -50,7 +50,7 @@ test('server create event with branch ref read-me-fix', async (t) => {
   t.is(typeof handleCreateEvent, 'function')
 
   const configure = function (yaml) {
-    return {repository: 'name', labels: ['label']}
+    return { repository: 'name', labels: ['label'] }
   }
 
   await handleCreateEvent({
@@ -79,7 +79,7 @@ test('server create event with non-existing branch name', async (t) => {
   const handleCreateEvent = robotMock.on.lastCall.args[1]
   t.is(typeof handleCreateEvent, 'function')
 
-  const githubMock = nock('https://api.github.com', {encodedQueryParams: true})
+  const githubMock = nock('https://api.github.com', { encodedQueryParams: true })
     .get('/repos/hoodiehq/first-timers-bot/branches/first-timers-does-not-exist')
     .reply(404, {
       message: 'Branch not found',
@@ -87,7 +87,7 @@ test('server create event with non-existing branch name', async (t) => {
     })
 
   const configure = function (yaml) {
-    return {repository: 'name', labels: ['label']}
+    return { repository: 'name', labels: ['label'] }
   }
 
   await handleCreateEvent({
