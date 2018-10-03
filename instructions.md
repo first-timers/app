@@ -38,6 +38,7 @@ $DIFF
 ### 🤔❓ Questions
 
 Leave a comment below!
+## comment 1: This is a great site for first timers to know how to use github
 
 
 This issue was created by [First-Timers-Bot](https://github.com/hoodiehq/first-timers-bot).
