@@ -7,7 +7,7 @@ Essa issue é reservada para pessoas que nunca antes contribuíram com Open Sour
 
 ### 🤔 O que você precisa saber.
 
-Nada. Essa issue foi feita para lhe dar as boas-vindas ao Open Source :) Estamos felizes por guiá-lo nesse processo.
+Nada. Essa issue foi feita para dar-lhe as boas-vindas ao Open Source :) Estamos felizes por guiá-lo nesse processo.
 
 ### 📋 Passo a Passo
 
@@ -17,7 +17,6 @@ Nada. Essa issue foi feita para lhe dar as boas-vindas ao Open Source :) Estamos
 
 - [ ] 👌 **Aceite o nosso convite** para esse repositório. Uma vez aceito, atribua essa issue a você mesmo.
 
-- [ ] 📝 **Update** the file [$FILENAME]($BRANCH_URL) in the `$REPO` repository (press the little pen Icon) and edit the line as shown below.
 - [ ] 📝 **Atualize** o arquivo [$FILENAME]($BRANCH_URL) no repositório `$REPO` (clique no ícone em formato de caneta) e edite a linha conforme mostrado abaixo.
 
 
@@ -26,16 +25,14 @@ $DIFF
 ``````
 
 
-- [ ] 💾 Faça o **Commit** das suas alterações
+- [ ] 💾 Faça o **Commit** das suas alterações.
 
-- [ ] 🔀 **Start a Pull Request**. There are two ways how you can start a pull request:
 - [ ] 🔀 **Inicie um Pull Request**. Existem duas formas de iniciar um pull request:
 
 1. Se você está familiarizado com o terminal ou gostaria de aprender a usá-lo, [há um excelente tutorial aqui](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github) sobre como enviar um pull request usando o terminal.
 
 2. Você pode [editar arquivos diretamente pelo seu navegador](https://help.github.com/articles/editing-files-in-your-repository/)
 
-- [ ] 🏁 **Done** Ask in comments for a review :)
 - [ ] 🏁 **Pronto** Use os comentários para pedir por uma revisão :)
 
 ### 🤔❓ Perguntas?
