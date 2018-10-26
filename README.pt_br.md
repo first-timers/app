@@ -6,16 +6,15 @@
 
 Pelas nossas próprias experiências, sabemos que o processo de criar um pull request é uma grande barreira para novos contribuidores. Nós queríamos agilizar esse processo criando issues muito simples e amigáveis ao contribuidor para ajudar mais pessoas a se tornarem contribuidoras Open Source pela primeira vez.
 
-Na Hoodie, nosso objetivo é tornar-se a [comunidade Open Source mais acolhedora possível](http://hood.ie/blog/welcoming-communities.html). Unimos forças com iniciativas como a [First Timers Only](http://www.firsttimersonly.com/) e [Your First PR](http://yourfirstpr.github.io/) para buscar ativamente novos contribuidores e criar um ambiente em que eles se sintam encorajados e apoiados.
+Na Hoodie, nosso objetivo é tornar-se a [comunidade Open Source mais acolhedora possível](http://hood.ie/blog/welcoming-communities.html). Unimos forças com iniciativas como a [First Timers Only](http://www.firsttimersonly.com/) e [Your First PR](http://yourfirstpr.github.io/) para buscar ativamente novos contribuidores e criar um ambiente no qual eles se sintam encorajados e apoiados.
 
-Criar o que chamamos de [issues iniciais](http://hood.ie/blog/starter-issues.html) (_starter issues_) é um aspecto disso. E é um dos mais bem sucedidos. Parte dessas issues iniciais são correções tão simples como erros de digitação, o que é perfeito para integrar pessoas e ajudá-las a se familiarizar com o GitHub e o processo de pull request. Como erros de digitação e issues similares são tão triviais, basicamente poderíamos gerar automaticamente toda a issue inicial com base em um diff.
+Criar o que chamamos de [issues iniciais](http://hood.ie/blog/starter-issues.html) (_starter issues_) é um aspecto disso. E é um dos mais bem sucedidos. Parte dessas issues iniciais são correções simples como erros de digitação, o que é perfeito para integrar pessoas e ajudá-las a se familiarizar com o GitHub e o processo de pull request. Como erros de digitação e issues similares são tão triviais, basicamente poderíamos gerar automaticamente toda a issue inicial com base em um diff.
 
-### 💡💥❓ Como as coisas funcionam
+### 💡💥❓ Como funciona
 
 Digamos que eu seja um contribuidor da Hoodie e encontrei um erro de digitação em algum lugar. Ao invés de corrigir a issue diretamente na branch master ou perder tempo criando um pull request, eu posso simplesmente criar uma nova branch e chamá-la de algo como _first-timers-only-erro-digitacao-no-titulo._ O GitHub irá notificar o **First Timers Bot** sobre a nova branch usando Webhooks. O bot fica de olho em qualquer nova branch que comece com **first-timers-** e criará uma nova issue no seu repositório. O campo commit pode ser usado para contextualizar e adicionar informações e se deixado vazio, a seção 🤔 **What you will need to know** simplesmente exibirá "Nothing :)".
 
 ### 😮🙌👀🎉 Use Nosso Bot!
-### 😮🙌👀🎉 Use Our Bot!
 
 First-timers-bot é construído com [Probot](https://probot.github.io/).
 
@@ -82,7 +81,7 @@ Contributors END -->
 | :---: | :---: |
 <!-- Contributors table END -->
 
-Angie e Arlene são naturais de Los Angeles e se conheceram ao atender o Dev BootCamp em San Francisco. Quando o bootcamp terminou e voltaram a LA, elas ficaram com vontade de fazer parte mais uma vez de uma comunidade incrível e acolhedora como aquela do Dev BootCamp em San Francisco. Por isso fundaram Hoodie através do [Rails Girls Summer of Code](https://railsgirlssummerofcode.org/)! Esse projeto é ainda mais especial para elas por ter sido a primeira contribuição open source de ambas.
+Angie e Arlene são naturais de Los Angeles e se conheceram ao frequentar o Dev BootCamp em San Francisco. Quando o bootcamp terminou e voltaram a LA, elas ficaram com vontade de fazer parte mais uma vez de uma comunidade incrível e acolhedora como aquela do Dev BootCamp em San Francisco. Por isso fundaram Hoodie através do [Rails Girls Summer of Code](https://railsgirlssummerofcode.org/)! Esse projeto é ainda mais especial para elas por ter sido a primeira contribuição open source de ambas.
 
 ### Contribuidores
 
