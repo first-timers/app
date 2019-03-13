@@ -5,7 +5,7 @@ const getTemplateContent = require('../../lib/get-template-content')
 
 const api = {
   repos: {
-    getContent: () => {}
+    getContents: () => {}
   }
 }
 
@@ -18,7 +18,7 @@ test('gets template content if URL exists', t => {
     customTemplateUrl: 'custom_url'
   }
 
-  simple.mock(api.repos, 'getContent').resolveWith({
+  simple.mock(api.repos, 'getContents').resolveWith({
     data: {
       content: 'Y29udGVudA=='
     }
@@ -27,7 +27,7 @@ test('gets template content if URL exists', t => {
   getTemplateContent(state)
 
     .then(() => {
-      const getTemplateContentArgs = api.repos.getContent.lastCall.arg
+      const getTemplateContentArgs = api.repos.getContents.lastCall.arg
       t.is(getTemplateContentArgs.owner, 'owner')
       t.is(getTemplateContentArgs.repo, 'issueRepo')
       t.is(getTemplateContentArgs.path, 'custom_url')
