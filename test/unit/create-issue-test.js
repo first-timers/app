@@ -35,7 +35,7 @@ test('create issue request succeeds', t => {
     }
   })
 
-  simple.mock(api.issues, 'edit').resolveWith({
+  simple.mock(api.issues, 'update').resolveWith({
     data: {
       body: 'test value1: patch value2: filename value3: branchUrl value4: installRepo value5: 123'
     }
@@ -45,7 +45,7 @@ test('create issue request succeeds', t => {
 
     .then((response) => {
       const createIssueArgs = api.issues.create.lastCall.arg
-      const editIssueArgs = api.issues.edit.lastCall.arg
+      const editIssueArgs = api.issues.update.lastCall.arg
       t.is(response.data.html_url, 'html_url')
       t.is(response.data.number, 123)
       t.is(createIssueArgs.title, 'title')
