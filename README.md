@@ -10,9 +10,9 @@ At Hoodie, we aim to become the most [welcoming Open Source community possible](
 
 Creating what we call [starter issues](http://hood.ie/blog/starter-issues.html) is one aspect of that. And it is one of the most successful. A subset of these starter issues are super simple fixes like typos, so they are perfect to onboard people and help them get familiar with GitHub and the pull request workflow. Because typos and similar issues are so trivial, we should basically be able to automatically generate the entire starter issue based on a diff.
 
-### 💡💥❓ How things work
+### 💡💥❓ How Things Work
 
-Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the issue directly in the master branch or creating a pull request which is time-consuming, I can simply create a new branch that is called something like _first-timers-only-typo-in-title._ GitHub will then notify the **First Timers Bot** about the new branch using Webhooks. The bot is listening to any new branch starting with **first-timers-** and it will create a new issue on your repo.The commit body can be used to add some context information and if left empty, the 🤔 **What you will need to know** section of the issue will simply say "Nothing :)".
+Say I’m a Hoodie contributor and find a typo somewhere. Instead of fixing the issue directly in the master branch or creating a pull request which is time-consuming, I can simply create a new branch that is called something like _first-timers-only-typo-in-title._ GitHub will then notify the **First Timers Bot** about the new branch using Webhooks. The bot is listening to any new branch starting with **first-timers-** and it will create a new issue on your repo. The commit body can be used to add some context information and if left empty, the 🤔 **What you will need to know** section of the issue will simply say "Nothing :)".
 
 
 ### 😮🙌👀🎉 Use Our Bot!
