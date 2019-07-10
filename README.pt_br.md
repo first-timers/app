@@ -4,11 +4,11 @@
 
 ### 🐶🎯⛳ A Motivação
 
-Pelas nossas próprias experiências, sabemos que o processo de criar um pull request é uma grande barreira para novos contribuidores. Nós queríamos agilizar esse processo criando issues muito simples e amigáveis ao contribuidor para ajudar mais pessoas a se tornarem contribuidoras Open Source pela primeira vez.
+Pelas nossas próprias experiências, sabemos que o processo de criar um pull request é a maior barreira para novos contribuidores. Nós queríamos agilizar esse processo criando issues muito simples e amigáveis ao contribuidor, para ajudar mais pessoas a se tornarem contribuidoras Open Source pela primeira vez.
 
-Na Hoodie, nosso objetivo é tornar-se a [comunidade Open Source mais acolhedora possível](http://hood.ie/blog/welcoming-communities.html). Unimos forças com iniciativas como a [First Timers Only](http://www.firsttimersonly.com/) e [Your First PR](http://yourfirstpr.github.io/) para buscar ativamente novos contribuidores e criar um ambiente no qual eles se sintam encorajados e apoiados.
+Na Hoodie, nosso objetivo é nos tornarmos a [comunidade Open Source mais acolhedora possível](http://hood.ie/blog/welcoming-communities.html). Unimos forças com iniciativas como a [First Timers Only](http://www.firsttimersonly.com/) e [Your First PR](http://yourfirstpr.github.io/) para buscar ativamente novos contribuidores e criar um ambiente no qual eles se sintam encorajados e apoiados.
 
-Criar o que chamamos de [issues iniciais](http://hood.ie/blog/starter-issues.html) (_starter issues_) é um aspecto disso. E é um dos mais bem sucedidos. Parte dessas issues iniciais são correções simples como erros de digitação, o que é perfeito para integrar pessoas e ajudá-las a se familiarizar com o GitHub e o processo de pull request. Como erros de digitação e issues similares são tão triviais, basicamente poderíamos gerar automaticamente toda a issue inicial com base em um diff.
+Criar o que chamamos de [issues iniciais](http://hood.ie/blog/starter-issues.html) (_starter issues_) é uma possibilidade. E é uma das mais bem sucedidas. Parte dessas issues iniciais são correções simples como erros de digitação, o que é perfeito para integrar pessoas e ajudá-las a se familiarizar com o GitHub e o processo de pull request. Como erros de digitação e issues similares são tão triviais, basicamente poderíamos gerar automaticamente toda a issue inicial com base em um diff.
 
 ### 💡💥❓ Como funciona
 
