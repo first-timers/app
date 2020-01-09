@@ -43,7 +43,7 @@ test('get commit request succeeds', t => {
     api.repos.getCommit.lastCall.arg
       t.is(getCommitArgs.owner, 'owner')
       t.is(getCommitArgs.repo, 'installRepo')
-      t.is(getCommitArgs.sha, 'sha')
+      t.is(getCommitArgs.ref, 'sha')
       t.is(state.commit.message, 'message')
       t.is(state.commit.filename, 'filename')
       t.is(state.commit.patch, 'patch')
