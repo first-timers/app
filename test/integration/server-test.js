@@ -1,4 +1,4 @@
-const Octokit = require('@octokit/rest')
+const { Octokit } = require('@octokit/rest')
 const nock = require('nock')
 const simple = require('simple-mock')
 const { test } = require('tap')
