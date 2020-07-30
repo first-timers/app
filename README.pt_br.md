@@ -1,6 +1,6 @@
 # first-timers-bot
 
-[![Build Status](https://travis-ci.org/hoodiehq/first-timers-bot.svg?branch=master)](https://travis-ci.org/hoodiehq/first-timers-bot) [![Coverage Status](https://coveralls.io/repos/github/hoodiehq/first-timers-bot/badge.svg?branch=master)](https://coveralls.io/github/hoodiehq/first-timers-bot?branch=master) [![Greenkeeper badge](https://badges.greenkeeper.io/hoodiehq/first-timers-bot.svg)](https://greenkeeper.io/) [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m779426128-6b6e81ed8dc987db17d4cad2.svg)](https://stats.uptimerobot.com/LZ40Lcoj4)
+[![Build Status](https://github.com/hoodiehq/first-timers-bot/workflows/Test/badge.svg)](https://github.com/hoodiehq/first-timers-bot/actions?query=workflow%3ATest+branch%3Amaster) [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m779426128-6b6e81ed8dc987db17d4cad2.svg)](https://stats.uptimerobot.com/LZ40Lcoj4)
 
 ### 🐶🎯⛳ A Motivação
 
