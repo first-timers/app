@@ -6,7 +6,9 @@
   "scripts": {
     "now-start": "PRIVATE_KEY=$(echo $PRIVATE_KEY | base64 -d) DEBUG=probot* npm start",
     "start": "probot run ./server.js",
-    "pretest": "standard",
+    "lint": "prettier --check '{lib,test}/**/*.js' *.md package.json",
+    "lint:fix": "prettier --write '{lib,test}/**/*.js' *.md package.json",
+    "pretest": "npm run -s lint",
     "test": "tap --coverage 'test/{integration,unit}/*-test.js'",
     "coverage": "tap --coverage-report=text-lcov | coveralls"
   },
@@ -18,8 +20,8 @@
     "@octokit/rest": "^17.0.0",
     "coveralls": "^3.0.0",
     "nock": "^12.0.0",
+    "prettier": "^2.0.5",
     "simple-mock": "^0.8.0",
-    "standard": "^14.0.2",
     "tap": "^14.0.0"
   },
   "engines": {

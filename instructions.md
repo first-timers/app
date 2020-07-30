@@ -1,4 +1,3 @@
-
 ### 🆕🐥☝ First Timers Only.
 
 This issue is reserved for people who never contributed to Open Source before. We know that the process of creating a pull request is the biggest barrier for new contributors. This issue is for you 💝
@@ -17,13 +16,11 @@ Nothing. This issue is meant to welcome you to Open Source :) We are happy to wa
 
 - [ ] 👌 **Accept our invitation** to this repository. Once accepted, assign yourself to this issue
 
-- [ ] 📝 **Update** the file [$FILENAME]($BRANCH_URL) in the `$REPO` repository (press the little pen Icon) and edit the line as shown below.
+- [ ] 📝 **Update** the file [\$FILENAME]($BRANCH_URL) in the `$REPO` repository (press the little pen Icon) and edit the line as shown below.
 
-
-``````diff
+```diff
 $DIFF
-``````
-
+```
 
 - [ ] 💾 **Commit** your changes
 
@@ -38,6 +35,5 @@ $DIFF
 ### 🤔❓ Questions
 
 Leave a comment below!
-
 
 This issue was created by [First-Timers-Bot](https://github.com/hoodiehq/first-timers-bot).

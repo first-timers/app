@@ -1,6 +1,6 @@
-const { test } = require('tap')
+const { test } = require("tap");
 
-test('smoke test', (t) => {
-  require('../../server')
-  t.end()
-})
+test("smoke test", (t) => {
+  require("../../server");
+  t.end();
+});

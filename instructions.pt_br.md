@@ -1,4 +1,3 @@
-
 ### 🆕🐥☝ First Timers Only.
 
 Essa issue é reservada para pessoas que nunca antes contribuíram com Open Source. Sabemos que o processo de criar um pull request é a maior barreira para novos contribuidores. Essa issue é pra você 💝
@@ -17,13 +16,11 @@ Nada. Essa issue foi feita para dar-lhe as boas-vindas ao Open Source :) Estamos
 
 - [ ] 👌 **Aceite o nosso convite** para esse repositório. Uma vez aceito, atribua essa issue a você mesmo.
 
-- [ ] 📝 **Atualize** o arquivo [$FILENAME]($BRANCH_URL) no repositório `$REPO` (clique no ícone em formato de caneta) e edite a linha conforme mostrado abaixo.
+- [ ] 📝 **Atualize** o arquivo [\$FILENAME]($BRANCH_URL) no repositório `$REPO` (clique no ícone em formato de caneta) e edite a linha conforme mostrado abaixo.
 
-
-``````diff
+```diff
 $DIFF
-``````
-
+```
 
 - [ ] 💾 Faça o **Commit** das suas alterações.
 
@@ -38,6 +35,5 @@ $DIFF
 ### 🤔❓ Perguntas?
 
 Deixe um comentário abaixo!
-
 
 Essa issue foi criada por [First-Timers-Bot](https://github.com/hoodiehq/first-timers-bot).
