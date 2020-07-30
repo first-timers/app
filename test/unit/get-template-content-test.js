@@ -1,54 +1,52 @@
-const simple = require('simple-mock')
-const { test } = require('tap')
+const simple = require("simple-mock");
+const { test } = require("tap");
 
-const getTemplateContent = require('../../lib/get-template-content')
+const getTemplateContent = require("../../lib/get-template-content");
 
 const api = {
   repos: {
-    getContents: () => {}
-  }
-}
+    getContents: () => {},
+  },
+};
 
-test('gets template content if URL exists', t => {
+test("gets template content if URL exists", (t) => {
   const state = {
     api,
     debug: () => {},
-    owner: 'owner',
-    issueRepo: 'issueRepo',
-    customTemplateUrl: 'custom_url'
-  }
+    owner: "owner",
+    issueRepo: "issueRepo",
+    customTemplateUrl: "custom_url",
+  };
 
-  simple.mock(api.repos, 'getContents').resolveWith({
+  simple.mock(api.repos, "getContents").resolveWith({
     data: {
-      content: 'Y29udGVudA=='
-    }
-  })
+      content: "Y29udGVudA==",
+    },
+  });
 
-  getTemplateContent(state)
+  getTemplateContent(state).then(() => {
+    const getTemplateContentArgs = api.repos.getContents.lastCall.arg;
+    t.is(getTemplateContentArgs.owner, "owner");
+    t.is(getTemplateContentArgs.repo, "issueRepo");
+    t.is(getTemplateContentArgs.path, "custom_url");
+    t.is(state.template, "content");
 
-    .then(() => {
-      const getTemplateContentArgs = api.repos.getContents.lastCall.arg
-      t.is(getTemplateContentArgs.owner, 'owner')
-      t.is(getTemplateContentArgs.repo, 'issueRepo')
-      t.is(getTemplateContentArgs.path, 'custom_url')
-      t.is(state.template, 'content')
+    simple.restore();
+    t.end();
+  });
+});
 
-      simple.restore()
-      t.end()
-    })
-})
-
-test('does not get content if URL does not exist', t => {
+test("does not get content if URL does not exist", (t) => {
   const state = {
     api,
     debug: () => {},
-    owner: 'owner',
-    issueRepo: 'issueRepo',
-    customTemplateUrl: null
-  }
+    owner: "owner",
+    issueRepo: "issueRepo",
+    customTemplateUrl: null,
+  };
 
-  getTemplateContent(state)
-  t.pass('Ignores custom template')
-  simple.restore()
-  t.end()
-})
+  getTemplateContent(state);
+  t.pass("Ignores custom template");
+  simple.restore();
+  t.end();
+});

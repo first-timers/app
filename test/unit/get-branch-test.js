@@ -1,66 +1,64 @@
-const simple = require('simple-mock')
-const { test } = require('tap')
+const simple = require("simple-mock");
+const { test } = require("tap");
 
-const getBranch = require('../../lib/get-branch')
+const getBranch = require("../../lib/get-branch");
 
 const api = {
   repos: {
-    getBranch: () => {}
-  }
-}
+    getBranch: () => {},
+  },
+};
 
-test('get branch request succeeds', t => {
+test("get branch request succeeds", (t) => {
   const state = {
     api,
     debug: () => {},
-    owner: 'owner',
-    installRepo: 'installRepo',
-    branch: 'branch'
-  }
+    owner: "owner",
+    installRepo: "installRepo",
+    branch: "branch",
+  };
 
-  simple.mock(api.repos, 'getBranch').resolveWith({
+  simple.mock(api.repos, "getBranch").resolveWith({
     data: {
       commit: {
-        sha: 'sha'
-      }
-    }
-  })
+        sha: "sha",
+      },
+    },
+  });
 
   getBranch(state)
-
     .then(() => {
-      const getBranchArgs = api.repos.getBranch.lastCall.arg
-      t.is(getBranchArgs.owner, 'owner')
-      t.is(getBranchArgs.repo, 'installRepo')
-      t.is(getBranchArgs.branch, 'branch')
-      t.is(state.sha, 'sha')
+      const getBranchArgs = api.repos.getBranch.lastCall.arg;
+      t.is(getBranchArgs.owner, "owner");
+      t.is(getBranchArgs.repo, "installRepo");
+      t.is(getBranchArgs.branch, "branch");
+      t.is(state.sha, "sha");
 
-      simple.restore()
-      t.end()
+      simple.restore();
+      t.end();
     })
 
-    .catch(t.error)
-})
+    .catch(t.error);
+});
 
-test('get branch test fails', t => {
+test("get branch test fails", (t) => {
   const state = {
     api,
-    debug: () => {}
-  }
+    debug: () => {},
+  };
 
-  simple.mock(api.repos, 'getBranch').rejectWith({
-    code: 404
-  })
+  simple.mock(api.repos, "getBranch").rejectWith({
+    code: 404,
+  });
 
   getBranch(state)
-
     .then(() => {
-      t.fail('should not resolve')
+      t.fail("should not resolve");
     })
     .catch((error) => {
-      t.is(error.code, 404)
+      t.is(error.code, 404);
 
-      simple.restore()
-      t.end()
-    })
-})
+      simple.restore();
+      t.end();
+    });
+});

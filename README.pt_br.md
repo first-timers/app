@@ -64,21 +64,27 @@ template: .github/first-timers-issue-template.md
 # A issue irá referenciar o repositório original em que a contribuição será feita.
 repository: repo-name
 ```
+
 **Exemplo de Configuração** 🖥 💯
 
 Nosso arquivo [`.github/first-timers.yml`](https://github.com/hoodiehq/first-timers-bot/blob/master/.github/first-timers.yml) do repositório `hoodiehq/first-timers-bot` está usando o arquivo [`.github/FIRST_TIMERS_ISSUE_TEMPLATE.md`](https://github.com/hoodiehq/camp/blob/gh-pages/.github/FIRST_TIMERS_ISSUE_TEMPLATE.md) do repositório `hoodiehq/camp` como template para criar uma issue como essa: https://github.com/hoodiehq/camp/issues/126.
 
 ### Status do Servidor
+
 Verifique se o distintivo de **status** no topo deste arquivo está marcado como `up`. First Timers Bot é uma aplicação node atualmente executada no [Now](https://zeit.co/now).
 
 ### 👩‍💻💕Quem Somos
+
 <!-- Contributors START
 Angie_Gonzalez agonzalez0515 https://agonzalez0515.github.io
 Arlene_Perez techforchange https://github.com/techforchange
 Contributors END -->
 <!-- Contributors table START -->
+
 | <img src="https://avatars.githubusercontent.com/agonzalez0515?s=100" width="100" alt="Angie Gonzalez" /><br />[<sub>Angie Gonzalez</sub>](https://agonzalez0515.github.io)<br /> | <img src="https://avatars.githubusercontent.com/techforchange?s=100" width="100" alt="Arlene Perez" /><br />[<sub>Arlene Perez</sub>](https://github.com/techforchange)<br /> |
-| :---: | :---: |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+
+
 <!-- Contributors table END -->
 
 Angie e Arlene são naturais de Los Angeles e se conheceram ao frequentar o Dev BootCamp em San Francisco. Quando o bootcamp terminou e voltaram a LA, elas ficaram com vontade de fazer parte mais uma vez de uma comunidade incrível e acolhedora como aquela do Dev BootCamp em San Francisco. Por isso fundaram Hoodie através do [Rails Girls Summer of Code](https://railsgirlssummerofcode.org/)! Esse projeto é ainda mais especial para elas por ter sido a primeira contribuição open source de ambas.
@@ -86,14 +92,19 @@ Angie e Arlene são naturais de Los Angeles e se conheceram ao frequentar o Dev 
 ### Contribuidores
 
 Obrigado a todos aqueles que contribuíram com esse projeto.
+
 <!-- Contributors START
  Michael_McCombie michaelmccombie https://twitter.com/michaelbuilds design
  Gregor_Martynus gr2m https://twitter.com/gr2m mentor
  Contributors END -->
 <!-- Contributors table START -->
+
 | <img src="https://avatars.githubusercontent.com/michaelmccombie?s=100" width="100" alt="Michael McCombie" /><br />[<sub>Michael McCombie</sub>](https://twitter.com/michaelbuilds)<br />[🎨](https://raw.githubusercontent.com/hoodiehq/first-timers-bot/51742c62ae3e4e2be7e58d170a9eab73a3871bf4/assets/avatar.png) | <img src="https://avatars.githubusercontent.com/gr2m?s=100" width="100" alt="Gregor Martynus" /><br />[<sub>Gregor Martynus</sub>](https://twitter.com/gr2m)<br />👨🏻‍🏫 |
-| :---: | :---: |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+
+
 <!-- Contributors table END -->
+
 Esse projeto segue a especificação [all-contributors](https://github.com/kentcdodds/all-contributors).
 
 ### Licença
