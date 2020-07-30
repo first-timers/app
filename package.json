@@ -9,8 +9,8 @@
     "lint": "prettier --check '{lib,test}/**/*.js' *.md package.json",
     "lint:fix": "prettier --write '{lib,test}/**/*.js' *.md package.json",
     "pretest": "npm run -s lint",
-    "test": "tap --coverage 'test/{integration,unit}/*-test.js'",
-    "coverage": "tap --coverage-report=text-lcov | coveralls"
+    "test": "tap --100 'test/{integration,unit}/*-test.js'",
+    "coverage": "tap --coverage-report=html"
   },
   "dependencies": {
     "debug": "^4.0.1",
@@ -18,7 +18,6 @@
   },
   "devDependencies": {
     "@octokit/rest": "^17.0.0",
-    "coveralls": "^3.0.0",
     "nock": "^12.0.0",
     "prettier": "^2.0.5",
     "simple-mock": "^0.8.0",
