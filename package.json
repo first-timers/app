@@ -19,7 +19,7 @@
   "devDependencies": {
     "@octokit/rest": "^18.0.4",
     "nock": "^13.0.4",
-    "prettier": "^2.0.5",
+    "prettier": "^2.1.1",
     "simple-mock": "^0.8.0",
     "tap": "^14.10.8"
   },
