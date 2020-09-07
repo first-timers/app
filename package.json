@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "debug": "^4.0.1",
-    "probot": "^9.14.1"
+    "probot": "^10.1.4"
   },
   "devDependencies": {
     "@octokit/rest": "^18.0.4",
