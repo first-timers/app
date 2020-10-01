@@ -4,7 +4,7 @@
 
 ### 🐶🎯⛳ The Motivation
 
-From our own experiences, we know the process of creating a pull request is the biggest barrier for new contributors. We wanted to streamline the process to create very simple contributor-friendly issues to help onboard more people to become Open Source contributors for the first time.
+From our experiences, we know the process of creating a pull request is the biggest barrier for new contributors. We wanted to streamline the process to create very simple contributor-friendly issues to help onboard more people to become Open Source contributors for the first time.
 
 At Hoodie, we aim to become the most [welcoming Open Source community possible](http://hood.ie/blog/welcoming-communities.html). We joined forces with initiatives like [First Timers Only](http://www.firsttimersonly.com/) and [Your First PR](http://yourfirstpr.github.io/) to actively reach out to new contributors and create an environment where they feel encouraged and supported.
 
