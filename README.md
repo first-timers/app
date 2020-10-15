@@ -65,6 +65,15 @@ template: .github/first-timers-issue-template.md
 repository: repo-name
 ```
 
+The following placeholders are supported in the template and will be replaced upon creation:
+
+- `$DIFF`: The diff string
+- `$FILENAME`: The file name
+- `$BRANCH_URL`: URL to the file on github.com
+- `$REPO`: name of the repository
+- `$AUTHOR`: author of the user who created the commit
+- `$COMMIT_BODY`: The body of the commit
+
 **Configuration Example** 🖥 💯
 
 Our `hoodiehq/first-timers-bot` repository’s [`.github/first-timers.yml`](https://github.com/hoodiehq/first-timers-bot/blob/master/.github/first-timers.yml) file is using `hoodiehq/camp` repository’s [`.github/FIRST_TIMERS_ISSUE_TEMPLATE.md`](https://github.com/hoodiehq/camp/blob/gh-pages/.github/FIRST_TIMERS_ISSUE_TEMPLATE.md) file as a template to create an issue such as this one: https://github.com/hoodiehq/camp/issues/126.
