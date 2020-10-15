@@ -57,8 +57,10 @@ The first-timers app works without configuration. If you want to change the defa
 labels:
   - first-timers-only
 
-#If you would like to add your own template for the issue, add an .md file to your .github folder
+# If you would like to add your own template for the issue, add an .md file to your .github folder
 template: .github/first-timers-issue-template.md
+# In order to load the template from another repository, prefix the path with "<repo>:", e.g.
+# template: other-repo:.github/first-timers-issue-template.md
 
 # You can create the issue in a different repo than where the problem is. Just make sure you installed the bot on the configured repository.
 # The issue will link back to the original repository where the contribution will be made.
