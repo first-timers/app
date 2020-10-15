@@ -4,7 +4,7 @@ const { test } = require("tap");
 const deleteBranch = require("../../lib/delete-branch");
 
 const api = {
-  gitdata: {
+  git: {
     deleteRef: () => {},
   },
 };
@@ -18,7 +18,7 @@ test("delete branch request succeeds", (t) => {
     installRepo: "installRepo",
   };
 
-  simple.mock(api.gitdata, "deleteRef").resolveWith({
+  simple.mock(api.git, "deleteRef").resolveWith({
     meta: {
       status: "204 No Content",
     },
@@ -41,7 +41,7 @@ test("delete branch request fails", (t) => {
     repo: null,
   };
 
-  simple.mock(api.gitdata, "deleteRef").rejectWith({
+  simple.mock(api.git, "deleteRef").rejectWith({
     code: 403,
   });
 
@@ -49,7 +49,7 @@ test("delete branch request fails", (t) => {
     t.is(error.code, 403);
   });
 
-  simple.mock(api.gitdata, "deleteRef").rejectWith({
+  simple.mock(api.git, "deleteRef").rejectWith({
     code: 404,
   });
 
