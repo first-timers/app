@@ -20,13 +20,13 @@ test("create issue request succeeds", (t) => {
     sha: "sha",
     labels: "label-1",
     commit: {
-      message: "title\n\ndescription",
+      message: "commit subject\n\ncommit body",
       patch: "patch",
       filename: "filename",
       branchUrl: "branchUrl",
     },
     template:
-      "test value1: $DIFF value2: $FILENAME value3: $BRANCH_URL value4: $REPO value5: $ISSUE_NUMBER",
+      "test value1: $DIFF value2: $FILENAME value3: $BRANCH_URL value4: $REPO value5: $ISSUE_NUMBER value6: $COMMIT_BODY",
   };
 
   simple.mock(api.issues, "create").resolveWith({
@@ -48,17 +48,17 @@ test("create issue request succeeds", (t) => {
     const editIssueArgs = api.issues.update.lastCall.arg;
     t.is(response.data.html_url, "html_url");
     t.is(response.data.number, 123);
-    t.is(createIssueArgs.title, "title");
+    t.is(createIssueArgs.title, "commit subject");
     t.is(
       createIssueArgs.body,
-      "test value1: patch value2: filename value3: branchUrl value4: installRepo value5: $ISSUE_NUMBER"
+      "test value1: patch value2: filename value3: branchUrl value4: installRepo value5: $ISSUE_NUMBER value6: commit body"
     );
     t.is(createIssueArgs.repo, "issueRepo");
     t.is(createIssueArgs.labels, "label-1");
     t.is(createIssueArgs.owner, "owner");
     t.is(
       editIssueArgs.body,
-      "test value1: patch value2: filename value3: branchUrl value4: installRepo value5: 123"
+      "test value1: patch value2: filename value3: branchUrl value4: installRepo value5: 123 value6: commit body"
     );
 
     simple.restore();
