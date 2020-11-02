@@ -70,8 +70,9 @@ test("server create event with branch ref read-me-fix", async (t) => {
 });
 
 test("server create event with non-existing branch name", async (t) => {
-  t.plan(3);
+  t.plan(5);
   simple.mock(robotMock, "on");
+  simple.mock(console, "error").callFn(() => {});
 
   server(robotMock);
 
@@ -108,9 +109,12 @@ test("server create event with non-existing branch name", async (t) => {
       },
     },
     config: configure,
+  }).catch((error) => {
+    t.is(error.message, "Branch not found");
   });
 
   t.is(githubMock.pendingMocks()[0], undefined);
+  t.is(console.error.callCount, 1);
 
   simple.restore();
   t.end();
