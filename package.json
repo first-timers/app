@@ -24,7 +24,7 @@
     "tap": "^14.10.8"
   },
   "engines": {
-    "node": "10.x"
+    "node": "12.x"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/first-timers-only-bot"
