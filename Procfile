@@ -1,1 +1,1 @@
-web: ./node_modules/.bin/probot run ./index.js
+web: ./node_modules/.bin/probot run ./server.js
