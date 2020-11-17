@@ -6,8 +6,8 @@
   "scripts": {
     "now-start": "PRIVATE_KEY=$(echo $PRIVATE_KEY | base64 -d) DEBUG=probot* npm start",
     "start": "probot run ./server.js",
-    "lint": "prettier --check '{lib,test}/**/*.js' *.md package.json",
-    "lint:fix": "prettier --write '{lib,test}/**/*.js' *.md package.json",
+    "lint": "prettier --check '{lib,test}/**/*.js' *.js *.md package.json",
+    "lint:fix": "prettier --write '{lib,test}/**/*.js' *.js *.md package.json",
     "pretest": "npm run -s lint",
     "test": "tap --100 'test/{integration,unit}/*-test.js'",
     "coverage": "tap --coverage-report=html"
