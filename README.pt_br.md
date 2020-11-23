@@ -84,7 +84,6 @@ Contributors END -->
 | <img src="https://avatars.githubusercontent.com/agonzalez0515?s=100" width="100" alt="Angie Gonzalez" /><br />[<sub>Angie Gonzalez</sub>](https://agonzalez0515.github.io)<br /> | <img src="https://avatars.githubusercontent.com/techforchange?s=100" width="100" alt="Arlene Perez" /><br />[<sub>Arlene Perez</sub>](https://github.com/techforchange)<br /> |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
-
 <!-- Contributors table END -->
 
 Angie e Arlene são naturais de Los Angeles e se conheceram ao frequentar o Dev BootCamp em San Francisco. Quando o bootcamp terminou e voltaram a LA, elas ficaram com vontade de fazer parte mais uma vez de uma comunidade incrível e acolhedora como aquela do Dev BootCamp em San Francisco. Por isso fundaram Hoodie através do [Rails Girls Summer of Code](https://railsgirlssummerofcode.org/)! Esse projeto é ainda mais especial para elas por ter sido a primeira contribuição open source de ambas.
@@ -101,7 +100,6 @@ Obrigado a todos aqueles que contribuíram com esse projeto.
 
 | <img src="https://avatars.githubusercontent.com/michaelmccombie?s=100" width="100" alt="Michael McCombie" /><br />[<sub>Michael McCombie</sub>](https://twitter.com/michaelbuilds)<br />[🎨](https://raw.githubusercontent.com/hoodiehq/first-timers-bot/51742c62ae3e4e2be7e58d170a9eab73a3871bf4/assets/avatar.png) | <img src="https://avatars.githubusercontent.com/gr2m?s=100" width="100" alt="Gregor Martynus" /><br />[<sub>Gregor Martynus</sub>](https://twitter.com/gr2m)<br />👨🏻‍🏫 |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-
 
 <!-- Contributors table END -->
 
