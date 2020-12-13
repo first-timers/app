@@ -6,6 +6,9 @@ const { test } = require("tap");
 const octokit = new Octokit();
 const server = require("../../server");
 const robotMock = {
+  log: {
+    debug: () => {},
+  },
   on: () => {},
 };
 
@@ -25,6 +28,9 @@ test("server create event with reftype = tag", async (t) => {
   };
 
   await handleCreateEvent({
+    log: {
+      debug() {},
+    },
     payload: {
       ref_type: "tag",
       repository: {
@@ -54,6 +60,9 @@ test("server create event with branch ref read-me-fix", async (t) => {
   };
 
   await handleCreateEvent({
+    log: {
+      debug() {},
+    },
     payload: {
       ref_type: "branch",
       ref: "read-me-fix",
@@ -96,6 +105,9 @@ test("server create event with non-existing branch name", async (t) => {
   };
 
   await handleCreateEvent({
+    log: {
+      debug() {},
+    },
     github: octokit,
     payload: {
       ref_type: "branch",

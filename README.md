@@ -82,7 +82,7 @@ Our `hoodiehq/first-timers-bot` repository’s [`.github/first-timers.yml`](http
 
 ### Server Status
 
-Make sure to verify that the **status** badge at the top of this file is labeled as `up`. First Timers Bot is a node app that currently runs on [Now](https://zeit.co/now).
+Make sure to verify that the **status** badge at the top of this file is labeled as `up`. You can check the current status at https://stats.uptimerobot.com/LZ40Lcoj4
 
 ### 👩‍💻💕About Us
 
