@@ -4,7 +4,6 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "now-start": "PRIVATE_KEY=$(echo $PRIVATE_KEY | base64 -d) DEBUG=probot* npm start",
     "start": "probot run ./server.js",
     "lint": "prettier --check '{lib,test}/**/*.js' *.js *.md package.json",
     "lint:fix": "prettier --write '{lib,test}/**/*.js' *.js *.md package.json",
@@ -14,7 +13,7 @@
   },
   "dependencies": {
     "debug": "^4.3.1",
-    "probot": "^10.17.3"
+    "probot": "^11.0.0-beta.3"
   },
   "devDependencies": {
     "@octokit/rest": "^18.0.12",

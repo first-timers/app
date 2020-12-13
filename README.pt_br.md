@@ -71,7 +71,7 @@ Nosso arquivo [`.github/first-timers.yml`](https://github.com/hoodiehq/first-tim
 
 ### Status do Servidor
 
-Verifique se o distintivo de **status** no topo deste arquivo está marcado como `up`. First Timers Bot é uma aplicação node atualmente executada no [Now](https://zeit.co/now).
+Verifique se o distintivo de **status** no topo deste arquivo está marcado como `up`.
 
 ### 👩‍💻💕Quem Somos
 
