@@ -17,7 +17,7 @@ nock.disableNetConnect();
 test("server create event with reftype = tag", async (t) => {
   simple.mock(robotMock, "on");
 
-  server({ app: robotMock });
+  server(robotMock);
 
   t.is(robotMock.on.lastCall.arg, "create");
   const handleCreateEvent = robotMock.on.lastCall.args[1];
@@ -49,7 +49,7 @@ test("server create event with reftype = tag", async (t) => {
 test("server create event with branch ref read-me-fix", async (t) => {
   simple.mock(robotMock, "on");
 
-  server({ app: robotMock });
+  server(robotMock);
 
   t.is(robotMock.on.lastCall.arg, "create");
   const handleCreateEvent = robotMock.on.lastCall.args[1];
@@ -83,7 +83,7 @@ test("server create event with non-existing branch name", async (t) => {
   simple.mock(robotMock, "on");
   simple.mock(console, "error").callFn(() => {});
 
-  server({ app: robotMock });
+  server(robotMock);
 
   t.is(robotMock.on.lastCall.arg, "create");
   const handleCreateEvent = robotMock.on.lastCall.args[1];
@@ -108,7 +108,7 @@ test("server create event with non-existing branch name", async (t) => {
     log: {
       debug() {},
     },
-    github: octokit,
+    octokit,
     payload: {
       ref_type: "branch",
       ref: "first-timers-does-not-exist",
