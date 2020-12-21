@@ -80,7 +80,7 @@ The following placeholders are supported in the template and will be replaced up
 
 Our `hoodiehq/first-timers-bot` repository’s [`.github/first-timers.yml`](https://github.com/hoodiehq/first-timers-bot/blob/master/.github/first-timers.yml) file is using `hoodiehq/camp` repository’s [`.github/FIRST_TIMERS_ISSUE_TEMPLATE.md`](https://github.com/hoodiehq/camp/blob/gh-pages/.github/FIRST_TIMERS_ISSUE_TEMPLATE.md) file as a template to create an issue such as this one: https://github.com/hoodiehq/camp/issues/126.
 
-### Server Status
+### App Status
 
 Make sure to verify that the **status** badge at the top of this file is labeled as `up`. You can check the current status at https://stats.uptimerobot.com/LZ40Lcoj4
 

@@ -4,7 +4,7 @@ const simple = require("simple-mock");
 const { test } = require("tap");
 
 const octokit = new Octokit();
-const server = require("../../server");
+const app = require("../../app");
 const robotMock = {
   log: {
     debug: () => {},
@@ -14,10 +14,10 @@ const robotMock = {
 
 nock.disableNetConnect();
 
-test("server create event with reftype = tag", async (t) => {
+test("create event with reftype = tag", async (t) => {
   simple.mock(robotMock, "on");
 
-  server(robotMock);
+  app(robotMock);
 
   t.is(robotMock.on.lastCall.arg, "create");
   const handleCreateEvent = robotMock.on.lastCall.args[1];
@@ -46,10 +46,10 @@ test("server create event with reftype = tag", async (t) => {
   t.end();
 });
 
-test("server create event with branch ref read-me-fix", async (t) => {
+test("create event with branch ref read-me-fix", async (t) => {
   simple.mock(robotMock, "on");
 
-  server(robotMock);
+  app(robotMock);
 
   t.is(robotMock.on.lastCall.arg, "create");
   const handleCreateEvent = robotMock.on.lastCall.args[1];
@@ -78,12 +78,12 @@ test("server create event with branch ref read-me-fix", async (t) => {
   t.end();
 });
 
-test("server create event with non-existing branch name", async (t) => {
+test("create event with non-existing branch name", async (t) => {
   t.plan(5);
   simple.mock(robotMock, "on");
   simple.mock(console, "error").callFn(() => {});
 
-  server(robotMock);
+  app(robotMock);
 
   t.is(robotMock.on.lastCall.arg, "create");
   const handleCreateEvent = robotMock.on.lastCall.args[1];

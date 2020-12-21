@@ -2,9 +2,9 @@
   "name": "first-timers-bot",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "start": "probot run ./server.js",
+    "start": "probot run ./app.js",
     "lint": "prettier --check '{lib,test}/**/*.js' *.js *.md package.json",
     "lint:fix": "prettier --write '{lib,test}/**/*.js' *.js *.md package.json",
     "pretest": "npm run -s lint",
@@ -25,16 +25,16 @@
     "node": "12.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/first-timers-only-bot"
+    "url": "https://github.com/hoodiehq/first-timers-bot"
   },
   "license": "Apache-2.0",
   "files": [
     "lib",
-    "server.js",
+    "app.js",
     "instructions.md"
   ],
   "keywords": [
-    "node",
-    "server"
+    "probot-app",
+    "first-timers-only"
   ]
 }
