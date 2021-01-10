@@ -4,7 +4,7 @@ This issue is reserved for people who never contributed to Open Source before. W
 
 [About First Timers Only](http://www.firsttimersonly.com/).
 
-### 🤔 What you will need to know.
+### 🤔 What you need to know.
 
 Nothing. This issue is meant to welcome you to Open Source :) We are happy to walk you through the process.
 
