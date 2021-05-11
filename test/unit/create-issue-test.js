@@ -38,8 +38,7 @@ test("create issue request succeeds", (t) => {
 
   simple.mock(api.issues, "update").resolveWith({
     data: {
-      body:
-        "test value1: patch value2: filename value3: branchUrl value4: installRepo value5: 123",
+      body: "test value1: patch value2: filename value3: branchUrl value4: installRepo value5: 123",
     },
   });
 
