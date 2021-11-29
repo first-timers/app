@@ -19,7 +19,7 @@
     "nock": "^13.2.1",
     "prettier": "^2.5.0",
     "simple-mock": "^0.8.0",
-    "tap": "^15.1.2"
+    "tap": "^15.1.5"
   },
   "engines": {
     "node": "12.x"
