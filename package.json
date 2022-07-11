@@ -15,7 +15,7 @@
     "probot": "^12.2.5"
   },
   "devDependencies": {
-    "@octokit/rest": "^18.12.0",
+    "@octokit/rest": "^19.0.3",
     "nock": "^13.2.8",
     "prettier": "^2.7.1",
     "simple-mock": "^0.8.0",
