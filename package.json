@@ -12,7 +12,7 @@
     "coverage": "tap --coverage-report=html"
   },
   "dependencies": {
-    "probot": "^12.2.7"
+    "probot": "^12.2.8"
   },
   "devDependencies": {
     "@octokit/rest": "^19.0.4",
