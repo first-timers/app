@@ -21,12 +21,7 @@
     "simple-mock": "^0.8.0",
     "tap": "^16.3.3"
   },
-  "engines": {
-    "node": "12.x"
-  },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/first-timers-only-bot"
-  },
+  "repository": "github:first-timers/app",
   "license": "Apache-2.0",
   "files": [
     "lib",
