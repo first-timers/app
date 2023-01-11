@@ -3,7 +3,7 @@ const fetchMock = require("fetch-mock");
 const simple = require("simple-mock");
 const { test } = require("tap");
 
-const server = require("../../server");
+const server = require("../../app");
 const robotMock = {
   log: {
     debug: () => {},

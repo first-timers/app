@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "probot run ./server.js",
+    "start": "probot run ./app.js",
     "lint": "prettier --check '{lib,test}/**/*.js' *.js *.md package.json",
     "lint:fix": "prettier --write '{lib,test}/**/*.js' *.js *.md package.json",
     "pretest": "npm run -s lint",
@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@octokit/rest": "^19.0.5",
+    "@vercel/node": "^2.8.6",
     "fetch-mock": "^9.11.0",
     "prettier": "^2.8.2",
     "simple-mock": "^0.8.0",
