@@ -1,6 +1,6 @@
 # first-timers-bot
 
-[![Build Status](https://github.com/first-timers/app/workflows/Test/badge.svg)](https://github.com/first-timers/app/actions?query=workflow%3ATest+branch%3Amaster) [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m779426128-6b6e81ed8dc987db17d4cad2.svg)](https://stats.uptimerobot.com/LZ40Lcoj4)
+[![Build Status](https://github.com/first-timers/app/workflows/Test/badge.svg)](https://github.com/first-timers/app/actions?query=workflow%3ATest+branch%3Amain) [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m779426128-6b6e81ed8dc987db17d4cad2.svg)](https://stats.uptimerobot.com/LZ40Lcoj4)
 
 ### 🐶🎯⛳ A Motivação
 
@@ -12,7 +12,7 @@ Criar o que chamamos de [issues iniciais](http://hood.ie/blog/starter-issues.htm
 
 ### 💡💥❓ Como funciona
 
-Digamos que eu seja um contribuidor da Hoodie e encontrei um erro de digitação em algum lugar. Ao invés de corrigir a issue diretamente na branch master ou perder tempo criando um pull request, eu posso simplesmente criar uma nova branch e chamá-la de algo como _first-timers-only-erro-digitacao-no-titulo._ O GitHub irá notificar o **First Timers Bot** sobre a nova branch usando Webhooks. O bot fica de olho em qualquer nova branch que comece com **first-timers-** e criará uma nova issue no seu repositório. O campo commit pode ser usado para contextualizar e adicionar informações e se deixado vazio, a seção 🤔 **What you will need to know** simplesmente exibirá "Nothing :)".
+Digamos que eu seja um contribuidor da Hoodie e encontrei um erro de digitação em algum lugar. Ao invés de corrigir a issue diretamente na branch main ou perder tempo criando um pull request, eu posso simplesmente criar uma nova branch e chamá-la de algo como _first-timers-only-erro-digitacao-no-titulo._ O GitHub irá notificar o **First Timers Bot** sobre a nova branch usando Webhooks. O bot fica de olho em qualquer nova branch que comece com **first-timers-** e criará uma nova issue no seu repositório. O campo commit pode ser usado para contextualizar e adicionar informações e se deixado vazio, a seção 🤔 **What you will need to know** simplesmente exibirá "Nothing :)".
 
 ### 😮🙌👀🎉 Use Nosso Bot!
 
@@ -67,7 +67,7 @@ repository: repo-name
 
 **Exemplo de Configuração** 🖥 💯
 
-Nosso arquivo [`.github/first-timers.yml`](https://github.com/first-timers/app/blob/master/.github/first-timers.yml) do repositório `first-timers/app` está usando o arquivo [`.github/FIRST_TIMERS_ISSUE_TEMPLATE.md`](https://github.com/hoodiehq/camp/blob/gh-pages/.github/FIRST_TIMERS_ISSUE_TEMPLATE.md) do repositório `hoodiehq/camp` como template para criar uma issue como essa: https://github.com/hoodiehq/camp/issues/126.
+Nosso arquivo [`.github/first-timers.yml`](https://github.com/first-timers/app/blob/main/.github/first-timers.yml) do repositório `first-timers/app` está usando o arquivo [`.github/FIRST_TIMERS_ISSUE_TEMPLATE.md`](https://github.com/hoodiehq/camp/blob/gh-pages/.github/FIRST_TIMERS_ISSUE_TEMPLATE.md) do repositório `hoodiehq/camp` como template para criar uma issue como essa: https://github.com/hoodiehq/camp/issues/126.
 
 ### Status do Servidor
 
