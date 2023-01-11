@@ -26,10 +26,10 @@ test("gets template content if URL exists", (t) => {
 
   getTemplateContent(state).then(() => {
     const getTemplateContentArgs = api.repos.getContent.lastCall.arg;
-    t.is(getTemplateContentArgs.owner, "owner");
-    t.is(getTemplateContentArgs.repo, "issue_repo");
-    t.is(getTemplateContentArgs.path, "template_path");
-    t.is(state.template, "content");
+    t.equal(getTemplateContentArgs.owner, "owner");
+    t.equal(getTemplateContentArgs.repo, "issue_repo");
+    t.equal(getTemplateContentArgs.path, "template_path");
+    t.equal(state.template, "content");
 
     simple.restore();
     t.end();
@@ -53,9 +53,9 @@ test("gets template from different repository", (t) => {
 
   getTemplateContent(state).then(() => {
     const getTemplateContentArgs = api.repos.getContent.lastCall.arg;
-    t.is(getTemplateContentArgs.owner, "owner");
-    t.is(getTemplateContentArgs.repo, "other_repo");
-    t.is(getTemplateContentArgs.path, "path/to/template.md");
+    t.equal(getTemplateContentArgs.owner, "owner");
+    t.equal(getTemplateContentArgs.repo, "other_repo");
+    t.equal(getTemplateContentArgs.path, "path/to/template.md");
     simple.restore();
     t.end();
   });

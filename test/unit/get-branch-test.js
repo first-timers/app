@@ -29,10 +29,10 @@ test("get branch request succeeds", (t) => {
   getBranch(state)
     .then(() => {
       const getBranchArgs = api.repos.getBranch.lastCall.arg;
-      t.is(getBranchArgs.owner, "owner");
-      t.is(getBranchArgs.repo, "installRepo");
-      t.is(getBranchArgs.branch, "branch");
-      t.is(state.sha, "sha");
+      t.equal(getBranchArgs.owner, "owner");
+      t.equal(getBranchArgs.repo, "installRepo");
+      t.equal(getBranchArgs.branch, "branch");
+      t.equal(state.sha, "sha");
 
       simple.restore();
       t.end();
@@ -56,7 +56,7 @@ test("get branch test fails", (t) => {
       t.fail("should not resolve");
     })
     .catch((error) => {
-      t.is(error.code, 404);
+      t.equal(error.code, 404);
 
       simple.restore();
       t.end();

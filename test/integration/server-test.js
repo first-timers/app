@@ -19,9 +19,9 @@ test("server create event with reftype = tag", async (t) => {
 
   server(robotMock);
 
-  t.is(robotMock.on.lastCall.arg, "create");
+  t.equal(robotMock.on.lastCall.arg, "create");
   const handleCreateEvent = robotMock.on.lastCall.args[1];
-  t.is(typeof handleCreateEvent, "function");
+  t.equal(typeof handleCreateEvent, "function");
 
   const configure = function (yaml) {
     return { repository: "name", labels: ["label"] };
@@ -51,9 +51,9 @@ test("server create event with branch ref read-me-fix", async (t) => {
 
   server(robotMock);
 
-  t.is(robotMock.on.lastCall.arg, "create");
+  t.equal(robotMock.on.lastCall.arg, "create");
   const handleCreateEvent = robotMock.on.lastCall.args[1];
-  t.is(typeof handleCreateEvent, "function");
+  t.equal(typeof handleCreateEvent, "function");
 
   const configure = function (yaml) {
     return { repository: "name", labels: ["label"] };
@@ -85,9 +85,9 @@ test("server create event with non-existing branch name", async (t) => {
 
   server(robotMock);
 
-  t.is(robotMock.on.lastCall.arg, "create");
+  t.equal(robotMock.on.lastCall.arg, "create");
   const handleCreateEvent = robotMock.on.lastCall.args[1];
-  t.is(typeof handleCreateEvent, "function");
+  t.equal(typeof handleCreateEvent, "function");
 
   const githubMock = nock("https://api.github.com", {
     encodedQueryParams: true,
@@ -120,11 +120,11 @@ test("server create event with non-existing branch name", async (t) => {
     },
     config: configure,
   }).catch((error) => {
-    t.is(error.message, "Branch not found");
+    t.equal(error.message, "Branch not found");
   });
 
-  t.is(githubMock.pendingMocks()[0], undefined);
-  t.is(console.error.callCount, 1);
+  t.equal(githubMock.pendingMocks()[0], undefined);
+  t.equal(console.error.callCount, 1);
 
   simple.restore();
   t.end();

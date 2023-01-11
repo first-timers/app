@@ -25,7 +25,7 @@ test("delete branch request succeeds", (t) => {
   });
 
   deleteBranch(state).then((response) => {
-    t.is(response.meta.status, "204 No Content");
+    t.equal(response.meta.status, "204 No Content");
 
     simple.restore();
     t.end();
@@ -46,7 +46,7 @@ test("delete branch request fails", (t) => {
   });
 
   deleteBranch(state).then((error) => {
-    t.is(error.code, 403);
+    t.equal(error.code, 403);
   });
 
   simple.mock(api.git, "deleteRef").rejectWith({
@@ -54,7 +54,7 @@ test("delete branch request fails", (t) => {
   });
 
   deleteBranch(state).then((error) => {
-    t.is(error.code, 404);
+    t.equal(error.code, 404);
     simple.restore();
     t.end();
   });

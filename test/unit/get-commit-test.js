@@ -40,17 +40,17 @@ test("get commit request succeeds", (t) => {
 
   getCommit(state).then(() => {
     const getCommitArgs = api.repos.getCommit.lastCall.arg;
-    t.is(getCommitArgs.owner, "owner");
-    t.is(getCommitArgs.repo, "installRepo");
-    t.is(getCommitArgs.ref, "sha");
-    t.is(state.commit.message, "message");
-    t.is(state.commit.filename, "filename");
-    t.is(state.commit.patch, "patch");
-    t.is(
+    t.equal(getCommitArgs.owner, "owner");
+    t.equal(getCommitArgs.repo, "installRepo");
+    t.equal(getCommitArgs.ref, "sha");
+    t.equal(state.commit.message, "message");
+    t.equal(state.commit.filename, "filename");
+    t.equal(state.commit.patch, "patch");
+    t.equal(
       state.commit.branchUrl,
       "https://github.com/Techforchange/first-timers-test/blob/defaultBranch/docs/README.md"
     );
-    t.is(state.commit.authorLogin, "username");
+    t.equal(state.commit.authorLogin, "username");
 
     simple.restore();
     t.end();
@@ -70,7 +70,7 @@ test("get commit fails", (t) => {
       t.fail("should not resolve");
     })
     .catch((error) => {
-      t.is(error.code, 404);
+      t.equal(error.code, 404);
 
       simple.restore();
       t.end();

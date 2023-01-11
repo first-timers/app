@@ -45,17 +45,17 @@ test("create issue request succeeds", (t) => {
   createIssue(state).then((response) => {
     const createIssueArgs = api.issues.create.lastCall.arg;
     const editIssueArgs = api.issues.update.lastCall.arg;
-    t.is(response.data.html_url, "html_url");
-    t.is(response.data.number, 123);
-    t.is(createIssueArgs.title, "commit subject");
-    t.is(
+    t.equal(response.data.html_url, "html_url");
+    t.equal(response.data.number, 123);
+    t.equal(createIssueArgs.title, "commit subject");
+    t.equal(
       createIssueArgs.body,
       "test value1: patch value2: filename value3: branchUrl value4: installRepo value5: $ISSUE_NUMBER value6: commit body"
     );
-    t.is(createIssueArgs.repo, "issueRepo");
-    t.is(createIssueArgs.labels, "label-1");
-    t.is(createIssueArgs.owner, "owner");
-    t.is(
+    t.equal(createIssueArgs.repo, "issueRepo");
+    t.equal(createIssueArgs.labels, "label-1");
+    t.equal(createIssueArgs.owner, "owner");
+    t.equal(
       editIssueArgs.body,
       "test value1: patch value2: filename value3: branchUrl value4: installRepo value5: 123 value6: commit body"
     );
@@ -94,7 +94,7 @@ test("create issue request fails", (t) => {
     })
 
     .catch((error) => {
-      t.is(error.code, 404);
+      t.equal(error.code, 404);
 
       simple.restore();
       t.end();
