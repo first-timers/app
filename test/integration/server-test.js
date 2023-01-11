@@ -1,9 +1,8 @@
 const { Octokit } = require("@octokit/rest");
-const nock = require("nock");
+const fetchMock = require("fetch-mock");
 const simple = require("simple-mock");
 const { test } = require("tap");
 
-const octokit = new Octokit();
 const server = require("../../server");
 const robotMock = {
   log: {
@@ -11,8 +10,6 @@ const robotMock = {
   },
   on: () => {},
 };
-
-nock.disableNetConnect();
 
 test("server create event with reftype = tag", async (t) => {
   simple.mock(robotMock, "on");
@@ -83,20 +80,30 @@ test("server create event with non-existing branch name", async (t) => {
   simple.mock(robotMock, "on");
   simple.mock(console, "error").callFn(() => {});
 
+  const mock = fetchMock.sandbox();
+
+  const octokit = new Octokit({
+    request: {
+      fetch: mock,
+    },
+  });
+
   server(robotMock);
 
   t.equal(robotMock.on.lastCall.arg, "create");
   const handleCreateEvent = robotMock.on.lastCall.args[1];
   t.equal(typeof handleCreateEvent, "function");
 
-  const githubMock = nock("https://api.github.com", {
-    encodedQueryParams: true,
-  })
-    .get("/repos/first-timers/app/branches/first-timers-does-not-exist")
-    .reply(404, {
-      message: "Branch not found",
-      documentation_url: "https://developer.github.com/v3/repos/#get-branch",
-    });
+  mock.get(
+    "path:/repos/first-timers/app/branches/first-timers-does-not-exist",
+    {
+      status: 404,
+      body: {
+        message: "Branch not found",
+        documentation_url: "https://developer.github.com/v3/repos/#get-branch",
+      },
+    }
+  );
 
   const configure = function (yaml) {
     return { repository: "name", labels: ["label"] };
@@ -123,7 +130,7 @@ test("server create event with non-existing branch name", async (t) => {
     t.equal(error.message, "Branch not found");
   });
 
-  t.equal(githubMock.pendingMocks()[0], undefined);
+  t.equal(mock.done(), true);
   t.equal(console.error.callCount, 1);
 
   simple.restore();
