@@ -1,6 +1,6 @@
 const { test } = require("tap");
 
 test("smoke test", (t) => {
-  require("../../server");
+  require("../../app");
   t.end();
 });
