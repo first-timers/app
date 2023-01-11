@@ -36,4 +36,4 @@ $DIFF
 
 Leave a comment below!
 
-This issue was created by [First-Timers-Bot](https://github.com/hoodiehq/first-timers-bot).
+This issue was created by [First-Timers-Bot](https://github.com/first-timers/app).

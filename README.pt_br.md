@@ -1,6 +1,6 @@
 # first-timers-bot
 
-[![Build Status](https://github.com/hoodiehq/first-timers-bot/workflows/Test/badge.svg)](https://github.com/hoodiehq/first-timers-bot/actions?query=workflow%3ATest+branch%3Amaster) [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m779426128-6b6e81ed8dc987db17d4cad2.svg)](https://stats.uptimerobot.com/LZ40Lcoj4)
+[![Build Status](https://github.com/first-timers/app/workflows/Test/badge.svg)](https://github.com/first-timers/app/actions?query=workflow%3ATest+branch%3Amaster) [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m779426128-6b6e81ed8dc987db17d4cad2.svg)](https://stats.uptimerobot.com/LZ40Lcoj4)
 
 ### 🐶🎯⛳ A Motivação
 
@@ -67,7 +67,7 @@ repository: repo-name
 
 **Exemplo de Configuração** 🖥 💯
 
-Nosso arquivo [`.github/first-timers.yml`](https://github.com/hoodiehq/first-timers-bot/blob/master/.github/first-timers.yml) do repositório `hoodiehq/first-timers-bot` está usando o arquivo [`.github/FIRST_TIMERS_ISSUE_TEMPLATE.md`](https://github.com/hoodiehq/camp/blob/gh-pages/.github/FIRST_TIMERS_ISSUE_TEMPLATE.md) do repositório `hoodiehq/camp` como template para criar uma issue como essa: https://github.com/hoodiehq/camp/issues/126.
+Nosso arquivo [`.github/first-timers.yml`](https://github.com/first-timers/app/blob/master/.github/first-timers.yml) do repositório `first-timers/app` está usando o arquivo [`.github/FIRST_TIMERS_ISSUE_TEMPLATE.md`](https://github.com/hoodiehq/camp/blob/gh-pages/.github/FIRST_TIMERS_ISSUE_TEMPLATE.md) do repositório `hoodiehq/camp` como template para criar uma issue como essa: https://github.com/hoodiehq/camp/issues/126.
 
 ### Status do Servidor
 
@@ -98,7 +98,7 @@ Obrigado a todos aqueles que contribuíram com esse projeto.
  Contributors END -->
 <!-- Contributors table START -->
 
-| <img src="https://avatars.githubusercontent.com/michaelmccombie?s=100" width="100" alt="Michael McCombie" /><br />[<sub>Michael McCombie</sub>](https://twitter.com/michaelbuilds)<br />[🎨](https://raw.githubusercontent.com/hoodiehq/first-timers-bot/51742c62ae3e4e2be7e58d170a9eab73a3871bf4/assets/avatar.png) | <img src="https://avatars.githubusercontent.com/gr2m?s=100" width="100" alt="Gregor Martynus" /><br />[<sub>Gregor Martynus</sub>](https://twitter.com/gr2m)<br />👨🏻‍🏫 |
+| <img src="https://avatars.githubusercontent.com/michaelmccombie?s=100" width="100" alt="Michael McCombie" /><br />[<sub>Michael McCombie</sub>](https://twitter.com/michaelbuilds)<br />[🎨](https://raw.githubusercontent.com/first-timers/app/51742c62ae3e4e2be7e58d170a9eab73a3871bf4/assets/avatar.png) | <img src="https://avatars.githubusercontent.com/gr2m?s=100" width="100" alt="Gregor Martynus" /><br />[<sub>Gregor Martynus</sub>](https://twitter.com/gr2m)<br />👨🏻‍🏫 |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
 <!-- Contributors table END -->

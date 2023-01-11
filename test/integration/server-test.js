@@ -34,7 +34,7 @@ test("server create event with reftype = tag", async (t) => {
     payload: {
       ref_type: "tag",
       repository: {
-        full_name: "hoodiehq/first-timers-bot",
+        full_name: "first-timers/app",
       },
     },
     config: configure,
@@ -67,7 +67,7 @@ test("server create event with branch ref read-me-fix", async (t) => {
       ref_type: "branch",
       ref: "read-me-fix",
       repository: {
-        full_name: "hoodiehq/first-timers-bot",
+        full_name: "first-timers/app",
       },
     },
     config: configure,
@@ -93,7 +93,7 @@ test("server create event with non-existing branch name", async (t) => {
     encodedQueryParams: true,
   })
     .get(
-      "/repos/hoodiehq/first-timers-bot/branches/first-timers-does-not-exist"
+      "/repos/first-timers/app/branches/first-timers-does-not-exist"
     )
     .reply(404, {
       message: "Branch not found",
@@ -114,7 +114,7 @@ test("server create event with non-existing branch name", async (t) => {
       ref: "first-timers-does-not-exist",
       repository: {
         name: "first-timers-bot",
-        full_name: "hoodiehq/first-timers-bot",
+        full_name: "first-timers/app",
         owner: {
           login: "hoodiehq",
         },
