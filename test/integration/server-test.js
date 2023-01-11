@@ -92,9 +92,7 @@ test("server create event with non-existing branch name", async (t) => {
   const githubMock = nock("https://api.github.com", {
     encodedQueryParams: true,
   })
-    .get(
-      "/repos/first-timers/app/branches/first-timers-does-not-exist"
-    )
+    .get("/repos/first-timers/app/branches/first-timers-does-not-exist")
     .reply(404, {
       message: "Branch not found",
       documentation_url: "https://developer.github.com/v3/repos/#get-branch",
@@ -113,10 +111,10 @@ test("server create event with non-existing branch name", async (t) => {
       ref_type: "branch",
       ref: "first-timers-does-not-exist",
       repository: {
-        name: "first-timers-bot",
+        name: "app",
         full_name: "first-timers/app",
         owner: {
-          login: "hoodiehq",
+          login: "first-timers",
         },
       },
     },
