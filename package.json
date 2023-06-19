@@ -15,7 +15,7 @@
     "probot": "^12.3.0"
   },
   "devDependencies": {
-    "@octokit/rest": "^19.0.11",
+    "@octokit/rest": "^19.0.13",
     "@vercel/node": "^2.15.1",
     "fetch-mock": "^9.11.0",
     "prettier": "^2.8.8",
