@@ -50,14 +50,14 @@ test("create issue request succeeds", (t) => {
     t.equal(createIssueArgs.title, "commit subject");
     t.equal(
       createIssueArgs.body,
-      "test value1: patch value2: filename value3: branchUrl value4: installRepo value5: $ISSUE_NUMBER value6: commit body"
+      "test value1: patch value2: filename value3: branchUrl value4: installRepo value5: $ISSUE_NUMBER value6: commit body",
     );
     t.equal(createIssueArgs.repo, "issueRepo");
     t.equal(createIssueArgs.labels, "label-1");
     t.equal(createIssueArgs.owner, "owner");
     t.equal(
       editIssueArgs.body,
-      "test value1: patch value2: filename value3: branchUrl value4: installRepo value5: 123 value6: commit body"
+      "test value1: patch value2: filename value3: branchUrl value4: installRepo value5: 123 value6: commit body",
     );
 
     simple.restore();
