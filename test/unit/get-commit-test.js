@@ -48,7 +48,7 @@ test("get commit request succeeds", (t) => {
     t.equal(state.commit.patch, "patch");
     t.equal(
       state.commit.branchUrl,
-      "https://github.com/Techforchange/first-timers-test/blob/defaultBranch/docs/README.md"
+      "https://github.com/Techforchange/first-timers-test/blob/defaultBranch/docs/README.md",
     );
     t.equal(state.commit.authorLogin, "username");
 

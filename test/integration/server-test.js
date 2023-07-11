@@ -102,7 +102,7 @@ test("server create event with non-existing branch name", async (t) => {
         message: "Branch not found",
         documentation_url: "https://developer.github.com/v3/repos/#get-branch",
       },
-    }
+    },
   );
 
   const configure = function (yaml) {

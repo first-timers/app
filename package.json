@@ -18,7 +18,7 @@
     "@octokit/rest": "^19.0.13",
     "@vercel/node": "^2.15.3",
     "fetch-mock": "^9.11.0",
-    "prettier": "^2.8.8",
+    "prettier": "^3.0.0",
     "simple-mock": "^0.8.0",
     "tap": "^16.3.7"
   },
