@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@octokit/rest": "^20.0.1",
-    "@vercel/node": "^2.15.9",
+    "@vercel/node": "^2.15.10",
     "fetch-mock": "^9.11.0",
     "prettier": "^3.0.2",
     "simple-mock": "^0.8.0",
