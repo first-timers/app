@@ -20,7 +20,7 @@
     "fetch-mock": "^9.11.0",
     "prettier": "^3.1.0",
     "simple-mock": "^0.8.0",
-    "tap": "^16.3.8"
+    "tap": "^18.5.7"
   },
   "repository": "github:first-timers/app",
   "license": "Apache-2.0",
